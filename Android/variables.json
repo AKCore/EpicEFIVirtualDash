@@ -1,0 +1,9132 @@
+[
+  {
+    "name": "acacButtonState",
+    "hash": -2010169270,
+    "source": "output"
+  },
+  {
+    "name": "acacCompressorState",
+    "hash": -1792900549,
+    "source": "output"
+  },
+  {
+    "name": "acacPressureTooHigh",
+    "hash": -1997922376,
+    "source": "output"
+  },
+  {
+    "name": "acacPressureTooLow",
+    "hash": 1501267754,
+    "source": "output"
+  },
+  {
+    "name": "accelEnX",
+    "hash": -1279670200,
+    "source": "config"
+  },
+  {
+    "name": "accelEnY",
+    "hash": -1279670199,
+    "source": "config"
+  },
+  {
+    "name": "accelEnZ",
+    "hash": -1279670198,
+    "source": "config"
+  },
+  {
+    "name": "accelerationLat",
+    "hash": -2133047664,
+    "source": "output"
+  },
+  {
+    "name": "accelerationLon",
+    "hash": -2133047208,
+    "source": "output"
+  },
+  {
+    "name": "accelerationVert",
+    "hash": -1670732400,
+    "source": "output"
+  },
+  {
+    "name": "accelerometerFds",
+    "hash": 1552403965,
+    "source": "config"
+  },
+  {
+    "name": "accelerometerHPCF",
+    "hash": -310192191,
+    "source": "config"
+  },
+  {
+    "name": "accelerometerHPM",
+    "hash": 1552406533,
+    "source": "config"
+  },
+  {
+    "name": "accelerometerOrd",
+    "hash": 1552414213,
+    "source": "config"
+  },
+  {
+    "name": "accelerometerScale",
+    "hash": -1633831640,
+    "source": "config"
+  },
+  {
+    "name": "accelHighRes",
+    "hash": -356454233,
+    "source": "config"
+  },
+  {
+    "name": "accelSelfTest",
+    "hash": 1095822215,
+    "source": "config"
+  },
+  {
+    "name": "accPedalSplit",
+    "hash": 864210494,
+    "source": "output"
+  },
+  {
+    "name": "accPedalUnfiltered",
+    "hash": 1466421764,
+    "source": "output"
+  },
+  {
+    "name": "acDelay",
+    "hash": 483010008,
+    "source": "config"
+  },
+  {
+    "name": "acengineTooFast",
+    "hash": 982732799,
+    "source": "output"
+  },
+  {
+    "name": "acengineTooHot",
+    "hash": 810685564,
+    "source": "output"
+  },
+  {
+    "name": "acengineTooSlow",
+    "hash": 983211830,
+    "source": "output"
+  },
+  {
+    "name": "acIdleExtraOffset",
+    "hash": 1933500210,
+    "source": "config"
+  },
+  {
+    "name": "acIdleRpmTarget",
+    "hash": 30701245,
+    "source": "config"
+  },
+  {
+    "name": "acisDisabledByLua",
+    "hash": -2102560038,
+    "source": "output"
+  },
+  {
+    "name": "acLowRpmLimit",
+    "hash": -2138018615,
+    "source": "config"
+  },
+  {
+    "name": "acm_acEnabled",
+    "hash": -1652521980,
+    "source": "output"
+  },
+  {
+    "name": "acnoClt",
+    "hash": 495219145,
+    "source": "output"
+  },
+  {
+    "name": "acPressure",
+    "hash": 1644550754,
+    "source": "output"
+  },
+  {
+    "name": "acPressure.v1",
+    "hash": 1470507575,
+    "source": "config"
+  },
+  {
+    "name": "acPressure.v2",
+    "hash": 1470507576,
+    "source": "config"
+  },
+  {
+    "name": "acPressure.value1",
+    "hash": -1171243586,
+    "source": "config"
+  },
+  {
+    "name": "acPressure.value2",
+    "hash": -1171243585,
+    "source": "config"
+  },
+  {
+    "name": "acPressureEnableHyst",
+    "hash": 298344625,
+    "source": "config"
+  },
+  {
+    "name": "acrActive",
+    "hash": -1548941801,
+    "source": "output"
+  },
+  {
+    "name": "acrDisablePhase",
+    "hash": 1574876352,
+    "source": "config"
+  },
+  {
+    "name": "acRelayAlternatorDutyAdder",
+    "hash": -908268760,
+    "source": "config"
+  },
+  {
+    "name": "acrEngineMovedRecently",
+    "hash": -791147982,
+    "source": "output"
+  },
+  {
+    "name": "acrRevolutions",
+    "hash": -1373423899,
+    "source": "config"
+  },
+  {
+    "name": "activateSwitchCondition",
+    "hash": 1265600943,
+    "source": "output"
+  },
+  {
+    "name": "actpsTooHigh",
+    "hash": 1357163474,
+    "source": "output"
+  },
+  {
+    "name": "actualLastInjection",
+    "hash": 681043126,
+    "source": "output"
+  },
+  {
+    "name": "actualLastInjectionStage2",
+    "hash": -1434098660,
+    "source": "output"
+  },
+  {
+    "name": "actualLastInjPreSmallPw",
+    "hash": -350710533,
+    "source": "output"
+  },
+  {
+    "name": "actualLastInjSTG2PreSmallPw",
+    "hash": 2046400891,
+    "source": "output"
+  },
+  {
+    "name": "adcVcc",
+    "hash": -244496183,
+    "source": "config"
+  },
+  {
+    "name": "aeEngageCnt",
+    "hash": 1737199159,
+    "source": "output"
+  },
+  {
+    "name": "afr.v1",
+    "hash": -241663117,
+    "source": "config"
+  },
+  {
+    "name": "afr.v2",
+    "hash": -241663116,
+    "source": "config"
+  },
+  {
+    "name": "afr.value1",
+    "hash": 1273287930,
+    "source": "config"
+  },
+  {
+    "name": "afr.value2",
+    "hash": 1273287931,
+    "source": "config"
+  },
+  {
+    "name": "afr2GasolineScale",
+    "hash": 2029444810,
+    "source": "output"
+  },
+  {
+    "name": "AFRBlend1BlendMode",
+    "hash": -380849858,
+    "source": "config"
+  },
+  {
+    "name": "afrError",
+    "hash": -1112972888,
+    "source": "output"
+  },
+  {
+    "name": "afrExpAverageAlpha",
+    "hash": 1597749004,
+    "source": "config"
+  },
+  {
+    "name": "afrGasolineScale",
+    "hash": 111403416,
+    "source": "output"
+  },
+  {
+    "name": "afrSensorLambdaRange",
+    "hash": 353722918,
+    "source": "config"
+  },
+  {
+    "name": "afrTableSwitch1Active",
+    "hash": 1083710597,
+    "source": "output"
+  },
+  {
+    "name": "afrTableYAxis",
+    "hash": 995190836,
+    "source": "output"
+  },
+  {
+    "name": "afrTrimRangeMax",
+    "hash": -1506146739,
+    "source": "config"
+  },
+  {
+    "name": "afrTrimRangeMin",
+    "hash": -1506146485,
+    "source": "config"
+  },
+  {
+    "name": "AFRValue",
+    "hash": -1093429509,
+    "source": "output"
+  },
+  {
+    "name": "AFRValue2",
+    "hash": -1723435379,
+    "source": "output"
+  },
+  {
+    "name": "airByRpmTaper",
+    "hash": 2070727975,
+    "source": "config"
+  },
+  {
+    "name": "airTaperRpmRange",
+    "hash": -174866119,
+    "source": "config"
+  },
+  {
+    "name": "allowDFUwithIgn",
+    "hash": -411193027,
+    "source": "config"
+  },
+  {
+    "name": "allowIdenticalPps",
+    "hash": 445194564,
+    "source": "config"
+  },
+  {
+    "name": "alphaNUseIat",
+    "hash": -253720028,
+    "source": "config"
+  },
+  {
+    "name": "ALSEtbAdd",
+    "hash": 1232469673,
+    "source": "config"
+  },
+  {
+    "name": "alsEtbPosition",
+    "hash": -731677323,
+    "source": "config"
+  },
+  {
+    "name": "ALSIdleAdd",
+    "hash": -2021435668,
+    "source": "config"
+  },
+  {
+    "name": "ALSMaxCLT",
+    "hash": 1523813390,
+    "source": "config"
+  },
+  {
+    "name": "ALSMaxDuration",
+    "hash": 1830002033,
+    "source": "config"
+  },
+  {
+    "name": "ALSMaxRPM",
+    "hash": 1523829850,
+    "source": "config"
+  },
+  {
+    "name": "ALSMaxTPS",
+    "hash": 1523832034,
+    "source": "config"
+  },
+  {
+    "name": "ALSMinCLT",
+    "hash": 1532941388,
+    "source": "config"
+  },
+  {
+    "name": "ALSMinRPM",
+    "hash": 1532957848,
+    "source": "config"
+  },
+  {
+    "name": "alsMinTimeBetween",
+    "hash": -1118241790,
+    "source": "config"
+  },
+  {
+    "name": "ALSSkipRatio",
+    "hash": -1404414917,
+    "source": "config"
+  },
+  {
+    "name": "alternator_iTermMax",
+    "hash": 107641479,
+    "source": "config"
+  },
+  {
+    "name": "alternator_iTermMin",
+    "hash": 107641733,
+    "source": "config"
+  },
+  {
+    "name": "alternatorControl.dFactor",
+    "hash": -311714733,
+    "source": "config"
+  },
+  {
+    "name": "alternatorControl.iFactor",
+    "hash": 1850657816,
+    "source": "config"
+  },
+  {
+    "name": "alternatorControl.maxValue",
+    "hash": -1623166029,
+    "source": "config"
+  },
+  {
+    "name": "alternatorControl.minValue",
+    "hash": -272710799,
+    "source": "config"
+  },
+  {
+    "name": "alternatorControl.offset",
+    "hash": 1983046327,
+    "source": "config"
+  },
+  {
+    "name": "alternatorControl.periodMs",
+    "hash": -1995686573,
+    "source": "config"
+  },
+  {
+    "name": "alternatorControl.pFactor",
+    "hash": -1993968289,
+    "source": "config"
+  },
+  {
+    "name": "alternatorPwmFrequency",
+    "hash": 799798215,
+    "source": "config"
+  },
+  {
+    "name": "alternatorStatus.dTerm",
+    "hash": -1111560081,
+    "source": "output"
+  },
+  {
+    "name": "alternatorStatus.error",
+    "hash": -1110431971,
+    "source": "output"
+  },
+  {
+    "name": "alternatorStatus.iTerm",
+    "hash": -1105630476,
+    "source": "output"
+  },
+  {
+    "name": "alternatorStatus.output",
+    "hash": -1889531804,
+    "source": "output"
+  },
+  {
+    "name": "alternatorStatus.pTerm",
+    "hash": -1097329029,
+    "source": "output"
+  },
+  {
+    "name": "alternatorStatus.resetCounter",
+    "hash": -1254008074,
+    "source": "output"
+  },
+  {
+    "name": "alwaysInstantRpm",
+    "hash": -1934896346,
+    "source": "config"
+  },
+  {
+    "name": "alwaysWriteSdCard",
+    "hash": 787397010,
+    "source": "config"
+  },
+  {
+    "name": "ambientTemp",
+    "hash": 309572379,
+    "source": "output"
+  },
+  {
+    "name": "ambientTempSensor.config.bias_resistor",
+    "hash": -1899369472,
+    "source": "config"
+  },
+  {
+    "name": "ambientTempSensor.config.resistance_1",
+    "hash": -1084296600,
+    "source": "config"
+  },
+  {
+    "name": "ambientTempSensor.config.resistance_2",
+    "hash": -1084296599,
+    "source": "config"
+  },
+  {
+    "name": "ambientTempSensor.config.resistance_3",
+    "hash": -1084296598,
+    "source": "config"
+  },
+  {
+    "name": "ambientTempSensor.config.tempC_1",
+    "hash": 275986512,
+    "source": "config"
+  },
+  {
+    "name": "ambientTempSensor.config.tempC_2",
+    "hash": 275986513,
+    "source": "config"
+  },
+  {
+    "name": "ambientTempSensor.config.tempC_3",
+    "hash": 275986514,
+    "source": "config"
+  },
+  {
+    "name": "analogInputDividerCoefficient",
+    "hash": 1779689293,
+    "source": "config"
+  },
+  {
+    "name": "anotherCiTest",
+    "hash": -283215870,
+    "source": "config"
+  },
+  {
+    "name": "antiLagEnabled",
+    "hash": -933524784,
+    "source": "config"
+  },
+  {
+    "name": "antilagTriggered",
+    "hash": 1155330306,
+    "source": "output"
+  },
+  {
+    "name": "applyExpAverageToEtbTarget",
+    "hash": -1837413512,
+    "source": "config"
+  },
+  {
+    "name": "artificialTestMisfire",
+    "hash": -1528619572,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbMaxAllowedPpsPct",
+    "hash": -1585413592,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbMaxPct",
+    "hash": -975349491,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbMinBatteryVoltage",
+    "hash": -1794461103,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbMinPct",
+    "hash": -966221493,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbPeriodSec",
+    "hash": 917458462,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbRiseWindowSec",
+    "hash": 311680038,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbRotate",
+    "hash": -763229169,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbRotateIterations",
+    "hash": 1589865105,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbRotatePeriodSec",
+    "hash": -251224435,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbSettleWindowSec",
+    "hash": 1541154756,
+    "source": "config"
+  },
+  {
+    "name": "assistedEtbTuningEnabled",
+    "hash": -491789856,
+    "source": "config"
+  },
+  {
+    "name": "auxFrequencyFilter",
+    "hash": 383307083,
+    "source": "config"
+  },
+  {
+    "name": "auxFrequencyFilter1",
+    "hash": -235768100,
+    "source": "config"
+  },
+  {
+    "name": "auxFrequencyFilter2",
+    "hash": -235768099,
+    "source": "config"
+  },
+  {
+    "name": "auxFrequencyFilter3",
+    "hash": -235768098,
+    "source": "config"
+  },
+  {
+    "name": "auxFrequencyFilter4",
+    "hash": -235768097,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear1",
+    "hash": 803810399,
+    "source": "output"
+  },
+  {
+    "name": "auxLinear1.v1",
+    "hash": -1415669996,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear1.v2",
+    "hash": -1415669995,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear1.value1",
+    "hash": -65154789,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear1.value2",
+    "hash": -65154788,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear2",
+    "hash": 803810400,
+    "source": "output"
+  },
+  {
+    "name": "auxLinear2.v1",
+    "hash": -1415634059,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear2.v2",
+    "hash": -1415634058,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear2.value1",
+    "hash": -396384772,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear2.value2",
+    "hash": -396384771,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear3",
+    "hash": 803810401,
+    "source": "output"
+  },
+  {
+    "name": "auxLinear3.v1",
+    "hash": -1415598122,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear3.v2",
+    "hash": -1415598121,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear3.value1",
+    "hash": -727614755,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear3.value2",
+    "hash": -727614754,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear4",
+    "hash": 803810402,
+    "source": "output"
+  },
+  {
+    "name": "auxLinear4.v1",
+    "hash": -1415562185,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear4.v2",
+    "hash": -1415562184,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear4.value1",
+    "hash": -1058844738,
+    "source": "config"
+  },
+  {
+    "name": "auxLinear4.value2",
+    "hash": -1058844737,
+    "source": "config"
+  },
+  {
+    "name": "auxLowPassCutoffHz",
+    "hash": -1653846075,
+    "source": "config"
+  },
+  {
+    "name": "auxSpeed1",
+    "hash": 957036309,
+    "source": "output"
+  },
+  {
+    "name": "auxSpeed1Multiplier",
+    "hash": -1644887108,
+    "source": "config"
+  },
+  {
+    "name": "auxSpeed2",
+    "hash": 957036310,
+    "source": "output"
+  },
+  {
+    "name": "auxSpeed3",
+    "hash": 957036311,
+    "source": "output"
+  },
+  {
+    "name": "auxSpeed4",
+    "hash": 957036312,
+    "source": "output"
+  },
+  {
+    "name": "auxSpeedMult1",
+    "hash": -1345684809,
+    "source": "config"
+  },
+  {
+    "name": "auxSpeedMult2",
+    "hash": -1345684808,
+    "source": "config"
+  },
+  {
+    "name": "auxSpeedMult3",
+    "hash": -1345684807,
+    "source": "config"
+  },
+  {
+    "name": "auxSpeedMult4",
+    "hash": -1345684806,
+    "source": "config"
+  },
+  {
+    "name": "auxTemp1",
+    "hash": 1331305978,
+    "source": "output"
+  },
+  {
+    "name": "auxTemp2",
+    "hash": 1331305979,
+    "source": "output"
+  },
+  {
+    "name": "auxTempSensor1.config.bias_resistor",
+    "hash": -1189603841,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor1.config.resistance_1",
+    "hash": 629168263,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor1.config.resistance_2",
+    "hash": 629168264,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor1.config.resistance_3",
+    "hash": 629168265,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor1.config.tempC_1",
+    "hash": -1104834801,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor1.config.tempC_2",
+    "hash": -1104834800,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor1.config.tempC_3",
+    "hash": -1104834799,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor2.config.bias_resistor",
+    "hash": 734290080,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor2.config.resistance_1",
+    "hash": 1988973320,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor2.config.resistance_2",
+    "hash": 1988973321,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor2.config.resistance_3",
+    "hash": 1988973322,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor2.config.tempC_1",
+    "hash": -900025104,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor2.config.tempC_2",
+    "hash": -900025103,
+    "source": "config"
+  },
+  {
+    "name": "auxTempSensor2.config.tempC_3",
+    "hash": -900025102,
+    "source": "config"
+  },
+  {
+    "name": "baroCorrection",
+    "hash": -281693247,
+    "source": "output"
+  },
+  {
+    "name": "baroCounts",
+    "hash": 1773847813,
+    "source": "output"
+  },
+  {
+    "name": "baroHasError",
+    "hash": 634106895,
+    "source": "output"
+  },
+  {
+    "name": "baroHasNoPressure",
+    "hash": 1067281211,
+    "source": "output"
+  },
+  {
+    "name": "baroHasPressure",
+    "hash": -1049398690,
+    "source": "output"
+  },
+  {
+    "name": "baroHighValueVoltage",
+    "hash": 1258057240,
+    "source": "config"
+  },
+  {
+    "name": "baroLowValueVoltage",
+    "hash": 193889898,
+    "source": "config"
+  },
+  {
+    "name": "baroPressure",
+    "hash": -2066867294,
+    "source": "output"
+  },
+  {
+    "name": "baroSensor.highValue",
+    "hash": 173166222,
+    "source": "config"
+  },
+  {
+    "name": "baroSensor.lowValue",
+    "hash": 1474689568,
+    "source": "config"
+  },
+  {
+    "name": "baseDwell",
+    "hash": -1777838088,
+    "source": "output"
+  },
+  {
+    "name": "baseIgnitionAdvance",
+    "hash": 493641747,
+    "source": "output"
+  },
+  {
+    "name": "benchTestCount",
+    "hash": -204721234,
+    "source": "config"
+  },
+  {
+    "name": "benchTestOffTime",
+    "hash": -1655178001,
+    "source": "config"
+  },
+  {
+    "name": "benchTestOnTime",
+    "hash": -1992436143,
+    "source": "config"
+  },
+  {
+    "name": "boardUseCanTerminator",
+    "hash": -312962799,
+    "source": "config"
+  },
+  {
+    "name": "boostboostControllerClosedLoopPart",
+    "hash": -1535181662,
+    "source": "output"
+  },
+  {
+    "name": "boostboostControlTarget",
+    "hash": -955735749,
+    "source": "output"
+  },
+  {
+    "name": "boostboostOutput",
+    "hash": 459143268,
+    "source": "output"
+  },
+  {
+    "name": "boostClosedLoopYAxisValue",
+    "hash": 854100555,
+    "source": "output"
+  },
+  {
+    "name": "boostControlMinMap",
+    "hash": -1976642929,
+    "source": "config"
+  },
+  {
+    "name": "boostControlMinRpm",
+    "hash": -1976636992,
+    "source": "config"
+  },
+  {
+    "name": "boostControlMinTps",
+    "hash": -1976634808,
+    "source": "config"
+  },
+  {
+    "name": "boostControlSafeDutyCycle",
+    "hash": -1965075262,
+    "source": "config"
+  },
+  {
+    "name": "boostCutPressure",
+    "hash": -1992945039,
+    "source": "config"
+  },
+  {
+    "name": "boostCutPressureHyst",
+    "hash": -2111374247,
+    "source": "config"
+  },
+  {
+    "name": "boosthasInitBoost",
+    "hash": -1979108093,
+    "source": "output"
+  },
+  {
+    "name": "boostisBelowClosedLoopThreshold",
+    "hash": 800627490,
+    "source": "output"
+  },
+  {
+    "name": "boostisBoostControlled",
+    "hash": 2071622501,
+    "source": "output"
+  },
+  {
+    "name": "boostisNotClosedLoop",
+    "hash": 1006880557,
+    "source": "output"
+  },
+  {
+    "name": "boostisPlantValid",
+    "hash": -272334953,
+    "source": "output"
+  },
+  {
+    "name": "boostisTpsInvalid",
+    "hash": -543204250,
+    "source": "output"
+  },
+  {
+    "name": "boostisZeroRpm",
+    "hash": -1477802537,
+    "source": "output"
+  },
+  {
+    "name": "boostluaOpenLoopAdd",
+    "hash": -1358648093,
+    "source": "output"
+  },
+  {
+    "name": "boostluaTargetAdd",
+    "hash": 151619422,
+    "source": "output"
+  },
+  {
+    "name": "boostluaTargetMult",
+    "hash": 708923767,
+    "source": "output"
+  },
+  {
+    "name": "boostlwgDutyPct",
+    "hash": -1261602589,
+    "source": "output"
+  },
+  {
+    "name": "boostm_shouldResetPid",
+    "hash": -921746905,
+    "source": "output"
+  },
+  {
+    "name": "boostmapTooLow",
+    "hash": -29626162,
+    "source": "output"
+  },
+  {
+    "name": "boostopenLoopPart",
+    "hash": -1448655345,
+    "source": "output"
+  },
+  {
+    "name": "boostOpenLoopYAxisValue",
+    "hash": 1848010723,
+    "source": "output"
+  },
+  {
+    "name": "boostPid.dFactor",
+    "hash": -1190930054,
+    "source": "config"
+  },
+  {
+    "name": "boostPid.iFactor",
+    "hash": 971442495,
+    "source": "config"
+  },
+  {
+    "name": "boostPid.maxValue",
+    "hash": -572500550,
+    "source": "config"
+  },
+  {
+    "name": "boostPid.minValue",
+    "hash": 777954680,
+    "source": "config"
+  },
+  {
+    "name": "boostPid.offset",
+    "hash": 1435801342,
+    "source": "config"
+  },
+  {
+    "name": "boostPid.periodMs",
+    "hash": -945021094,
+    "source": "config"
+  },
+  {
+    "name": "boostPid.pFactor",
+    "hash": 1421783686,
+    "source": "config"
+  },
+  {
+    "name": "boostPwmFrequency",
+    "hash": -1990709262,
+    "source": "config"
+  },
+  {
+    "name": "boostrpmTooLow",
+    "hash": 899082431,
+    "source": "output"
+  },
+  {
+    "name": "boostSpooledApplyToLowerWg",
+    "hash": 1243122194,
+    "source": "config"
+  },
+  {
+    "name": "boostStatus.dTerm",
+    "hash": 392899738,
+    "source": "output"
+  },
+  {
+    "name": "boostStatus.error",
+    "hash": 394027848,
+    "source": "output"
+  },
+  {
+    "name": "boostStatus.iTerm",
+    "hash": 398829343,
+    "source": "output"
+  },
+  {
+    "name": "boostStatus.output",
+    "hash": 513001967,
+    "source": "output"
+  },
+  {
+    "name": "boostStatus.pTerm",
+    "hash": 407130790,
+    "source": "output"
+  },
+  {
+    "name": "boostStatus.resetCounter",
+    "hash": 308336833,
+    "source": "output"
+  },
+  {
+    "name": "boosttpsTooLow",
+    "hash": -328386745,
+    "source": "output"
+  },
+  {
+    "name": "boostUsePWMLimiterLowerWg",
+    "hash": 632136522,
+    "source": "config"
+  },
+  {
+    "name": "brakeMeanEffectivePressureDifferential",
+    "hash": -4616606,
+    "source": "config"
+  },
+  {
+    "name": "brakePedalState",
+    "hash": -705383759,
+    "source": "output"
+  },
+  {
+    "name": "brokenInjector",
+    "hash": -1453554940,
+    "source": "output"
+  },
+  {
+    "name": "byFirmwareVersion",
+    "hash": 171869155,
+    "source": "config"
+  },
+  {
+    "name": "bypassTcharge",
+    "hash": 407969621,
+    "source": "config"
+  },
+  {
+    "name": "calibrationBirthday",
+    "hash": -2136933308,
+    "source": "config"
+  },
+  {
+    "name": "calibrationMode",
+    "hash": 1774505810,
+    "source": "output"
+  },
+  {
+    "name": "calibrationValue",
+    "hash": -1560670902,
+    "source": "output"
+  },
+  {
+    "name": "calibrationValue2",
+    "hash": 37467836,
+    "source": "output"
+  },
+  {
+    "name": "calmerBurn",
+    "hash": 1327246448,
+    "source": "config"
+  },
+  {
+    "name": "camDecoder2jzPosition",
+    "hash": 594789367,
+    "source": "config"
+  },
+  {
+    "name": "camDecoder2jzPrecision",
+    "hash": 306303086,
+    "source": "config"
+  },
+  {
+    "name": "camSyncOnSecondCrankRevolution",
+    "hash": 996346642,
+    "source": "config"
+  },
+  {
+    "name": "can1ListenMode",
+    "hash": 178430876,
+    "source": "config"
+  },
+  {
+    "name": "can2ListenMode",
+    "hash": -1879090979,
+    "source": "config"
+  },
+  {
+    "name": "can2OpenBLT",
+    "hash": -1514354211,
+    "source": "config"
+  },
+  {
+    "name": "can_blend_afr_1_toggle",
+    "hash": -116334588,
+    "source": "output"
+  },
+  {
+    "name": "can_blend_clboost_1_toggle",
+    "hash": -652705567,
+    "source": "output"
+  },
+  {
+    "name": "can_blend_ign_1_toggle",
+    "hash": -169985079,
+    "source": "output"
+  },
+  {
+    "name": "can_blend_ign_2_toggle",
+    "hash": -501215062,
+    "source": "output"
+  },
+  {
+    "name": "can_blend_olboost_1_toggle",
+    "hash": 1805010797,
+    "source": "output"
+  },
+  {
+    "name": "can_blend_ve_1_toggle",
+    "hash": -5770138,
+    "source": "output"
+  },
+  {
+    "name": "can_blend_ve_2_toggle",
+    "hash": -337000121,
+    "source": "output"
+  },
+  {
+    "name": "can_call_counter",
+    "hash": 169693489,
+    "source": "output"
+  },
+  {
+    "name": "can_call_counter_dlc_ok",
+    "hash": 1986829660,
+    "source": "output"
+  },
+  {
+    "name": "can_call_found_func",
+    "hash": -1008823912,
+    "source": "output"
+  },
+  {
+    "name": "can_call_last_arg",
+    "hash": 1646218718,
+    "source": "output"
+  },
+  {
+    "name": "can_call_last_func_id",
+    "hash": 1665682844,
+    "source": "output"
+  },
+  {
+    "name": "can_call_last_ok",
+    "hash": -1642070946,
+    "source": "output"
+  },
+  {
+    "name": "can_call_last_ret",
+    "hash": 1646236815,
+    "source": "output"
+  },
+  {
+    "name": "can_call_last_src_id",
+    "hash": 1986934008,
+    "source": "output"
+  },
+  {
+    "name": "can_var_get_counter",
+    "hash": 774230013,
+    "source": "output"
+  },
+  {
+    "name": "canBoxIdleUpPercentage",
+    "hash": 1414277985,
+    "source": "config"
+  },
+  {
+    "name": "canBoxIdleUpRpm",
+    "hash": 1068607666,
+    "source": "config"
+  },
+  {
+    "name": "canBoxTracTrim",
+    "hash": -1191102746,
+    "source": "output"
+  },
+  {
+    "name": "canBoxTracTrim1",
+    "hash": -651684905,
+    "source": "config"
+  },
+  {
+    "name": "canBoxTracTrim2",
+    "hash": -651684904,
+    "source": "config"
+  },
+  {
+    "name": "canBoxTracTrim3",
+    "hash": -651684903,
+    "source": "config"
+  },
+  {
+    "name": "canBoxTracTrim4",
+    "hash": -651684902,
+    "source": "config"
+  },
+  {
+    "name": "canBoxTracTrimMax",
+    "hash": -1015189044,
+    "source": "config"
+  },
+  {
+    "name": "canBoxTracTrimMin",
+    "hash": -1015188790,
+    "source": "config"
+  },
+  {
+    "name": "canBoxTracTrimStep",
+    "hash": 858735714,
+    "source": "config"
+  },
+  {
+    "name": "canBroadcastCams",
+    "hash": 1904613262,
+    "source": "config"
+  },
+  {
+    "name": "canBroadcastEgt",
+    "hash": 1229072650,
+    "source": "config"
+  },
+  {
+    "name": "canBroadcastKnock",
+    "hash": -1562315488,
+    "source": "config"
+  },
+  {
+    "name": "canBroadcastUseChannelTwo",
+    "hash": 1181153770,
+    "source": "config"
+  },
+  {
+    "name": "canButtons18",
+    "hash": 355813839,
+    "source": "output"
+  },
+  {
+    "name": "canButtons916",
+    "hash": -1143036666,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle1",
+    "hash": -1065713562,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle10",
+    "hash": -808809130,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle11",
+    "hash": -808809129,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle12",
+    "hash": -808809128,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle13",
+    "hash": -808809127,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle14",
+    "hash": -808809126,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle15",
+    "hash": -808809125,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle16",
+    "hash": -808809124,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle2",
+    "hash": -1065713561,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle3",
+    "hash": -1065713560,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle4",
+    "hash": -1065713559,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle5",
+    "hash": -1065713558,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle6",
+    "hash": -1065713557,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle7",
+    "hash": -1065713556,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle8",
+    "hash": -1065713555,
+    "source": "output"
+  },
+  {
+    "name": "canButtonToggle9",
+    "hash": -1065713554,
+    "source": "output"
+  },
+  {
+    "name": "canInputBCM",
+    "hash": 470555289,
+    "source": "config"
+  },
+  {
+    "name": "canOpenBLT",
+    "hash": -631762165,
+    "source": "config"
+  },
+  {
+    "name": "canReadCounter",
+    "hash": 1247316691,
+    "source": "output"
+  },
+  {
+    "name": "canReadEnabled",
+    "hash": -528008450,
+    "source": "config"
+  },
+  {
+    "name": "canReWidebandCmdStatus",
+    "hash": -823915964,
+    "source": "output"
+  },
+  {
+    "name": "canReWidebandFwDay",
+    "hash": 888763399,
+    "source": "output"
+  },
+  {
+    "name": "canReWidebandFwMon",
+    "hash": 888773651,
+    "source": "output"
+  },
+  {
+    "name": "canReWidebandFwYear",
+    "hash": -734820550,
+    "source": "output"
+  },
+  {
+    "name": "canReWidebandVersion",
+    "hash": -2850030,
+    "source": "output"
+  },
+  {
+    "name": "canSleepPeriodMs",
+    "hash": 296563315,
+    "source": "config"
+  },
+  {
+    "name": "canVssScaling",
+    "hash": -846143628,
+    "source": "config"
+  },
+  {
+    "name": "canWriteEnabled",
+    "hash": 2104472173,
+    "source": "config"
+  },
+  {
+    "name": "canWriteNotOk",
+    "hash": 1964920685,
+    "source": "output"
+  },
+  {
+    "name": "canWriteOk",
+    "hash": 1193280444,
+    "source": "output"
+  },
+  {
+    "name": "cc_accdec_request_timeout",
+    "hash": -165252373,
+    "source": "config"
+  },
+  {
+    "name": "cc_kmhstep",
+    "hash": -1329176058,
+    "source": "config"
+  },
+  {
+    "name": "cc_max_soft_etb",
+    "hash": 321581893,
+    "source": "config"
+  },
+  {
+    "name": "cc_maxEtbAdjustmentClose",
+    "hash": 960719456,
+    "source": "config"
+  },
+  {
+    "name": "cc_maxEtbAdjustmentOpen",
+    "hash": -751355172,
+    "source": "config"
+  },
+  {
+    "name": "cc_maxRpm",
+    "hash": -235965601,
+    "source": "config"
+  },
+  {
+    "name": "cc_maxSpeed",
+    "hash": 732678913,
+    "source": "config"
+  },
+  {
+    "name": "cc_maxThrottlePedalAllowedToEngage",
+    "hash": 406278046,
+    "source": "config"
+  },
+  {
+    "name": "cc_maxThrottlePedalAllowedToStayEngaged",
+    "hash": -607443421,
+    "source": "config"
+  },
+  {
+    "name": "cc_minRpm",
+    "hash": -226837603,
+    "source": "config"
+  },
+  {
+    "name": "cc_minSpeed",
+    "hash": 2083134143,
+    "source": "config"
+  },
+  {
+    "name": "cc_pedal_release_seconds",
+    "hash": -2036308770,
+    "source": "config"
+  },
+  {
+    "name": "cc_proportionalGainRPM",
+    "hash": -1507985087,
+    "source": "config"
+  },
+  {
+    "name": "cc_proportionalGainSPEED",
+    "hash": -1517072029,
+    "source": "config"
+  },
+  {
+    "name": "cc_rpmBandHigh",
+    "hash": 924403790,
+    "source": "config"
+  },
+  {
+    "name": "cc_rpmBandLow",
+    "hash": 1199371520,
+    "source": "config"
+  },
+  {
+    "name": "cc_rpmDeadBandHigh",
+    "hash": -1715823812,
+    "source": "config"
+  },
+  {
+    "name": "cc_rpmDeadBandLow",
+    "hash": 78160430,
+    "source": "config"
+  },
+  {
+    "name": "cc_rpmstep",
+    "hash": -755499083,
+    "source": "config"
+  },
+  {
+    "name": "cc_setpoint_adjust_rate",
+    "hash": 2109872789,
+    "source": "config"
+  },
+  {
+    "name": "cc_smooth_exp_average",
+    "hash": -1974390710,
+    "source": "config"
+  },
+  {
+    "name": "cc_speedBandHigh",
+    "hash": 71000176,
+    "source": "config"
+  },
+  {
+    "name": "cc_speedBandLow",
+    "hash": -1429499678,
+    "source": "config"
+  },
+  {
+    "name": "cc_speedDeadBandHigh",
+    "hash": -594545570,
+    "source": "config"
+  },
+  {
+    "name": "cc_speedDeadBandLow",
+    "hash": 1673944848,
+    "source": "config"
+  },
+  {
+    "name": "cc_unsafeTps",
+    "hash": -1731476413,
+    "source": "config"
+  },
+  {
+    "name": "checkEngine",
+    "hash": -1790051911,
+    "source": "output"
+  },
+  {
+    "name": "CLBoostBlend1BlendMode",
+    "hash": -868970149,
+    "source": "config"
+  },
+  {
+    "name": "clBoostTableSwitch1Active",
+    "hash": 151249794,
+    "source": "output"
+  },
+  {
+    "name": "clt.config.bias_resistor",
+    "hash": -653172717,
+    "source": "config"
+  },
+  {
+    "name": "clt.config.resistance_1",
+    "hash": -5328869,
+    "source": "config"
+  },
+  {
+    "name": "clt.config.resistance_2",
+    "hash": -5328868,
+    "source": "config"
+  },
+  {
+    "name": "clt.config.resistance_3",
+    "hash": -5328867,
+    "source": "config"
+  },
+  {
+    "name": "clt.config.tempC_1",
+    "hash": -1832527325,
+    "source": "config"
+  },
+  {
+    "name": "clt.config.tempC_2",
+    "hash": -1832527324,
+    "source": "config"
+  },
+  {
+    "name": "clt.config.tempC_3",
+    "hash": -1832527323,
+    "source": "config"
+  },
+  {
+    "name": "cltSensorPulldown",
+    "hash": 1925843479,
+    "source": "config"
+  },
+  {
+    "name": "cltTimingCorrection",
+    "hash": 256951528,
+    "source": "output"
+  },
+  {
+    "name": "clutchDownState",
+    "hash": 724244513,
+    "source": "output"
+  },
+  {
+    "name": "clutchUpState",
+    "hash": -797965330,
+    "source": "output"
+  },
+  {
+    "name": "coastingFuelCutClt",
+    "hash": -1494053736,
+    "source": "config"
+  },
+  {
+    "name": "coastingFuelCutEnabled",
+    "hash": 1570088896,
+    "source": "config"
+  },
+  {
+    "name": "coastingFuelCutMap",
+    "hash": -1494043213,
+    "source": "config"
+  },
+  {
+    "name": "coastingFuelCutRpmHigh",
+    "hash": 1272017572,
+    "source": "config"
+  },
+  {
+    "name": "coastingFuelCutRpmLow",
+    "hash": 168701078,
+    "source": "config"
+  },
+  {
+    "name": "coastingFuelCutTps",
+    "hash": -1494035092,
+    "source": "config"
+  },
+  {
+    "name": "coastingFuelCutVssHigh",
+    "hash": -2027523439,
+    "source": "config"
+  },
+  {
+    "name": "coastingFuelCutVssLow",
+    "hash": 329016035,
+    "source": "config"
+  },
+  {
+    "name": "coilDutyCycle",
+    "hash": 1029096098,
+    "source": "output"
+  },
+  {
+    "name": "coilState1",
+    "hash": -1124698530,
+    "source": "output"
+  },
+  {
+    "name": "coilState10",
+    "hash": 1539654222,
+    "source": "output"
+  },
+  {
+    "name": "coilState11",
+    "hash": 1539654223,
+    "source": "output"
+  },
+  {
+    "name": "coilState12",
+    "hash": 1539654224,
+    "source": "output"
+  },
+  {
+    "name": "coilState2",
+    "hash": -1124698529,
+    "source": "output"
+  },
+  {
+    "name": "coilState3",
+    "hash": -1124698528,
+    "source": "output"
+  },
+  {
+    "name": "coilState4",
+    "hash": -1124698527,
+    "source": "output"
+  },
+  {
+    "name": "coilState5",
+    "hash": -1124698526,
+    "source": "output"
+  },
+  {
+    "name": "coilState6",
+    "hash": -1124698525,
+    "source": "output"
+  },
+  {
+    "name": "coilState7",
+    "hash": -1124698524,
+    "source": "output"
+  },
+  {
+    "name": "coilState8",
+    "hash": -1124698523,
+    "source": "output"
+  },
+  {
+    "name": "coilState9",
+    "hash": -1124698522,
+    "source": "output"
+  },
+  {
+    "name": "complexWallModel",
+    "hash": -2018683234,
+    "source": "config"
+  },
+  {
+    "name": "compressionRatio",
+    "hash": 355839382,
+    "source": "config"
+  },
+  {
+    "name": "compressorDischargePressure",
+    "hash": 1404346549,
+    "source": "output"
+  },
+  {
+    "name": "compressorDischargeTemp",
+    "hash": 553570450,
+    "source": "output"
+  },
+  {
+    "name": "compressorDischargeTemperature.config.bias_resistor",
+    "hash": -1555883851,
+    "source": "config"
+  },
+  {
+    "name": "compressorDischargeTemperature.config.resistance_1",
+    "hash": 878369917,
+    "source": "config"
+  },
+  {
+    "name": "compressorDischargeTemperature.config.resistance_2",
+    "hash": 878369918,
+    "source": "config"
+  },
+  {
+    "name": "compressorDischargeTemperature.config.resistance_3",
+    "hash": 878369919,
+    "source": "config"
+  },
+  {
+    "name": "compressorDischargeTemperature.config.tempC_1",
+    "hash": -498450107,
+    "source": "config"
+  },
+  {
+    "name": "compressorDischargeTemperature.config.tempC_2",
+    "hash": -498450106,
+    "source": "config"
+  },
+  {
+    "name": "compressorDischargeTemperature.config.tempC_3",
+    "hash": -498450105,
+    "source": "config"
+  },
+  {
+    "name": "consumeObdSensors",
+    "hash": 950993889,
+    "source": "config"
+  },
+  {
+    "name": "coolant",
+    "hash": -746111499,
+    "source": "output"
+  },
+  {
+    "name": "correctedIgnitionAdvance",
+    "hash": 352421907,
+    "source": "output"
+  },
+  {
+    "name": "crank",
+    "hash": 255764596,
+    "source": "output"
+  },
+  {
+    "name": "cranking.rpm",
+    "hash": -1717336209,
+    "source": "config"
+  },
+  {
+    "name": "crankingFuel.baseFuel",
+    "hash": 1119735859,
+    "source": "output"
+  },
+  {
+    "name": "crankingFuel.coolantTemperatureCoefficient",
+    "hash": -1206067863,
+    "source": "output"
+  },
+  {
+    "name": "crankingFuel.fuel",
+    "hash": -180401224,
+    "source": "output"
+  },
+  {
+    "name": "crankingFuel.tpsCoefficient",
+    "hash": 20251202,
+    "source": "output"
+  },
+  {
+    "name": "crankingTimingAngle",
+    "hash": 2071041633,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlAllowPedalUpToEngage",
+    "hash": 2015832005,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlAverageAdjustment",
+    "hash": 351868267,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlEnabled",
+    "hash": 2016604988,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlEnableTogglesState",
+    "hash": -1350791186,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlInhibitDFCO",
+    "hash": 910249844,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlReadBrakePedal",
+    "hash": 1217219128,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlReadClutchPedal",
+    "hash": -2088298794,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlReadClutchUp",
+    "hash": 2057611093,
+    "source": "config"
+  },
+  {
+    "name": "cruiseControlUseVehicleSpeed",
+    "hash": -606276593,
+    "source": "config"
+  },
+  {
+    "name": "currentEngineDecodedPhase",
+    "hash": 162105111,
+    "source": "output"
+  },
+  {
+    "name": "currentIgnitionMode",
+    "hash": -3603666,
+    "source": "output"
+  },
+  {
+    "name": "currentInjectionMode",
+    "hash": -921867120,
+    "source": "output"
+  },
+  {
+    "name": "currentMafCorrection",
+    "hash": -1498628812,
+    "source": "output"
+  },
+  {
+    "name": "currentVe",
+    "hash": 1359980579,
+    "source": "output"
+  },
+  {
+    "name": "customSentTpsMax",
+    "hash": -282198345,
+    "source": "config"
+  },
+  {
+    "name": "customSentTpsMin",
+    "hash": -282198091,
+    "source": "config"
+  },
+  {
+    "name": "cutFuelOnHardLimit",
+    "hash": -794334344,
+    "source": "config"
+  },
+  {
+    "name": "cutSparkOnHardLimit",
+    "hash": -1087585075,
+    "source": "config"
+  },
+  {
+    "name": "cylinderBore",
+    "hash": 1425664391,
+    "source": "config"
+  },
+  {
+    "name": "cylindersCount",
+    "hash": -1578655365,
+    "source": "config"
+  },
+  {
+    "name": "dcOutput0",
+    "hash": 1242329357,
+    "source": "output"
+  },
+  {
+    "name": "defaultEthanolContent",
+    "hash": -30520144,
+    "source": "config"
+  },
+  {
+    "name": "deferAllWritesUntilEngineOff",
+    "hash": -1548385409,
+    "source": "config"
+  },
+  {
+    "name": "deltaTpsAverageAlpha",
+    "hash": 1148935975,
+    "source": "config"
+  },
+  {
+    "name": "detectedGear",
+    "hash": 283558758,
+    "source": "output"
+  },
+  {
+    "name": "deviceUid",
+    "hash": 540029591,
+    "source": "output"
+  },
+  {
+    "name": "dfcoActive",
+    "hash": -622949795,
+    "source": "output"
+  },
+  {
+    "name": "dfcoDelay",
+    "hash": 1676700208,
+    "source": "config"
+  },
+  {
+    "name": "dfcoRetardDeg",
+    "hash": 601094003,
+    "source": "config"
+  },
+  {
+    "name": "dfcoRetardRampInTime",
+    "hash": 2030571545,
+    "source": "config"
+  },
+  {
+    "name": "dfcoTimingRetard",
+    "hash": -735105365,
+    "source": "output"
+  },
+  {
+    "name": "disableBARO",
+    "hash": -1965539,
+    "source": "config"
+  },
+  {
+    "name": "disableDINP",
+    "hash": -1885084,
+    "source": "config"
+  },
+  {
+    "name": "disableEGT",
+    "hash": -911109767,
+    "source": "config"
+  },
+  {
+    "name": "disableEtbWhenEngineStopped",
+    "hash": -2096650725,
+    "source": "config"
+  },
+  {
+    "name": "disableFan1AtSpeed",
+    "hash": -1575487611,
+    "source": "config"
+  },
+  {
+    "name": "disableFan1WhenStopped",
+    "hash": -1132710384,
+    "source": "config"
+  },
+  {
+    "name": "disableFan1WhenStoppedTimeout",
+    "hash": -566251913,
+    "source": "config"
+  },
+  {
+    "name": "disableFan2AtSpeed",
+    "hash": -1906717594,
+    "source": "config"
+  },
+  {
+    "name": "disableFan2WhenStopped",
+    "hash": -311454863,
+    "source": "config"
+  },
+  {
+    "name": "disableFan2WhenStoppedTimeout",
+    "hash": -1894116168,
+    "source": "config"
+  },
+  {
+    "name": "disableFuelCutOnClutch",
+    "hash": -1151782223,
+    "source": "config"
+  },
+  {
+    "name": "disableINJOK",
+    "hash": -56102764,
+    "source": "config"
+  },
+  {
+    "name": "disablemax31855",
+    "hash": 2010183589,
+    "source": "config"
+  },
+  {
+    "name": "disableMCP3208",
+    "hash": -521053722,
+    "source": "config"
+  },
+  {
+    "name": "disableProgOutputs",
+    "hash": -1629429387,
+    "source": "config"
+  },
+  {
+    "name": "disableWaterPump2AtSpeed",
+    "hash": 1132871702,
+    "source": "config"
+  },
+  {
+    "name": "disableWaterPump2WhenStopped",
+    "hash": -2045878495,
+    "source": "config"
+  },
+  {
+    "name": "disableWaterPump2WhenStoppedTimeout",
+    "hash": 722000488,
+    "source": "config"
+  },
+  {
+    "name": "disableWaterPumpAtSpeed",
+    "hash": 825446500,
+    "source": "config"
+  },
+  {
+    "name": "disableWaterPumpWhenStopped",
+    "hash": -1454971281,
+    "source": "config"
+  },
+  {
+    "name": "disableWaterPumpWhenStoppedTimeout",
+    "hash": 848453110,
+    "source": "config"
+  },
+  {
+    "name": "disallowPrimeFuelPump",
+    "hash": 149942287,
+    "source": "config"
+  },
+  {
+    "name": "displacement",
+    "hash": -1227821282,
+    "source": "config"
+  },
+  {
+    "name": "displayLogicLevelsInEngineSniffer",
+    "hash": 1616873838,
+    "source": "config"
+  },
+  {
+    "name": "distanceTraveled",
+    "hash": -1357387481,
+    "source": "output"
+  },
+  {
+    "name": "DriverThrottleIntent",
+    "hash": 1620085753,
+    "source": "output"
+  },
+  {
+    "name": "driveWheelRevPerKm",
+    "hash": 991724096,
+    "source": "config"
+  },
+  {
+    "name": "driveWheelRevPerKm1",
+    "hash": -1632843151,
+    "source": "config"
+  },
+  {
+    "name": "driveWheelRevPerKm2",
+    "hash": -1632843150,
+    "source": "config"
+  },
+  {
+    "name": "driveWheelRevPerKm3",
+    "hash": -1632843149,
+    "source": "config"
+  },
+  {
+    "name": "driveWheelRevPerKm4",
+    "hash": -1632843148,
+    "source": "config"
+  },
+  {
+    "name": "dtTuneBatch",
+    "hash": -1591245125,
+    "source": "config"
+  },
+  {
+    "name": "dtTuneCurCycle",
+    "hash": -1730700941,
+    "source": "output"
+  },
+  {
+    "name": "dtTuneCycleFuel",
+    "hash": -172041355,
+    "source": "config"
+  },
+  {
+    "name": "dtTuneCycles",
+    "hash": -904485188,
+    "source": "config"
+  },
+  {
+    "name": "dtTuneInjModeOverride",
+    "hash": -955291041,
+    "source": "output"
+  },
+  {
+    "name": "dtTuneMinRpm",
+    "hash": -531703796,
+    "source": "config"
+  },
+  {
+    "name": "dtTuneSequential",
+    "hash": 1971361492,
+    "source": "config"
+  },
+  {
+    "name": "dtTuneSimultaneous",
+    "hash": -184602782,
+    "source": "config"
+  },
+  {
+    "name": "dwellAccuracyRatio",
+    "hash": 222113127,
+    "source": "output"
+  },
+  {
+    "name": "dwellClampPercent",
+    "hash": -1211547749,
+    "source": "config"
+  },
+  {
+    "name": "dwellDurationAngle",
+    "hash": -1208021110,
+    "source": "output"
+  },
+  {
+    "name": "dwellVoltageCorrection",
+    "hash": -80612537,
+    "source": "output"
+  },
+  {
+    "name": "dynoCarCargoMassKg",
+    "hash": 183555079,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarCarMassKg",
+    "hash": -1343193327,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarCoeffOfDrag",
+    "hash": -1121870933,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarFrontalAreaM2",
+    "hash": -1661556925,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarGearFinalDrive",
+    "hash": 220694456,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarGearPrimaryReduction",
+    "hash": -1607465307,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarGearRatio",
+    "hash": 589242035,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarWheelAspectRatio",
+    "hash": -1404613719,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarWheelDiaInch",
+    "hash": 1541525498,
+    "source": "config"
+  },
+  {
+    "name": "dynoCarWheelTireWidthMm",
+    "hash": 1000921080,
+    "source": "config"
+  },
+  {
+    "name": "dynoRpmStep",
+    "hash": -1085712470,
+    "source": "config"
+  },
+  {
+    "name": "dynoSaeBaro",
+    "hash": -391393956,
+    "source": "config"
+  },
+  {
+    "name": "dynoSaeRelativeHumidity",
+    "hash": 1509051617,
+    "source": "config"
+  },
+  {
+    "name": "dynoSaeTemperatureC",
+    "hash": 903483241,
+    "source": "config"
+  },
+  {
+    "name": "ecuCanId",
+    "hash": -1902910591,
+    "source": "config"
+  },
+  {
+    "name": "ecumasterEgtToCan",
+    "hash": 895067939,
+    "source": "config"
+  },
+  {
+    "name": "ecumasterEgtToCanBaseId",
+    "hash": -1012476149,
+    "source": "config"
+  },
+  {
+    "name": "effectiveMap",
+    "hash": -1724101868,
+    "source": "output"
+  },
+  {
+    "name": "egoLowPassCutoffHz",
+    "hash": -537122990,
+    "source": "config"
+  },
+  {
+    "name": "egoValueShift",
+    "hash": 280323355,
+    "source": "config"
+  },
+  {
+    "name": "enableAemXSeries",
+    "hash": 259909218,
+    "source": "config"
+  },
+  {
+    "name": "enableAemXSeriesEgt",
+    "hash": -1196188030,
+    "source": "config"
+  },
+  {
+    "name": "enableCanVss",
+    "hash": 245947066,
+    "source": "config"
+  },
+  {
+    "name": "enabledStep1Limiter",
+    "hash": -2068213709,
+    "source": "config"
+  },
+  {
+    "name": "enableExtendedCanBroadcast",
+    "hash": 923152418,
+    "source": "config"
+  },
+  {
+    "name": "enableFan1",
+    "hash": -614923438,
+    "source": "config"
+  },
+  {
+    "name": "enableFan1WithAc",
+    "hash": -298185774,
+    "source": "config"
+  },
+  {
+    "name": "enableFan2",
+    "hash": -614923437,
+    "source": "config"
+  },
+  {
+    "name": "enableFan2WithAc",
+    "hash": 993282195,
+    "source": "config"
+  },
+  {
+    "name": "enableKline",
+    "hash": 1188684607,
+    "source": "config"
+  },
+  {
+    "name": "enableKnockSpectrogram",
+    "hash": -556893719,
+    "source": "config"
+  },
+  {
+    "name": "enableKnockSpectrogramFilter",
+    "hash": -1923222129,
+    "source": "config"
+  },
+  {
+    "name": "enableLaunchRetard",
+    "hash": -1583589783,
+    "source": "config"
+  },
+  {
+    "name": "enableOilPressureProtect",
+    "hash": -1194560694,
+    "source": "config"
+  },
+  {
+    "name": "enableSlipCalculations",
+    "hash": -897907098,
+    "source": "config"
+  },
+  {
+    "name": "enableSoftwareKnock",
+    "hash": -1724873939,
+    "source": "config"
+  },
+  {
+    "name": "enableStagedInjection",
+    "hash": 1160459527,
+    "source": "config"
+  },
+  {
+    "name": "enableTrailingSparks",
+    "hash": -1409016614,
+    "source": "config"
+  },
+  {
+    "name": "enableVerboseCanTx",
+    "hash": 1643181024,
+    "source": "config"
+  },
+  {
+    "name": "enableWaterPump",
+    "hash": -1519032079,
+    "source": "config"
+  },
+  {
+    "name": "enableWaterPump2",
+    "hash": 1411548995,
+    "source": "config"
+  },
+  {
+    "name": "enableWaterPump2WithAc",
+    "hash": -1637023613,
+    "source": "config"
+  },
+  {
+    "name": "enableWaterPumpWithAc",
+    "hash": 1723460785,
+    "source": "config"
+  },
+  {
+    "name": "engine",
+    "hash": -75965445,
+    "source": "output"
+  },
+  {
+    "name": "engineChartSize",
+    "hash": -1492464952,
+    "source": "config"
+  },
+  {
+    "name": "engineMakeCodeNameCrc16",
+    "hash": 1726931380,
+    "source": "output"
+  },
+  {
+    "name": "engineMode",
+    "hash": -2073424832,
+    "source": "output"
+  },
+  {
+    "name": "engineRunTime",
+    "hash": -1165835361,
+    "source": "output"
+  },
+  {
+    "name": "engineSnifferFocusOnInputs",
+    "hash": 465982216,
+    "source": "config"
+  },
+  {
+    "name": "engineSnifferRpmThreshold",
+    "hash": 46918724,
+    "source": "config"
+  },
+  {
+    "name": "epic_dinp1",
+    "hash": 1425505569,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinp2",
+    "hash": 1425505570,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinp3",
+    "hash": 1425505571,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinp4",
+    "hash": 1425505572,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinp5",
+    "hash": 1425505573,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinp6",
+    "hash": 1425505574,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinp7",
+    "hash": 1425505575,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinp8",
+    "hash": 1425505576,
+    "source": "output"
+  },
+  {
+    "name": "epic_dinps18",
+    "hash": 1892444332,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp1",
+    "hash": -1596390371,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp10",
+    "hash": -1141274643,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp2",
+    "hash": -1596390370,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp3",
+    "hash": -1596390369,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp4",
+    "hash": -1596390368,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp5",
+    "hash": -1596390367,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp6",
+    "hash": -1596390366,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp7",
+    "hash": -1596390365,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp8",
+    "hash": -1596390364,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inp9",
+    "hash": -1596390363,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inps18",
+    "hash": 992714408,
+    "source": "output"
+  },
+  {
+    "name": "epic_hall_inps916",
+    "hash": -1600154369,
+    "source": "output"
+  },
+  {
+    "name": "epicCanAllowSetVar",
+    "hash": 1713787596,
+    "source": "config"
+  },
+  {
+    "name": "epicCanEcuReadONLYONWrite",
+    "hash": -1240666085,
+    "source": "config"
+  },
+  {
+    "name": "epicInitHSHigh",
+    "hash": 1176668021,
+    "source": "config"
+  },
+  {
+    "name": "est_temp_charge_c",
+    "hash": 2018177457,
+    "source": "output"
+  },
+  {
+    "name": "est_temp_charge_k",
+    "hash": 2018177465,
+    "source": "output"
+  },
+  {
+    "name": "etb.dFactor",
+    "hash": 1879050865,
+    "source": "config"
+  },
+  {
+    "name": "etb.iFactor",
+    "hash": -253543882,
+    "source": "config"
+  },
+  {
+    "name": "etb.maxValue",
+    "hash": 1952621969,
+    "source": "config"
+  },
+  {
+    "name": "etb.minValue",
+    "hash": -991890097,
+    "source": "config"
+  },
+  {
+    "name": "etb.offset",
+    "hash": -423426795,
+    "source": "config"
+  },
+  {
+    "name": "etb.periodMs",
+    "hash": 1580101425,
+    "source": "config"
+  },
+  {
+    "name": "etb.pFactor",
+    "hash": 196797309,
+    "source": "config"
+  },
+  {
+    "name": "etb1adjustedEtbTarget",
+    "hash": -762743481,
+    "source": "output"
+  },
+  {
+    "name": "etb1boardEtbAdjustment",
+    "hash": 1055284435,
+    "source": "output"
+  },
+  {
+    "name": "etb1DutyCycle",
+    "hash": 1021133095,
+    "source": "output"
+  },
+  {
+    "name": "etb1etbCurrentTarget",
+    "hash": -1044288778,
+    "source": "output"
+  },
+  {
+    "name": "etb1etbErrorCode",
+    "hash": 839236273,
+    "source": "output"
+  },
+  {
+    "name": "etb1etbErrorCodeBlinker",
+    "hash": -1007205736,
+    "source": "output"
+  },
+  {
+    "name": "etb1etbFeedForward",
+    "hash": -1970249707,
+    "source": "output"
+  },
+  {
+    "name": "etb1etbPpsErrorCounter",
+    "hash": 2014293065,
+    "source": "output"
+  },
+  {
+    "name": "etb1etbRevLimitActive",
+    "hash": -1808516876,
+    "source": "output"
+  },
+  {
+    "name": "etb1etbTpsErrorCounter",
+    "hash": 86860621,
+    "source": "output"
+  },
+  {
+    "name": "etb1integralError",
+    "hash": -1507281103,
+    "source": "output"
+  },
+  {
+    "name": "etb1jamDetected",
+    "hash": -1238909045,
+    "source": "output"
+  },
+  {
+    "name": "etb1jamTimer",
+    "hash": -213258422,
+    "source": "output"
+  },
+  {
+    "name": "etb1luaAdjustment",
+    "hash": 1246430386,
+    "source": "output"
+  },
+  {
+    "name": "etb1m_adjustedTarget",
+    "hash": 28274136,
+    "source": "output"
+  },
+  {
+    "name": "etb1m_lastPidDtMs",
+    "hash": -1808022618,
+    "source": "output"
+  },
+  {
+    "name": "etb1m_wastegatePosition",
+    "hash": 561614935,
+    "source": "output"
+  },
+  {
+    "name": "etb1state",
+    "hash": -410785646,
+    "source": "output"
+  },
+  {
+    "name": "etb1targetWithIdlePosition",
+    "hash": 99356871,
+    "source": "output"
+  },
+  {
+    "name": "etb1tcEtbDrop",
+    "hash": 1502782136,
+    "source": "output"
+  },
+  {
+    "name": "etb1trim",
+    "hash": 2069994349,
+    "source": "output"
+  },
+  {
+    "name": "etb1validPlantPosition",
+    "hash": 752161333,
+    "source": "output"
+  },
+  {
+    "name": "etb2adjustedEtbTarget",
+    "hash": -1063282840,
+    "source": "output"
+  },
+  {
+    "name": "etb2boardEtbAdjustment",
+    "hash": -272579820,
+    "source": "output"
+  },
+  {
+    "name": "etb2etbCurrentTarget",
+    "hash": 1419463927,
+    "source": "output"
+  },
+  {
+    "name": "etb2etbErrorCode",
+    "hash": -2124102606,
+    "source": "output"
+  },
+  {
+    "name": "etb2etbErrorCodeBlinker",
+    "hash": -1877053191,
+    "source": "output"
+  },
+  {
+    "name": "etb2etbFeedForward",
+    "hash": 769117654,
+    "source": "output"
+  },
+  {
+    "name": "etb2etbPpsErrorCounter",
+    "hash": 686428810,
+    "source": "output"
+  },
+  {
+    "name": "etb2etbRevLimitActive",
+    "hash": -2109056235,
+    "source": "output"
+  },
+  {
+    "name": "etb2etbTpsErrorCounter",
+    "hash": -1241003634,
+    "source": "output"
+  },
+  {
+    "name": "etb2integralError",
+    "hash": -513216302,
+    "source": "output"
+  },
+  {
+    "name": "etb2jamDetected",
+    "hash": -417653524,
+    "source": "output"
+  },
+  {
+    "name": "etb2jamTimer",
+    "hash": 1741054027,
+    "source": "output"
+  },
+  {
+    "name": "etb2luaAdjustment",
+    "hash": -2054472109,
+    "source": "output"
+  },
+  {
+    "name": "etb2m_adjustedTarget",
+    "hash": -1802940455,
+    "source": "output"
+  },
+  {
+    "name": "etb2m_lastPidDtMs",
+    "hash": -813957817,
+    "source": "output"
+  },
+  {
+    "name": "etb2m_wastegatePosition",
+    "hash": -308232520,
+    "source": "output"
+  },
+  {
+    "name": "etb2state",
+    "hash": -371650253,
+    "source": "output"
+  },
+  {
+    "name": "etb2targetWithIdlePosition",
+    "hash": -836653176,
+    "source": "output"
+  },
+  {
+    "name": "etb2tcEtbDrop",
+    "hash": 1570583513,
+    "source": "output"
+  },
+  {
+    "name": "etb2trim",
+    "hash": 2071180270,
+    "source": "output"
+  },
+  {
+    "name": "etb2validPlantPosition",
+    "hash": -575702922,
+    "source": "output"
+  },
+  {
+    "name": "etb_iTermMax",
+    "hash": -1725192730,
+    "source": "config"
+  },
+  {
+    "name": "etb_iTermMin",
+    "hash": -1725192476,
+    "source": "config"
+  },
+  {
+    "name": "etb_use_two_wires",
+    "hash": -1334689362,
+    "source": "config"
+  },
+  {
+    "name": "etbEnabled",
+    "hash": 1842618379,
+    "source": "config"
+  },
+  {
+    "name": "etbFreq",
+    "hash": 2016887022,
+    "source": "config"
+  },
+  {
+    "name": "etbIdleThrottleRange",
+    "hash": -54532767,
+    "source": "config"
+  },
+  {
+    "name": "etbJamDetectThreshold",
+    "hash": -791880034,
+    "source": "config"
+  },
+  {
+    "name": "etbJamTimeout",
+    "hash": 1057701663,
+    "source": "config"
+  },
+  {
+    "name": "etbMaximumPosition",
+    "hash": -786901709,
+    "source": "config"
+  },
+  {
+    "name": "etbMinimumPosition",
+    "hash": -1855700175,
+    "source": "config"
+  },
+  {
+    "name": "etbNeutralPosition",
+    "hash": 1664668368,
+    "source": "config"
+  },
+  {
+    "name": "etbResetCnt",
+    "hash": -1659154648,
+    "source": "output"
+  },
+  {
+    "name": "etbRevLimitRange",
+    "hash": 399466905,
+    "source": "config"
+  },
+  {
+    "name": "etbRevLimitStart",
+    "hash": 401321850,
+    "source": "config"
+  },
+  {
+    "name": "etbSkipReinitWhileRunning",
+    "hash": 1181226300,
+    "source": "config"
+  },
+  {
+    "name": "etbSplit",
+    "hash": -2146852436,
+    "source": "config"
+  },
+  {
+    "name": "etbStatus.dTerm",
+    "hash": -56077458,
+    "source": "output"
+  },
+  {
+    "name": "etbStatus.error",
+    "hash": -54949348,
+    "source": "output"
+  },
+  {
+    "name": "etbStatus.iTerm",
+    "hash": -50147853,
+    "source": "output"
+  },
+  {
+    "name": "etbStatus.output",
+    "hash": -1418343613,
+    "source": "output"
+  },
+  {
+    "name": "etbStatus.pTerm",
+    "hash": -41846406,
+    "source": "output"
+  },
+  {
+    "name": "etbStatus.resetCounter",
+    "hash": 2098956565,
+    "source": "output"
+  },
+  {
+    "name": "etbTargetSmoothingFactor",
+    "hash": 923686462,
+    "source": "config"
+  },
+  {
+    "name": "etbWastegatePid.dFactor",
+    "hash": -866520333,
+    "source": "config"
+  },
+  {
+    "name": "etbWastegatePid.iFactor",
+    "hash": 1295852216,
+    "source": "config"
+  },
+  {
+    "name": "etbWastegatePid.maxValue",
+    "hash": 1543085651,
+    "source": "config"
+  },
+  {
+    "name": "etbWastegatePid.minValue",
+    "hash": -1401426415,
+    "source": "config"
+  },
+  {
+    "name": "etbWastegatePid.offset",
+    "hash": 794879319,
+    "source": "config"
+  },
+  {
+    "name": "etbWastegatePid.periodMs",
+    "hash": 1170565107,
+    "source": "config"
+  },
+  {
+    "name": "etbWastegatePid.pFactor",
+    "hash": 1746193407,
+    "source": "config"
+  },
+  {
+    "name": "externalRusEfiGdiModule",
+    "hash": 1546871344,
+    "source": "config"
+  },
+  {
+    "name": "extiOverflowCount",
+    "hash": 1630166812,
+    "source": "output"
+  },
+  {
+    "name": "fallbackMap",
+    "hash": -940825965,
+    "source": "output"
+  },
+  {
+    "name": "fan1AcAdder",
+    "hash": -180298801,
+    "source": "config"
+  },
+  {
+    "name": "fan1brokenClt",
+    "hash": -614909137,
+    "source": "output"
+  },
+  {
+    "name": "fan1cold",
+    "hash": -855279955,
+    "source": "output"
+  },
+  {
+    "name": "fan1cranking",
+    "hash": -113087656,
+    "source": "output"
+  },
+  {
+    "name": "fan1disabledBySpeed",
+    "hash": 890832495,
+    "source": "output"
+  },
+  {
+    "name": "fan1disabledWhileEngineStopped",
+    "hash": 168011889,
+    "source": "output"
+  },
+  {
+    "name": "fan1enabledForAc",
+    "hash": -662113279,
+    "source": "output"
+  },
+  {
+    "name": "fan1ExtraIdle",
+    "hash": 1397079021,
+    "source": "config"
+  },
+  {
+    "name": "fan1fan_pwm_started",
+    "hash": 1085574505,
+    "source": "output"
+  },
+  {
+    "name": "fan1hot",
+    "hash": -1717868938,
+    "source": "output"
+  },
+  {
+    "name": "fan1m_state",
+    "hash": -1997175144,
+    "source": "output"
+  },
+  {
+    "name": "fan1MaxPwm",
+    "hash": 983231621,
+    "source": "config"
+  },
+  {
+    "name": "fan1MinPwm",
+    "hash": 992359619,
+    "source": "config"
+  },
+  {
+    "name": "fan1notRunning",
+    "hash": -150769059,
+    "source": "output"
+  },
+  {
+    "name": "fan1Pwm",
+    "hash": -1717859969,
+    "source": "output"
+  },
+  {
+    "name": "fan1PwmEnabled",
+    "hash": 859066570,
+    "source": "config"
+  },
+  {
+    "name": "fan1PwmFrequency",
+    "hash": 1318639761,
+    "source": "config"
+  },
+  {
+    "name": "fan1radiatorFanStatus",
+    "hash": -1478067590,
+    "source": "output"
+  },
+  {
+    "name": "fan1SoftStartSec",
+    "hash": 1115446416,
+    "source": "config"
+  },
+  {
+    "name": "fan2AcAdder",
+    "hash": -511528784,
+    "source": "config"
+  },
+  {
+    "name": "fan2brokenClt",
+    "hash": -547107760,
+    "source": "output"
+  },
+  {
+    "name": "fan2cold",
+    "hash": -854094034,
+    "source": "output"
+  },
+  {
+    "name": "fan2cranking",
+    "hash": 1841224793,
+    "source": "output"
+  },
+  {
+    "name": "fan2disabledBySpeed",
+    "hash": 1095642192,
+    "source": "output"
+  },
+  {
+    "name": "fan2disabledWhileEngineStopped",
+    "hash": 494714802,
+    "source": "output"
+  },
+  {
+    "name": "fan2enabledForAc",
+    "hash": 669515138,
+    "source": "output"
+  },
+  {
+    "name": "fan2ExtraIdle",
+    "hash": 1464880398,
+    "source": "config"
+  },
+  {
+    "name": "fan2fan_pwm_started",
+    "hash": 1290384202,
+    "source": "output"
+  },
+  {
+    "name": "fan2hot",
+    "hash": -1717833001,
+    "source": "output"
+  },
+  {
+    "name": "fan2m_state",
+    "hash": 1966562169,
+    "source": "output"
+  },
+  {
+    "name": "fan2MaxPwm",
+    "hash": -2020267706,
+    "source": "config"
+  },
+  {
+    "name": "fan2MinPwm",
+    "hash": -2011139708,
+    "source": "config"
+  },
+  {
+    "name": "fan2notRunning",
+    "hash": 2086676382,
+    "source": "output"
+  },
+  {
+    "name": "fan2OffTemperature",
+    "hash": 1077467605,
+    "source": "config"
+  },
+  {
+    "name": "fan2OnTemperature",
+    "hash": 871106583,
+    "source": "config"
+  },
+  {
+    "name": "fan2Pwm",
+    "hash": -1717824032,
+    "source": "output"
+  },
+  {
+    "name": "fan2PwmEnabled",
+    "hash": -1198455285,
+    "source": "config"
+  },
+  {
+    "name": "fan2PwmFrequency",
+    "hash": -1644699118,
+    "source": "config"
+  },
+  {
+    "name": "fan2radiatorFanStatus",
+    "hash": -1778606949,
+    "source": "output"
+  },
+  {
+    "name": "fan2SoftStartSec",
+    "hash": -1847892463,
+    "source": "config"
+  },
+  {
+    "name": "fanOffTemperature",
+    "hash": 4686563,
+    "source": "config"
+  },
+  {
+    "name": "fanOnTemperature",
+    "hash": -853358747,
+    "source": "config"
+  },
+  {
+    "name": "fastAdcConversionCount",
+    "hash": 1749059722,
+    "source": "output"
+  },
+  {
+    "name": "fastAdcErrorCount",
+    "hash": -1344436946,
+    "source": "output"
+  },
+  {
+    "name": "fastAdcLastError",
+    "hash": -1773414247,
+    "source": "output"
+  },
+  {
+    "name": "fastAdcOverrunCount",
+    "hash": -1422787851,
+    "source": "output"
+  },
+  {
+    "name": "fastAdcPeriod",
+    "hash": -1798837954,
+    "source": "output"
+  },
+  {
+    "name": "finalGearRatio",
+    "hash": -869432403,
+    "source": "config"
+  },
+  {
+    "name": "finalIgnitionCutPercentBeforeLaunch",
+    "hash": 47348059,
+    "source": "config"
+  },
+  {
+    "name": "firmwareSignatureHash",
+    "hash": 301396472,
+    "source": "output"
+  },
+  {
+    "name": "firmwareVersion",
+    "hash": 799075048,
+    "source": "output"
+  },
+  {
+    "name": "fixedModeTiming",
+    "hash": -1965056926,
+    "source": "config"
+  },
+  {
+    "name": "fixedTiming",
+    "hash": -1359134883,
+    "source": "config"
+  },
+  {
+    "name": "fixSyncMisfire",
+    "hash": 678545432,
+    "source": "config"
+  },
+  {
+    "name": "flashWriteDelay",
+    "hash": 1615716653,
+    "source": "config"
+  },
+  {
+    "name": "flexCranking",
+    "hash": -563973567,
+    "source": "config"
+  },
+  {
+    "name": "flexEnabled",
+    "hash": -584588097,
+    "source": "config"
+  },
+  {
+    "name": "flexPercent",
+    "hash": 404628421,
+    "source": "output"
+  },
+  {
+    "name": "flexSensorInverted",
+    "hash": 512911183,
+    "source": "config"
+  },
+  {
+    "name": "forceIdleBelowTpsThreshold",
+    "hash": -462089681,
+    "source": "config"
+  },
+  {
+    "name": "forceIdleIgnitionBelowTps",
+    "hash": -184044765,
+    "source": "config"
+  },
+  {
+    "name": "forceIdleIgnitionUseDFCO",
+    "hash": 993647004,
+    "source": "config"
+  },
+  {
+    "name": "forceO2Heating",
+    "hash": -389678699,
+    "source": "config"
+  },
+  {
+    "name": "fordInjectorSmallPulseBreakPoint",
+    "hash": -1032938305,
+    "source": "config"
+  },
+  {
+    "name": "fordInjectorSmallPulseSlope",
+    "hash": -1465119085,
+    "source": "config"
+  },
+  {
+    "name": "frequencyMafFilter",
+    "hash": 746342705,
+    "source": "config"
+  },
+  {
+    "name": "frequencyMafMeasured",
+    "hash": 1692742817,
+    "source": "output"
+  },
+  {
+    "name": "fuelAlgorithm",
+    "hash": -1863470920,
+    "source": "output"
+  },
+  {
+    "name": "fuelClosedLoopCorrectionEnabled",
+    "hash": 1611799720,
+    "source": "config"
+  },
+  {
+    "name": "fuelCutReason",
+    "hash": -1225000603,
+    "source": "output"
+  },
+  {
+    "name": "fuelCutReasonBlinker",
+    "hash": 1745186508,
+    "source": "output"
+  },
+  {
+    "name": "fuelFlowRate",
+    "hash": 822501973,
+    "source": "output"
+  },
+  {
+    "name": "fuelingLoad",
+    "hash": 583799407,
+    "source": "output"
+  },
+  {
+    "name": "fuelInjectionCounter",
+    "hash": -1839290700,
+    "source": "output"
+  },
+  {
+    "name": "fuelLevelAveragingAlpha",
+    "hash": 2094922339,
+    "source": "config"
+  },
+  {
+    "name": "fuelLevelHighThresholdVoltage",
+    "hash": 2012123720,
+    "source": "config"
+  },
+  {
+    "name": "fuelLevelLowThresholdVoltage",
+    "hash": 1697484698,
+    "source": "config"
+  },
+  {
+    "name": "fuelLevelUpdatePeriodSec",
+    "hash": 128251338,
+    "source": "config"
+  },
+  {
+    "name": "fuelPumpDisable",
+    "hash": -380530585,
+    "source": "config"
+  },
+  {
+    "name": "fuelPumpengineTurnedRecently",
+    "hash": -92785887,
+    "source": "output"
+  },
+  {
+    "name": "fuelPumpfuelPumpForceState",
+    "hash": 1995425265,
+    "source": "output"
+  },
+  {
+    "name": "fuelPumpignitionOn",
+    "hash": 577940625,
+    "source": "output"
+  },
+  {
+    "name": "fuelPumpisFuelPumpOn",
+    "hash": 831481498,
+    "source": "output"
+  },
+  {
+    "name": "fuelPumpisPrime",
+    "hash": -2124710580,
+    "source": "output"
+  },
+  {
+    "name": "fuelPumpPrimeDelay",
+    "hash": -1286084577,
+    "source": "config"
+  },
+  {
+    "name": "fuelPumptpsFuelPumpPrime",
+    "hash": 717675541,
+    "source": "output"
+  },
+  {
+    "name": "fuelReferencePressure",
+    "hash": -395416807,
+    "source": "config"
+  },
+  {
+    "name": "fuelTankLevel",
+    "hash": 543832183,
+    "source": "output"
+  },
+  {
+    "name": "fuelTemp",
+    "hash": -1077373465,
+    "source": "output"
+  },
+  {
+    "name": "fuelTempSensor.config.bias_resistor",
+    "hash": -1285484724,
+    "source": "config"
+  },
+  {
+    "name": "fuelTempSensor.config.resistance_1",
+    "hash": -1195844556,
+    "source": "config"
+  },
+  {
+    "name": "fuelTempSensor.config.resistance_2",
+    "hash": -1195844555,
+    "source": "config"
+  },
+  {
+    "name": "fuelTempSensor.config.resistance_3",
+    "hash": -1195844554,
+    "source": "config"
+  },
+  {
+    "name": "fuelTempSensor.config.tempC_1",
+    "hash": -713764196,
+    "source": "config"
+  },
+  {
+    "name": "fuelTempSensor.config.tempC_2",
+    "hash": -713764195,
+    "source": "config"
+  },
+  {
+    "name": "fuelTempSensor.config.tempC_3",
+    "hash": -713764194,
+    "source": "config"
+  },
+  {
+    "name": "gapTrackingLengthOverride",
+    "hash": -2079960526,
+    "source": "config"
+  },
+  {
+    "name": "gapVvtTrackingLengthOverride",
+    "hash": -188591438,
+    "source": "config"
+  },
+  {
+    "name": "Gego",
+    "hash": 2090288615,
+    "source": "output"
+  },
+  {
+    "name": "getAirmassImpl_temp_c",
+    "hash": -572387970,
+    "source": "output"
+  },
+  {
+    "name": "globalAFRTrim",
+    "hash": 1377697963,
+    "source": "output"
+  },
+  {
+    "name": "globalFuelCorrection",
+    "hash": 1371979578,
+    "source": "config"
+  },
+  {
+    "name": "globalSparkCounter",
+    "hash": 642962903,
+    "source": "output"
+  },
+  {
+    "name": "globalTriggerAngleOffset",
+    "hash": -295413160,
+    "source": "config"
+  },
+  {
+    "name": "gyroYaw",
+    "hash": 519838295,
+    "source": "output"
+  },
+  {
+    "name": "harleyAcrSprayFuel",
+    "hash": -1053347749,
+    "source": "config"
+  },
+  {
+    "name": "hasCriticalError",
+    "hash": -2015383594,
+    "source": "output"
+  },
+  {
+    "name": "hasFaultReportFile",
+    "hash": -1502616231,
+    "source": "output"
+  },
+  {
+    "name": "heaterControlEnabled",
+    "hash": -818268726,
+    "source": "output"
+  },
+  {
+    "name": "hellenBoardId",
+    "hash": -295556270,
+    "source": "output"
+  },
+  {
+    "name": "highFuelPressure",
+    "hash": -1973799222,
+    "source": "output"
+  },
+  {
+    "name": "highPressureFuel.v1",
+    "hash": 2032707103,
+    "source": "config"
+  },
+  {
+    "name": "highPressureFuel.v2",
+    "hash": 2032707104,
+    "source": "config"
+  },
+  {
+    "name": "highPressureFuel.value1",
+    "hash": -1898025562,
+    "source": "config"
+  },
+  {
+    "name": "highPressureFuel.value2",
+    "hash": -1898025561,
+    "source": "config"
+  },
+  {
+    "name": "hondaK",
+    "hash": 42872346,
+    "source": "config"
+  },
+  {
+    "name": "hp",
+    "hash": 5863453,
+    "source": "output"
+  },
+  {
+    "name": "hpfpActivationAngle",
+    "hash": -81483444,
+    "source": "config"
+  },
+  {
+    "name": "hpfpCamLobes",
+    "hash": -1256141959,
+    "source": "config"
+  },
+  {
+    "name": "hpfpMinAngle",
+    "hash": 1494394654,
+    "source": "config"
+  },
+  {
+    "name": "hpfpPeakPos",
+    "hash": 1145081382,
+    "source": "config"
+  },
+  {
+    "name": "hpfpPid_iTermMax",
+    "hash": 535118454,
+    "source": "config"
+  },
+  {
+    "name": "hpfpPid_iTermMin",
+    "hash": 535118708,
+    "source": "config"
+  },
+  {
+    "name": "hpfpPidI",
+    "hash": 436500697,
+    "source": "config"
+  },
+  {
+    "name": "hpfpPidP",
+    "hash": 436500704,
+    "source": "config"
+  },
+  {
+    "name": "hpfpPumpVolume",
+    "hash": 334494733,
+    "source": "config"
+  },
+  {
+    "name": "hpfpTargetDecay",
+    "hash": 1025426144,
+    "source": "config"
+  },
+  {
+    "name": "iacByTpsDecayTime",
+    "hash": 1742748825,
+    "source": "config"
+  },
+  {
+    "name": "iacByTpsHoldTime",
+    "hash": -235994182,
+    "source": "config"
+  },
+  {
+    "name": "iacByTpsTaper",
+    "hash": -2065814304,
+    "source": "config"
+  },
+  {
+    "name": "iat.config.bias_resistor",
+    "hash": 406607630,
+    "source": "config"
+  },
+  {
+    "name": "iat.config.resistance_1",
+    "hash": -1014418506,
+    "source": "config"
+  },
+  {
+    "name": "iat.config.resistance_2",
+    "hash": -1014418505,
+    "source": "config"
+  },
+  {
+    "name": "iat.config.resistance_3",
+    "hash": -1014418504,
+    "source": "config"
+  },
+  {
+    "name": "iat.config.tempC_1",
+    "hash": -672272162,
+    "source": "config"
+  },
+  {
+    "name": "iat.config.tempC_2",
+    "hash": -672272161,
+    "source": "config"
+  },
+  {
+    "name": "iat.config.tempC_3",
+    "hash": -672272160,
+    "source": "config"
+  },
+  {
+    "name": "iatSensorPulldown",
+    "hash": 1570551154,
+    "source": "config"
+  },
+  {
+    "name": "idealEngineTorque",
+    "hash": -791713926,
+    "source": "output"
+  },
+  {
+    "name": "idle.solenoidFrequency",
+    "hash": -568903712,
+    "source": "config"
+  },
+  {
+    "name": "idle_antiwindupFreq",
+    "hash": -524949197,
+    "source": "config"
+  },
+  {
+    "name": "idle_derivativeFilterLoss",
+    "hash": -1269130308,
+    "source": "config"
+  },
+  {
+    "name": "idlebadTps",
+    "hash": 1422719489,
+    "source": "output"
+  },
+  {
+    "name": "idlebaseIdlePosition",
+    "hash": -133180239,
+    "source": "output"
+  },
+  {
+    "name": "idlecurrentIdlePosition",
+    "hash": 1601709561,
+    "source": "output"
+  },
+  {
+    "name": "idleDeltaRpmAdjAvgFactor",
+    "hash": -1613565112,
+    "source": "config"
+  },
+  {
+    "name": "idleEntryRampInterpolateAngle",
+    "hash": 1657973395,
+    "source": "config"
+  },
+  {
+    "name": "idleiacByRpmTaper",
+    "hash": -348839402,
+    "source": "output"
+  },
+  {
+    "name": "idleiacByTpsTaper",
+    "hash": -776487010,
+    "source": "output"
+  },
+  {
+    "name": "idleidle_deltaRpmAdj",
+    "hash": 1001494216,
+    "source": "output"
+  },
+  {
+    "name": "idleidle_m_last_phase",
+    "hash": -1271797456,
+    "source": "output"
+  },
+  {
+    "name": "idleidle_timeInIdle",
+    "hash": 2031699396,
+    "source": "output"
+  },
+  {
+    "name": "idleidleClosedLoop",
+    "hash": 865747829,
+    "source": "output"
+  },
+  {
+    "name": "idleidleState",
+    "hash": 1939661442,
+    "source": "output"
+  },
+  {
+    "name": "idleidleTarget",
+    "hash": -398482072,
+    "source": "output"
+  },
+  {
+    "name": "idleidleTargetAirmass",
+    "hash": -597849544,
+    "source": "output"
+  },
+  {
+    "name": "idleidleTargetError",
+    "hash": -993302478,
+    "source": "output"
+  },
+  {
+    "name": "idleidleTargetFlow",
+    "hash": -1591877056,
+    "source": "output"
+  },
+  {
+    "name": "idleIncrementalPidCic",
+    "hash": 1064399425,
+    "source": "config"
+  },
+  {
+    "name": "idleisBlipping",
+    "hash": -2093662604,
+    "source": "output"
+  },
+  {
+    "name": "idleisCranking",
+    "hash": 713313260,
+    "source": "output"
+  },
+  {
+    "name": "idleisIacTableForCoasting",
+    "hash": -1397911341,
+    "source": "output"
+  },
+  {
+    "name": "idleisIdleClosedLoop",
+    "hash": 1921464113,
+    "source": "output"
+  },
+  {
+    "name": "idleisIdleCoasting",
+    "hash": 1739403413,
+    "source": "output"
+  },
+  {
+    "name": "idleisInDeadZone",
+    "hash": 459712992,
+    "source": "output"
+  },
+  {
+    "name": "idlelooksLikeCoasting",
+    "hash": 105270760,
+    "source": "output"
+  },
+  {
+    "name": "idlelooksLikeCrankToIdle",
+    "hash": -1492749056,
+    "source": "output"
+  },
+  {
+    "name": "idlelooksLikeRunning",
+    "hash": -678234383,
+    "source": "output"
+  },
+  {
+    "name": "idleluaAdd",
+    "hash": 1837662926,
+    "source": "output"
+  },
+  {
+    "name": "idlem_isCoastingAdvance",
+    "hash": 1790577077,
+    "source": "output"
+  },
+  {
+    "name": "idlem_isIdlingOrTaper",
+    "hash": -1276540673,
+    "source": "output"
+  },
+  {
+    "name": "idlem_lastTargetRpm",
+    "hash": 1461165305,
+    "source": "output"
+  },
+  {
+    "name": "idleMaximumAirmass",
+    "hash": -1671871759,
+    "source": "config"
+  },
+  {
+    "name": "idlemightResetPid",
+    "hash": 1439272316,
+    "source": "output"
+  },
+  {
+    "name": "idlemustResetPid",
+    "hash": -488166228,
+    "source": "output"
+  },
+  {
+    "name": "idleneedReset",
+    "hash": -1996090622,
+    "source": "output"
+  },
+  {
+    "name": "idlePidActivationTime",
+    "hash": -1562952959,
+    "source": "config"
+  },
+  {
+    "name": "idlePidDeactivationTpsThreshold",
+    "hash": 1490213215,
+    "source": "config"
+  },
+  {
+    "name": "idlePidRpmDeadZone",
+    "hash": -528043591,
+    "source": "config"
+  },
+  {
+    "name": "idlePidRpmUpperLimit",
+    "hash": 1962548154,
+    "source": "config"
+  },
+  {
+    "name": "idlePositionMax",
+    "hash": -1256791970,
+    "source": "config"
+  },
+  {
+    "name": "idlePositionMin",
+    "hash": -1256791716,
+    "source": "config"
+  },
+  {
+    "name": "idlePositionSensor",
+    "hash": 782384530,
+    "source": "output"
+  },
+  {
+    "name": "idleReturnTargetRamp",
+    "hash": 118504154,
+    "source": "config"
+  },
+  {
+    "name": "idleReturnTargetRampDuration",
+    "hash": 62925536,
+    "source": "config"
+  },
+  {
+    "name": "idleRpmPid.dFactor",
+    "hash": -464180576,
+    "source": "config"
+  },
+  {
+    "name": "idleRpmPid.iFactor",
+    "hash": 1698191973,
+    "source": "config"
+  },
+  {
+    "name": "idleRpmPid.maxValue",
+    "hash": 1935395744,
+    "source": "config"
+  },
+  {
+    "name": "idleRpmPid.minValue",
+    "hash": -1009116322,
+    "source": "config"
+  },
+  {
+    "name": "idleRpmPid.offset",
+    "hash": -103982236,
+    "source": "config"
+  },
+  {
+    "name": "idleRpmPid.periodMs",
+    "hash": 1562875200,
+    "source": "config"
+  },
+  {
+    "name": "idleRpmPid.pFactor",
+    "hash": -2146434132,
+    "source": "config"
+  },
+  {
+    "name": "idlerpmpid_iTermMax",
+    "hash": -1742418955,
+    "source": "config"
+  },
+  {
+    "name": "idlerpmpid_iTermMin",
+    "hash": -1742418701,
+    "source": "config"
+  },
+  {
+    "name": "idleshouldResetPid",
+    "hash": -628192270,
+    "source": "output"
+  },
+  {
+    "name": "idleStatus.dTerm",
+    "hash": -1813050607,
+    "source": "output"
+  },
+  {
+    "name": "idleStatus.error",
+    "hash": -1811922497,
+    "source": "output"
+  },
+  {
+    "name": "idleStatus.iTerm",
+    "hash": -1807121002,
+    "source": "output"
+  },
+  {
+    "name": "idleStatus.output",
+    "hash": 731084614,
+    "source": "output"
+  },
+  {
+    "name": "idleStatus.pTerm",
+    "hash": -1798819555,
+    "source": "output"
+  },
+  {
+    "name": "idleStatus.resetCounter",
+    "hash": -424088744,
+    "source": "output"
+  },
+  {
+    "name": "idleStepperReactionTime",
+    "hash": 1145888170,
+    "source": "config"
+  },
+  {
+    "name": "idleStepperTargetPosition",
+    "hash": 356548450,
+    "source": "output"
+  },
+  {
+    "name": "idleStepperTotalSteps",
+    "hash": -1077032999,
+    "source": "config"
+  },
+  {
+    "name": "idletargetRpmAc",
+    "hash": -601080675,
+    "source": "output"
+  },
+  {
+    "name": "idletargetRpmByClt",
+    "hash": -1643597865,
+    "source": "output"
+  },
+  {
+    "name": "idleTimingPid.dFactor",
+    "hash": 270256825,
+    "source": "config"
+  },
+  {
+    "name": "idleTimingPid.iFactor",
+    "hash": -1862337922,
+    "source": "config"
+  },
+  {
+    "name": "idleTimingPid.maxValue",
+    "hash": 402026201,
+    "source": "config"
+  },
+  {
+    "name": "idleTimingPid.minValue",
+    "hash": 1752481431,
+    "source": "config"
+  },
+  {
+    "name": "idleTimingPid.offset",
+    "hash": -2033984419,
+    "source": "config"
+  },
+  {
+    "name": "idleTimingPid.periodMs",
+    "hash": 29505657,
+    "source": "config"
+  },
+  {
+    "name": "idleTimingPid.pFactor",
+    "hash": -1411996731,
+    "source": "config"
+  },
+  {
+    "name": "idleTimingSoftEntryTime",
+    "hash": 1881137064,
+    "source": "config"
+  },
+  {
+    "name": "idleveTableYAxis",
+    "hash": -605416844,
+    "source": "output"
+  },
+  {
+    "name": "idlewasResetPid",
+    "hash": 72665902,
+    "source": "output"
+  },
+  {
+    "name": "ignBlend1BlendMode",
+    "hash": -1140650813,
+    "source": "config"
+  },
+  {
+    "name": "ignBlend2BlendMode",
+    "hash": -1072849436,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled1",
+    "hash": -1843977329,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled10",
+    "hash": -721709665,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled11",
+    "hash": -721709664,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled12",
+    "hash": -721709663,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled2",
+    "hash": -1843977328,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled3",
+    "hash": -1843977327,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled4",
+    "hash": -1843977326,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled5",
+    "hash": -1843977325,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled6",
+    "hash": -1843977324,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled7",
+    "hash": -1843977323,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled8",
+    "hash": -1843977322,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDisabled9",
+    "hash": -1843977321,
+    "source": "config"
+  },
+  {
+    "name": "ignitionDwellForCrankingMs",
+    "hash": -589710926,
+    "source": "config"
+  },
+  {
+    "name": "ignitionFault",
+    "hash": -1158382750,
+    "source": "output"
+  },
+  {
+    "name": "ignitionLoad",
+    "hash": 1136482406,
+    "source": "output"
+  },
+  {
+    "name": "ignitionOnTime",
+    "hash": 795671090,
+    "source": "output"
+  },
+  {
+    "name": "ignKeyAdcDivider",
+    "hash": -506535813,
+    "source": "config"
+  },
+  {
+    "name": "ignTableSwitch1Active",
+    "hash": -776108566,
+    "source": "output"
+  },
+  {
+    "name": "ignTableSwitch2Active",
+    "hash": 515359403,
+    "source": "output"
+  },
+  {
+    "name": "initialIgnitionCutPercent",
+    "hash": -360834835,
+    "source": "config"
+  },
+  {
+    "name": "inj10ok",
+    "hash": -1634476895,
+    "source": "output"
+  },
+  {
+    "name": "inj11ok",
+    "hash": -1634475806,
+    "source": "output"
+  },
+  {
+    "name": "inj12ok",
+    "hash": -1634474717,
+    "source": "output"
+  },
+  {
+    "name": "inj1ok",
+    "hash": 80622993,
+    "source": "output"
+  },
+  {
+    "name": "inj2ok",
+    "hash": 80624082,
+    "source": "output"
+  },
+  {
+    "name": "inj3ok",
+    "hash": 80625171,
+    "source": "output"
+  },
+  {
+    "name": "inj4ok",
+    "hash": 80626260,
+    "source": "output"
+  },
+  {
+    "name": "inj5ok",
+    "hash": 80627349,
+    "source": "output"
+  },
+  {
+    "name": "inj6ok",
+    "hash": 80628438,
+    "source": "output"
+  },
+  {
+    "name": "inj7ok",
+    "hash": 80629527,
+    "source": "output"
+  },
+  {
+    "name": "inj8ok",
+    "hash": 80630616,
+    "source": "output"
+  },
+  {
+    "name": "inj9ok",
+    "hash": 80631705,
+    "source": "output"
+  },
+  {
+    "name": "injAdvAssistEnabled",
+    "hash": -101393725,
+    "source": "config"
+  },
+  {
+    "name": "injAdvAssistEndDeg",
+    "hash": -914016449,
+    "source": "config"
+  },
+  {
+    "name": "injAdvAssistMaxRpm",
+    "hash": -615615923,
+    "source": "config"
+  },
+  {
+    "name": "injAdvAssistMinRpm",
+    "hash": -606487925,
+    "source": "config"
+  },
+  {
+    "name": "injAdvAssistStartDeg",
+    "hash": -215143594,
+    "source": "config"
+  },
+  {
+    "name": "injAdvAssistStepCycles",
+    "hash": 1678478519,
+    "source": "config"
+  },
+  {
+    "name": "injAdvAssistStepDeg",
+    "hash": 1039339108,
+    "source": "config"
+  },
+  {
+    "name": "injectionOffset",
+    "hash": -243031057,
+    "source": "output"
+  },
+  {
+    "name": "injectionPrimingCounter",
+    "hash": 1526237246,
+    "source": "output"
+  },
+  {
+    "name": "injector.flow",
+    "hash": 1542550121,
+    "source": "config"
+  },
+  {
+    "name": "injectorDutyCycle",
+    "hash": -354325031,
+    "source": "output"
+  },
+  {
+    "name": "injectorDutyCycleStage2",
+    "hash": -1337459841,
+    "source": "output"
+  },
+  {
+    "name": "injectorFault",
+    "hash": 1608791711,
+    "source": "output"
+  },
+  {
+    "name": "injectorFlowAsMassFlow",
+    "hash": 444648859,
+    "source": "config"
+  },
+  {
+    "name": "injectorHwIssue",
+    "hash": -1237512821,
+    "source": "output"
+  },
+  {
+    "name": "injectorPrimeInhibit",
+    "hash": -2100683129,
+    "source": "config"
+  },
+  {
+    "name": "injectorSecondary.flow",
+    "hash": -289303407,
+    "source": "config"
+  },
+  {
+    "name": "injectorState1",
+    "hash": 2081101045,
+    "source": "output"
+  },
+  {
+    "name": "injectorState10",
+    "hash": -43142203,
+    "source": "output"
+  },
+  {
+    "name": "injectorState11",
+    "hash": -43142202,
+    "source": "output"
+  },
+  {
+    "name": "injectorState12",
+    "hash": -43142201,
+    "source": "output"
+  },
+  {
+    "name": "injectorState2",
+    "hash": 2081101046,
+    "source": "output"
+  },
+  {
+    "name": "injectorState3",
+    "hash": 2081101047,
+    "source": "output"
+  },
+  {
+    "name": "injectorState4",
+    "hash": 2081101048,
+    "source": "output"
+  },
+  {
+    "name": "injectorState5",
+    "hash": 2081101049,
+    "source": "output"
+  },
+  {
+    "name": "injectorState6",
+    "hash": 2081101050,
+    "source": "output"
+  },
+  {
+    "name": "injectorState7",
+    "hash": 2081101051,
+    "source": "output"
+  },
+  {
+    "name": "injectorState8",
+    "hash": 2081101052,
+    "source": "output"
+  },
+  {
+    "name": "injectorState9",
+    "hash": 2081101053,
+    "source": "output"
+  },
+  {
+    "name": "instantMAFValue",
+    "hash": -1553662697,
+    "source": "output"
+  },
+  {
+    "name": "instantMAPPREValue",
+    "hash": 861508808,
+    "source": "output"
+  },
+  {
+    "name": "instantMAPValue",
+    "hash": -1162308767,
+    "source": "output"
+  },
+  {
+    "name": "instantRpm",
+    "hash": -658597643,
+    "source": "output"
+  },
+  {
+    "name": "instantRpmRange",
+    "hash": -748456478,
+    "source": "config"
+  },
+  {
+    "name": "intake",
+    "hash": 81034497,
+    "source": "output"
+  },
+  {
+    "name": "internalMcuTemperature",
+    "hash": -871891659,
+    "source": "output"
+  },
+  {
+    "name": "invertCamVVTSignal",
+    "hash": 1081026348,
+    "source": "config"
+  },
+  {
+    "name": "invertExhaustCamVVTSignal",
+    "hash": -60727986,
+    "source": "config"
+  },
+  {
+    "name": "invertPrimaryTriggerSignal",
+    "hash": -587700301,
+    "source": "config"
+  },
+  {
+    "name": "invertSecondaryTriggerSignal",
+    "hash": -1944260329,
+    "source": "config"
+  },
+  {
+    "name": "invertVvtControlExhaust",
+    "hash": -1331668704,
+    "source": "config"
+  },
+  {
+    "name": "invertVvtControlIntake",
+    "hash": 755512282,
+    "source": "config"
+  },
+  {
+    "name": "is_enabled_spi_1",
+    "hash": -722238362,
+    "source": "config"
+  },
+  {
+    "name": "is_enabled_spi_2",
+    "hash": -722238361,
+    "source": "config"
+  },
+  {
+    "name": "is_enabled_spi_3",
+    "hash": -722238360,
+    "source": "config"
+  },
+  {
+    "name": "is_enabled_spi_4",
+    "hash": -722238359,
+    "source": "config"
+  },
+  {
+    "name": "is_enabled_spi_5",
+    "hash": -722238358,
+    "source": "config"
+  },
+  {
+    "name": "is_enabled_spi_6",
+    "hash": -722238357,
+    "source": "config"
+  },
+  {
+    "name": "isAlternatorControlEnabled",
+    "hash": -1771449111,
+    "source": "config"
+  },
+  {
+    "name": "isAnalogFailure",
+    "hash": -1383513733,
+    "source": "output"
+  },
+  {
+    "name": "isAppConditionSatisfied",
+    "hash": -1634779035,
+    "source": "output"
+  },
+  {
+    "name": "isBelowTemperatureThreshold",
+    "hash": 319978869,
+    "source": "output"
+  },
+  {
+    "name": "isBoostControlEnabled",
+    "hash": -1832431020,
+    "source": "config"
+  },
+  {
+    "name": "isBrakePedalActivated",
+    "hash": 781025153,
+    "source": "output"
+  },
+  {
+    "name": "isCltError",
+    "hash": 518760558,
+    "source": "output"
+  },
+  {
+    "name": "isClutchActivated",
+    "hash": 1569151513,
+    "source": "output"
+  },
+  {
+    "name": "isCylinderCleanupEnabled",
+    "hash": -1491889938,
+    "source": "config"
+  },
+  {
+    "name": "isDecodingMapCam",
+    "hash": 756216589,
+    "source": "output"
+  },
+  {
+    "name": "isDoubleSolenoidIdle",
+    "hash": 1097520823,
+    "source": "config"
+  },
+  {
+    "name": "isEnabled0",
+    "hash": 1691876092,
+    "source": "output"
+  },
+  {
+    "name": "isEnabled0_int",
+    "hash": -1236599226,
+    "source": "output"
+  },
+  {
+    "name": "isFasterEngineSpinUpEnabled",
+    "hash": 2048390406,
+    "source": "config"
+  },
+  {
+    "name": "isFlatShiftConditionSatisfied",
+    "hash": 1378388905,
+    "source": "output"
+  },
+  {
+    "name": "isForcedInduction",
+    "hash": -617915487,
+    "source": "config"
+  },
+  {
+    "name": "isIatError",
+    "hash": 1505102185,
+    "source": "output"
+  },
+  {
+    "name": "isIgnitionEnabled",
+    "hash": -1354884979,
+    "source": "config"
+  },
+  {
+    "name": "isInjectionEnabled",
+    "hash": 1917301199,
+    "source": "config"
+  },
+  {
+    "name": "isLaunchCondition",
+    "hash": -1959120957,
+    "source": "output"
+  },
+  {
+    "name": "isMafAveraging",
+    "hash": 1990113001,
+    "source": "output"
+  },
+  {
+    "name": "isMafAveragingEnabled",
+    "hash": 1418003188,
+    "source": "config"
+  },
+  {
+    "name": "isMafValid",
+    "hash": -348170267,
+    "source": "output"
+  },
+  {
+    "name": "isMapAveraging",
+    "hash": -1626840525,
+    "source": "output"
+  },
+  {
+    "name": "isMapAveragingEnabled",
+    "hash": 285726462,
+    "source": "config"
+  },
+  {
+    "name": "isMapError",
+    "hash": 23640681,
+    "source": "output"
+  },
+  {
+    "name": "isMapPreAveraging",
+    "hash": -1074514630,
+    "source": "output"
+  },
+  {
+    "name": "isMapPreAveragingEnabled",
+    "hash": 1406475301,
+    "source": "config"
+  },
+  {
+    "name": "isMapPredictionActive",
+    "hash": 884518764,
+    "source": "output"
+  },
+  {
+    "name": "isMapPreValid",
+    "hash": -677882442,
+    "source": "output"
+  },
+  {
+    "name": "isMapValid",
+    "hash": 43183663,
+    "source": "output"
+  },
+  {
+    "name": "isO2HeaterOn",
+    "hash": 438683128,
+    "source": "output"
+  },
+  {
+    "name": "isPedalError",
+    "hash": -2035612655,
+    "source": "output"
+  },
+  {
+    "name": "isPhaseSyncRequiredForIgnition",
+    "hash": -1543452424,
+    "source": "config"
+  },
+  {
+    "name": "isPreLaunchCondition",
+    "hash": -1872098102,
+    "source": "output"
+  },
+  {
+    "name": "isRpmConditionSatisfied",
+    "hash": -304304077,
+    "source": "output"
+  },
+  {
+    "name": "isRunningBench",
+    "hash": 2099290370,
+    "source": "output"
+  },
+  {
+    "name": "isSdCardEnabled",
+    "hash": -1603423011,
+    "source": "config"
+  },
+  {
+    "name": "issEdgeCounter",
+    "hash": 347478025,
+    "source": "output"
+  },
+  {
+    "name": "issFilterReciprocal",
+    "hash": -413489794,
+    "source": "config"
+  },
+  {
+    "name": "ISSValue",
+    "hash": 200047729,
+    "source": "output"
+  },
+  {
+    "name": "isSwitchActivated",
+    "hash": 1699495432,
+    "source": "output"
+  },
+  {
+    "name": "isTimeConditionSatisfied",
+    "hash": 1973309843,
+    "source": "output"
+  },
+  {
+    "name": "isTorqueReductionTriggerPinValid",
+    "hash": 1922853657,
+    "source": "output"
+  },
+  {
+    "name": "isTps2Error",
+    "hash": -1529936844,
+    "source": "output"
+  },
+  {
+    "name": "isTpsError",
+    "hash": 14587330,
+    "source": "output"
+  },
+  {
+    "name": "isTriggerError",
+    "hash": -1746157889,
+    "source": "output"
+  },
+  {
+    "name": "isTuningNow",
+    "hash": 1109228234,
+    "source": "output"
+  },
+  {
+    "name": "isUsbConnected",
+    "hash": 1836976702,
+    "source": "output"
+  },
+  {
+    "name": "isValidInputPin",
+    "hash": -978523544,
+    "source": "output"
+  },
+  {
+    "name": "isWarnNow",
+    "hash": -1919072851,
+    "source": "output"
+  },
+  {
+    "name": "isWaveAnalyzerEnabled",
+    "hash": -726159643,
+    "source": "config"
+  },
+  {
+    "name": "justATempTest",
+    "hash": -48120222,
+    "source": "config"
+  },
+  {
+    "name": "kickStartCranking",
+    "hash": 1156367906,
+    "source": "config"
+  },
+  {
+    "name": "kLineBaudRate",
+    "hash": 1498075808,
+    "source": "config"
+  },
+  {
+    "name": "kLineDoHondaSend",
+    "hash": 304164959,
+    "source": "config"
+  },
+  {
+    "name": "kLinePeriodUs",
+    "hash": 1915146851,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl1",
+    "hash": 1509355728,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl10",
+    "hash": -1730868480,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl11",
+    "hash": -1730868479,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl12",
+    "hash": -1730868478,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl2",
+    "hash": 1509355729,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl3",
+    "hash": 1509355730,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl4",
+    "hash": 1509355731,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl5",
+    "hash": 1509355732,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl6",
+    "hash": 1509355733,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl7",
+    "hash": 1509355734,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl8",
+    "hash": 1509355735,
+    "source": "config"
+  },
+  {
+    "name": "knockBankCyl9",
+    "hash": 1509355736,
+    "source": "config"
+  },
+  {
+    "name": "knockDetectionUseDoubleFrequency",
+    "hash": 892958612,
+    "source": "config"
+  },
+  {
+    "name": "knockDetectionWindowStart",
+    "hash": -339821344,
+    "source": "config"
+  },
+  {
+    "name": "knockFrequency",
+    "hash": 1972605869,
+    "source": "config"
+  },
+  {
+    "name": "knockFuelTrim",
+    "hash": -106437949,
+    "source": "config"
+  },
+  {
+    "name": "knockFuelTrimAggression",
+    "hash": -1811840427,
+    "source": "config"
+  },
+  {
+    "name": "knockFuelTrimReapplyRate",
+    "hash": -1833685972,
+    "source": "config"
+  },
+  {
+    "name": "knockm_knockCount",
+    "hash": 1119572486,
+    "source": "output"
+  },
+  {
+    "name": "knockm_knockFrequencyStart",
+    "hash": -2056673411,
+    "source": "output"
+  },
+  {
+    "name": "knockm_knockFrequencyStep",
+    "hash": 1239181931,
+    "source": "output"
+  },
+  {
+    "name": "knockm_knockFuelTrimMultiplier",
+    "hash": 1984514028,
+    "source": "output"
+  },
+  {
+    "name": "knockm_knockLevel",
+    "hash": 1129887189,
+    "source": "output"
+  },
+  {
+    "name": "knockm_knockRetard",
+    "hash": -1133692001,
+    "source": "output"
+  },
+  {
+    "name": "knockm_knockSpectrumChannelCyl",
+    "hash": 1082313329,
+    "source": "output"
+  },
+  {
+    "name": "knockm_knockThreshold",
+    "hash": 1060324714,
+    "source": "output"
+  },
+  {
+    "name": "knockm_maximumRetard",
+    "hash": -2000802553,
+    "source": "output"
+  },
+  {
+    "name": "knockRetardAggression",
+    "hash": 1989648303,
+    "source": "config"
+  },
+  {
+    "name": "knockRetardReapplyRate",
+    "hash": -938609466,
+    "source": "config"
+  },
+  {
+    "name": "knockSamplingDuration",
+    "hash": -430252676,
+    "source": "config"
+  },
+  {
+    "name": "knockSpectrumSensitivity",
+    "hash": 1561929785,
+    "source": "config"
+  },
+  {
+    "name": "knockSuppressMinRpm",
+    "hash": 893774675,
+    "source": "config"
+  },
+  {
+    "name": "knockSuppressMinTps",
+    "hash": 893776859,
+    "source": "config"
+  },
+  {
+    "name": "lambdaCurrentlyGood",
+    "hash": 350535927,
+    "source": "output"
+  },
+  {
+    "name": "lambdaMonitorCut",
+    "hash": 1849938842,
+    "source": "output"
+  },
+  {
+    "name": "lambdaProtectionEnable",
+    "hash": 1451020756,
+    "source": "config"
+  },
+  {
+    "name": "lambdaProtectionMinLoad",
+    "hash": -2094010831,
+    "source": "config"
+  },
+  {
+    "name": "lambdaProtectionMinRpm",
+    "hash": 1758659040,
+    "source": "config"
+  },
+  {
+    "name": "lambdaProtectionMinTps",
+    "hash": 1758661224,
+    "source": "config"
+  },
+  {
+    "name": "lambdaProtectionRestoreLoad",
+    "hash": -1274631759,
+    "source": "config"
+  },
+  {
+    "name": "lambdaProtectionRestoreRpm",
+    "hash": 872435040,
+    "source": "config"
+  },
+  {
+    "name": "lambdaProtectionRestoreTps",
+    "hash": 872437224,
+    "source": "config"
+  },
+  {
+    "name": "lambdaProtectionTimeout",
+    "hash": -1645106444,
+    "source": "config"
+  },
+  {
+    "name": "lambdaTimeSinceGood",
+    "hash": 481450608,
+    "source": "output"
+  },
+  {
+    "name": "lambdaValue",
+    "hash": -1119268893,
+    "source": "output"
+  },
+  {
+    "name": "lambdaValue2",
+    "hash": 1718832245,
+    "source": "output"
+  },
+  {
+    "name": "lastCanButtonFoundIdx",
+    "hash": -838175736,
+    "source": "output"
+  },
+  {
+    "name": "lastCanButtonSeen",
+    "hash": -1939960078,
+    "source": "output"
+  },
+  {
+    "name": "lastErrorCode",
+    "hash": -1346040258,
+    "source": "output"
+  },
+  {
+    "name": "launchActivatePinState",
+    "hash": 1928406809,
+    "source": "output"
+  },
+  {
+    "name": "launchControlEnabled",
+    "hash": -338157684,
+    "source": "config"
+  },
+  {
+    "name": "launchCorrectionsEndRpm",
+    "hash": 223926129,
+    "source": "config"
+  },
+  {
+    "name": "launchFuelAdderPercent",
+    "hash": -904771683,
+    "source": "config"
+  },
+  {
+    "name": "launchFuelCutEnable",
+    "hash": -980843809,
+    "source": "config"
+  },
+  {
+    "name": "launchRpm",
+    "hash": -776106289,
+    "source": "config"
+  },
+  {
+    "name": "launchRpmWindow",
+    "hash": -1798887513,
+    "source": "config"
+  },
+  {
+    "name": "launchSmoothRetard",
+    "hash": -954321508,
+    "source": "config"
+  },
+  {
+    "name": "launchSparkCutEnable",
+    "hash": -1829995308,
+    "source": "config"
+  },
+  {
+    "name": "launchSpeedThreshold",
+    "hash": -1743747394,
+    "source": "config"
+  },
+  {
+    "name": "launchTimingRetard",
+    "hash": 1226423210,
+    "source": "config"
+  },
+  {
+    "name": "launchTpsThreshold",
+    "hash": -1340834204,
+    "source": "config"
+  },
+  {
+    "name": "launchTriggered",
+    "hash": -52473827,
+    "source": "output"
+  },
+  {
+    "name": "limitTorqueReductionTime",
+    "hash": -819413824,
+    "source": "config"
+  },
+  {
+    "name": "loadForIgnitionTableDot",
+    "hash": 2031242236,
+    "source": "output"
+  },
+  {
+    "name": "lowFuelPressure",
+    "hash": -628741220,
+    "source": "output"
+  },
+  {
+    "name": "lowPressureFuel.v1",
+    "hash": -474791503,
+    "source": "config"
+  },
+  {
+    "name": "lowPressureFuel.v2",
+    "hash": -474791502,
+    "source": "config"
+  },
+  {
+    "name": "lowPressureFuel.value1",
+    "hash": 764445240,
+    "source": "config"
+  },
+  {
+    "name": "lowPressureFuel.value2",
+    "hash": 764445241,
+    "source": "config"
+  },
+  {
+    "name": "ltft.correctionEnabled",
+    "hash": -1686338448,
+    "source": "config"
+  },
+  {
+    "name": "ltft.deadband",
+    "hash": -1888587696,
+    "source": "config"
+  },
+  {
+    "name": "ltft.enabled",
+    "hash": -1407066344,
+    "source": "config"
+  },
+  {
+    "name": "ltft.maxAdd",
+    "hash": 1427207708,
+    "source": "config"
+  },
+  {
+    "name": "ltft.maxRemove",
+    "hash": -269110527,
+    "source": "config"
+  },
+  {
+    "name": "ltft.timeConstant",
+    "hash": 1941168166,
+    "source": "config"
+  },
+  {
+    "name": "ltftEnableAutoSave",
+    "hash": -1129280050,
+    "source": "config"
+  },
+  {
+    "name": "ltitApplyToFuel",
+    "hash": 2022304759,
+    "source": "config"
+  },
+  {
+    "name": "ltitClampMax",
+    "hash": -1622665899,
+    "source": "config"
+  },
+  {
+    "name": "ltitClampMin",
+    "hash": -1622665645,
+    "source": "config"
+  },
+  {
+    "name": "ltitCorrectionRate",
+    "hash": 743163558,
+    "source": "config"
+  },
+  {
+    "name": "ltitEmaAlpha",
+    "hash": -1008029221,
+    "source": "config"
+  },
+  {
+    "name": "ltitEnabled",
+    "hash": 1049828813,
+    "source": "config"
+  },
+  {
+    "name": "ltitIgnitionOffSaveDelay",
+    "hash": 423655964,
+    "source": "config"
+  },
+  {
+    "name": "ltitIgnitionOnDelay",
+    "hash": -135093297,
+    "source": "config"
+  },
+  {
+    "name": "ltitIntegratorThreshold",
+    "hash": -2065042706,
+    "source": "config"
+  },
+  {
+    "name": "ltitSmoothingIntensity",
+    "hash": 341519713,
+    "source": "config"
+  },
+  {
+    "name": "ltitStableRpmThreshold",
+    "hash": 341693817,
+    "source": "config"
+  },
+  {
+    "name": "ltitStableTime",
+    "hash": 496209836,
+    "source": "config"
+  },
+  {
+    "name": "lua.acRequestState",
+    "hash": 1517904291,
+    "source": "output"
+  },
+  {
+    "name": "lua.brakePedalState",
+    "hash": -1296201087,
+    "source": "output"
+  },
+  {
+    "name": "lua.clutchDownState",
+    "hash": 133427185,
+    "source": "output"
+  },
+  {
+    "name": "lua.clutchUpState",
+    "hash": -427776066,
+    "source": "output"
+  },
+  {
+    "name": "lua.disableDecelerationFuelCutOff",
+    "hash": 1680936043,
+    "source": "output"
+  },
+  {
+    "name": "lua.fuelAdd",
+    "hash": 1649801578,
+    "source": "output"
+  },
+  {
+    "name": "lua.fuelMult",
+    "hash": -1390672637,
+    "source": "output"
+  },
+  {
+    "name": "lua.luaDisableEtb",
+    "hash": 2055342630,
+    "source": "output"
+  },
+  {
+    "name": "lua.luaFuelCut",
+    "hash": 252935343,
+    "source": "output"
+  },
+  {
+    "name": "lua.luaIgnCut",
+    "hash": -802271455,
+    "source": "output"
+  },
+  {
+    "name": "lua.torqueReductionState",
+    "hash": -1605036797,
+    "source": "output"
+  },
+  {
+    "name": "luaCanRxWorkaround",
+    "hash": 1068374799,
+    "source": "config"
+  },
+  {
+    "name": "luaDigitalState0",
+    "hash": 945288534,
+    "source": "output"
+  },
+  {
+    "name": "luaDigitalState1",
+    "hash": 945288535,
+    "source": "output"
+  },
+  {
+    "name": "luaDigitalState2",
+    "hash": 945288536,
+    "source": "output"
+  },
+  {
+    "name": "luaDigitalState3",
+    "hash": 945288537,
+    "source": "output"
+  },
+  {
+    "name": "luaHardSparkSkip",
+    "hash": -1498397570,
+    "source": "output"
+  },
+  {
+    "name": "luaIgnitionSkip",
+    "hash": -1916613921,
+    "source": "output"
+  },
+  {
+    "name": "luaInvocationCounter",
+    "hash": 1766132801,
+    "source": "output"
+  },
+  {
+    "name": "luaLastCycleDuration",
+    "hash": 823476017,
+    "source": "output"
+  },
+  {
+    "name": "luaLaunchState",
+    "hash": 707453027,
+    "source": "output"
+  },
+  {
+    "name": "luaSoftSparkSkip",
+    "hash": -1117430949,
+    "source": "output"
+  },
+  {
+    "name": "luaTimingAdd",
+    "hash": -309610760,
+    "source": "output"
+  },
+  {
+    "name": "luaTimingMult",
+    "hash": -1626770351,
+    "source": "output"
+  },
+  {
+    "name": "m_deadtime",
+    "hash": -1167844818,
+    "source": "output"
+  },
+  {
+    "name": "m_isPriming",
+    "hash": -612624925,
+    "source": "output"
+  },
+  {
+    "name": "maf_airflow",
+    "hash": 2045663596,
+    "source": "output"
+  },
+  {
+    "name": "maf_airmass",
+    "hash": 2045903304,
+    "source": "output"
+  },
+  {
+    "name": "mafAirChargeLoad",
+    "hash": -1697011009,
+    "source": "output"
+  },
+  {
+    "name": "mafAirmass",
+    "hash": 1536841513,
+    "source": "output"
+  },
+  {
+    "name": "mafEstimate",
+    "hash": -2045040875,
+    "source": "output"
+  },
+  {
+    "name": "mafExpAverageAlpha",
+    "hash": 394665991,
+    "source": "config"
+  },
+  {
+    "name": "mafLoad",
+    "hash": -1274887687,
+    "source": "output"
+  },
+  {
+    "name": "mafLowPassCutoffHz",
+    "hash": 1907595115,
+    "source": "config"
+  },
+  {
+    "name": "mafmapAirmassSplit",
+    "hash": -988986989,
+    "source": "output"
+  },
+  {
+    "name": "mafmapBlendPercentage",
+    "hash": -1471965894,
+    "source": "output"
+  },
+  {
+    "name": "MAFMAPLoadIsMAF",
+    "hash": 116281959,
+    "source": "config"
+  },
+  {
+    "name": "mafMeasured",
+    "hash": -2032003569,
+    "source": "output"
+  },
+  {
+    "name": "mafMeasured2",
+    "hash": 1663359009,
+    "source": "output"
+  },
+  {
+    "name": "mafMinBufferLength",
+    "hash": 1685154329,
+    "source": "config"
+  },
+  {
+    "name": "mainRelayShutoffDelay",
+    "hash": 16864629,
+    "source": "config"
+  },
+  {
+    "name": "map.sensor.highValue",
+    "hash": -1434278346,
+    "source": "config"
+  },
+  {
+    "name": "map.sensor.lowValue",
+    "hash": -1307181880,
+    "source": "config"
+  },
+  {
+    "name": "map.sensorpre.highValue",
+    "hash": 937308829,
+    "source": "config"
+  },
+  {
+    "name": "map.sensorpre.lowValue",
+    "hash": -194111409,
+    "source": "config"
+  },
+  {
+    "name": "mapaccaen",
+    "hash": -1493125058,
+    "source": "output"
+  },
+  {
+    "name": "mapaccden",
+    "hash": -1493121791,
+    "source": "output"
+  },
+  {
+    "name": "mapCamDetectionAnglePosition",
+    "hash": 1958105647,
+    "source": "config"
+  },
+  {
+    "name": "mapCamPrevToothAngle",
+    "hash": 1581624998,
+    "source": "output"
+  },
+  {
+    "name": "mapErrorDetectionTooHigh",
+    "hash": 309682334,
+    "source": "config"
+  },
+  {
+    "name": "mapErrorDetectionTooLow",
+    "hash": 9388880,
+    "source": "config"
+  },
+  {
+    "name": "mapExpAverageAlpha",
+    "hash": -1852204335,
+    "source": "config"
+  },
+  {
+    "name": "mapFast",
+    "hash": -1263258735,
+    "source": "output"
+  },
+  {
+    "name": "mapHighValueVoltage",
+    "hash": -1084262094,
+    "source": "config"
+  },
+  {
+    "name": "mapLowPassCutoffHz",
+    "hash": -339275211,
+    "source": "config"
+  },
+  {
+    "name": "mapLowValueVoltage",
+    "hash": -137390524,
+    "source": "config"
+  },
+  {
+    "name": "mapMinBufferLength",
+    "hash": -561715997,
+    "source": "config"
+  },
+  {
+    "name": "mapPredEventOver",
+    "hash": -1250788372,
+    "source": "output"
+  },
+  {
+    "name": "mapPredictionBlendDuration",
+    "hash": 1445156767,
+    "source": "config"
+  },
+  {
+    "name": "mapPreFast",
+    "hash": 753242040,
+    "source": "output"
+  },
+  {
+    "name": "mappreHighValueVoltage",
+    "hash": 1207257049,
+    "source": "config"
+  },
+  {
+    "name": "mappreLowValueVoltage",
+    "hash": 973253643,
+    "source": "config"
+  },
+  {
+    "name": "MAPPREValue",
+    "hash": -893849209,
+    "source": "output"
+  },
+  {
+    "name": "mapSyncThreshold",
+    "hash": 1640008461,
+    "source": "config"
+  },
+  {
+    "name": "MAPValue",
+    "hash": 1281101952,
+    "source": "output"
+  },
+  {
+    "name": "mapVvt_CycleDelta",
+    "hash": 122475036,
+    "source": "output"
+  },
+  {
+    "name": "mapVvt_MAP_AT_CYCLE_COUNT",
+    "hash": 1637661099,
+    "source": "output"
+  },
+  {
+    "name": "mapVvt_MAP_AT_DIFF",
+    "hash": -1585778708,
+    "source": "output"
+  },
+  {
+    "name": "mapVvt_MAP_AT_SPECIAL_POINT",
+    "hash": -1727829859,
+    "source": "output"
+  },
+  {
+    "name": "mapVvt_min_point_counter",
+    "hash": -983339026,
+    "source": "output"
+  },
+  {
+    "name": "mapVvt_sync_counter",
+    "hash": 1921134430,
+    "source": "output"
+  },
+  {
+    "name": "maxAcClt",
+    "hash": 1569342546,
+    "source": "config"
+  },
+  {
+    "name": "maxAcPressure",
+    "hash": 1953870952,
+    "source": "config"
+  },
+  {
+    "name": "maxAcRpm",
+    "hash": 1569359006,
+    "source": "config"
+  },
+  {
+    "name": "maxAcTps",
+    "hash": 1569361190,
+    "source": "config"
+  },
+  {
+    "name": "maxCamPhaseResolveRpm",
+    "hash": -2070332548,
+    "source": "config"
+  },
+  {
+    "name": "maxCylindersCount",
+    "hash": -1121907071,
+    "source": "config"
+  },
+  {
+    "name": "maxIdleVss",
+    "hash": 1408421157,
+    "source": "config"
+  },
+  {
+    "name": "maximumIgnitionTiming",
+    "hash": -1726245940,
+    "source": "config"
+  },
+  {
+    "name": "maxInjectorDutyInstant",
+    "hash": 896753456,
+    "source": "config"
+  },
+  {
+    "name": "maxInjectorDutySustained",
+    "hash": 1651400031,
+    "source": "config"
+  },
+  {
+    "name": "maxInjectorDutySustainedTimeout",
+    "hash": 263235302,
+    "source": "config"
+  },
+  {
+    "name": "maxLockedDuration",
+    "hash": -558968637,
+    "source": "output"
+  },
+  {
+    "name": "maxOilPressureTimeout",
+    "hash": -1788499857,
+    "source": "config"
+  },
+  {
+    "name": "maxTriggerReentrant",
+    "hash": -1595441102,
+    "source": "output"
+  },
+  {
+    "name": "mc33810DisableRecoveryMode",
+    "hash": -464979268,
+    "source": "config"
+  },
+  {
+    "name": "mc33810Gpgd0Mode",
+    "hash": -785386645,
+    "source": "config"
+  },
+  {
+    "name": "mc33810Gpgd1Mode",
+    "hash": -784200724,
+    "source": "config"
+  },
+  {
+    "name": "mc33810Gpgd2Mode",
+    "hash": -783014803,
+    "source": "config"
+  },
+  {
+    "name": "mc33810Gpgd3Mode",
+    "hash": -781828882,
+    "source": "config"
+  },
+  {
+    "name": "mc33810Maxi",
+    "hash": -695395485,
+    "source": "config"
+  },
+  {
+    "name": "mc33810Nomi",
+    "hash": -695344665,
+    "source": "config"
+  },
+  {
+    "name": "mc33810spiErrorCounter",
+    "hash": -1225980502,
+    "source": "output"
+  },
+  {
+    "name": "mc33_hpfp_i_hold",
+    "hash": 578657622,
+    "source": "config"
+  },
+  {
+    "name": "mc33_hpfp_i_hold_off",
+    "hash": 944657936,
+    "source": "config"
+  },
+  {
+    "name": "mc33_hpfp_i_peak",
+    "hash": 578933872,
+    "source": "config"
+  },
+  {
+    "name": "mc33_hpfp_max_hold",
+    "hash": 663037299,
+    "source": "config"
+  },
+  {
+    "name": "mc33_hvolt",
+    "hash": 1182499943,
+    "source": "config"
+  },
+  {
+    "name": "mc33_i_boost",
+    "hash": -371707639,
+    "source": "config"
+  },
+  {
+    "name": "mc33_i_hold",
+    "hash": 379403209,
+    "source": "config"
+  },
+  {
+    "name": "mc33_i_peak",
+    "hash": 379679459,
+    "source": "config"
+  },
+  {
+    "name": "mc33_t_bypass",
+    "hash": 1281862911,
+    "source": "config"
+  },
+  {
+    "name": "mc33_t_hold_off",
+    "hash": -2086522258,
+    "source": "config"
+  },
+  {
+    "name": "mc33_t_hold_tot",
+    "hash": -2086516502,
+    "source": "config"
+  },
+  {
+    "name": "mc33_t_max_boost",
+    "hash": -486240071,
+    "source": "config"
+  },
+  {
+    "name": "mc33_t_min_boost",
+    "hash": 1129109559,
+    "source": "config"
+  },
+  {
+    "name": "mc33_t_peak_off",
+    "hash": -893360504,
+    "source": "config"
+  },
+  {
+    "name": "mc33_t_peak_tot",
+    "hash": -893354748,
+    "source": "config"
+  },
+  {
+    "name": "mcp3208divider",
+    "hash": 1400650745,
+    "source": "config"
+  },
+  {
+    "name": "mcp3208vref",
+    "hash": -929600315,
+    "source": "config"
+  },
+  {
+    "name": "mcuSerial",
+    "hash": 714144074,
+    "source": "output"
+  },
+  {
+    "name": "measureMafOnlyInOneCylinder",
+    "hash": 1769191040,
+    "source": "config"
+  },
+  {
+    "name": "measureMapOnlyInOneCylinder",
+    "hash": -1236202550,
+    "source": "config"
+  },
+  {
+    "name": "minAcPressure",
+    "hash": -965637402,
+    "source": "config"
+  },
+  {
+    "name": "minCamPhaseResolveRpm",
+    "hash": -45436934,
+    "source": "config"
+  },
+  {
+    "name": "minimumBoostClosedLoopMap",
+    "hash": 596585178,
+    "source": "config"
+  },
+  {
+    "name": "minimumIgnitionTiming",
+    "hash": 298649674,
+    "source": "config"
+  },
+  {
+    "name": "minimumOilPressureTimeout",
+    "hash": -2016978331,
+    "source": "config"
+  },
+  {
+    "name": "minOilPressureAfterStart",
+    "hash": -855687130,
+    "source": "config"
+  },
+  {
+    "name": "modeledFlowIdle",
+    "hash": 600643125,
+    "source": "config"
+  },
+  {
+    "name": "multiSparkCounter",
+    "hash": 680091441,
+    "source": "output"
+  },
+  {
+    "name": "multisparkDwell",
+    "hash": 617337449,
+    "source": "config"
+  },
+  {
+    "name": "multisparkEnable",
+    "hash": -1074393096,
+    "source": "config"
+  },
+  {
+    "name": "multisparkMaxExtraSparkCount",
+    "hash": 726613349,
+    "source": "config"
+  },
+  {
+    "name": "multisparkMaxRpm",
+    "hash": -775882810,
+    "source": "config"
+  },
+  {
+    "name": "multisparkMaxSparkingAngle",
+    "hash": 402092253,
+    "source": "config"
+  },
+  {
+    "name": "multisparkSparkDuration",
+    "hash": 48235288,
+    "source": "config"
+  },
+  {
+    "name": "needBurn",
+    "hash": 1368986296,
+    "source": "output"
+  },
+  {
+    "name": "neverWrite",
+    "hash": 1056486800,
+    "source": "config"
+  },
+  {
+    "name": "nitrousActivationRpm",
+    "hash": -469950118,
+    "source": "config"
+  },
+  {
+    "name": "nitrousControlEnabled",
+    "hash": -582951931,
+    "source": "config"
+  },
+  {
+    "name": "nitrousDeactivationRpm",
+    "hash": 1072117635,
+    "source": "config"
+  },
+  {
+    "name": "nitrousDeactivationRpmWindow",
+    "hash": -1786673317,
+    "source": "config"
+  },
+  {
+    "name": "nitrousFuelAdderPercent",
+    "hash": -1197734314,
+    "source": "config"
+  },
+  {
+    "name": "nitrousIgnitionRetard",
+    "hash": -617548836,
+    "source": "config"
+  },
+  {
+    "name": "nitrousisNitrousAfrCondition",
+    "hash": 1719590281,
+    "source": "output"
+  },
+  {
+    "name": "nitrousisNitrousArmed",
+    "hash": -924260494,
+    "source": "output"
+  },
+  {
+    "name": "nitrousisNitrousCltCondition",
+    "hash": -257492461,
+    "source": "output"
+  },
+  {
+    "name": "nitrousisNitrousCondition",
+    "hash": -930632752,
+    "source": "output"
+  },
+  {
+    "name": "nitrousisNitrousMapCondition",
+    "hash": 251826574,
+    "source": "output"
+  },
+  {
+    "name": "nitrousisNitrousRpmCondition",
+    "hash": -938324001,
+    "source": "output"
+  },
+  {
+    "name": "nitrousisNitrousSpeedCondition",
+    "hash": 685697025,
+    "source": "output"
+  },
+  {
+    "name": "nitrousisNitrousTpsCondition",
+    "hash": 1110995303,
+    "source": "output"
+  },
+  {
+    "name": "nitrousLuaGaugeArmingValue",
+    "hash": -1760115393,
+    "source": "config"
+  },
+  {
+    "name": "nitrousMaximumAfr",
+    "hash": -677584112,
+    "source": "config"
+  },
+  {
+    "name": "nitrousMaximumMap",
+    "hash": -677571211,
+    "source": "config"
+  },
+  {
+    "name": "nitrousMinimumClt",
+    "hash": 1089348504,
+    "source": "config"
+  },
+  {
+    "name": "nitrousMinimumTps",
+    "hash": 1089367148,
+    "source": "config"
+  },
+  {
+    "name": "nitrousMinimumVehicleSpeed",
+    "hash": 1658738502,
+    "source": "config"
+  },
+  {
+    "name": "noFuelTrimAfterAccelTime",
+    "hash": -1460984893,
+    "source": "config"
+  },
+  {
+    "name": "noFuelTrimAfterDfcoTime",
+    "hash": 1286770247,
+    "source": "config"
+  },
+  {
+    "name": "normalizedCylinderFilling",
+    "hash": 1599780729,
+    "source": "output"
+  },
+  {
+    "name": "oilPressure",
+    "hash": 598268994,
+    "source": "output"
+  },
+  {
+    "name": "oilPressure.v1",
+    "hash": -613392361,
+    "source": "config"
+  },
+  {
+    "name": "oilPressure.v2",
+    "hash": -613392360,
+    "source": "config"
+  },
+  {
+    "name": "oilPressure.value1",
+    "hash": -505257058,
+    "source": "config"
+  },
+  {
+    "name": "oilPressure.value2",
+    "hash": -505257057,
+    "source": "config"
+  },
+  {
+    "name": "oilTemp",
+    "hash": 1628523935,
+    "source": "output"
+  },
+  {
+    "name": "oilTempSensor.config.bias_resistor",
+    "hash": -346622972,
+    "source": "config"
+  },
+  {
+    "name": "oilTempSensor.config.resistance_1",
+    "hash": -1297544724,
+    "source": "config"
+  },
+  {
+    "name": "oilTempSensor.config.resistance_2",
+    "hash": -1297544723,
+    "source": "config"
+  },
+  {
+    "name": "oilTempSensor.config.resistance_3",
+    "hash": -1297544722,
+    "source": "config"
+  },
+  {
+    "name": "oilTempSensor.config.tempC_1",
+    "hash": -1460957868,
+    "source": "config"
+  },
+  {
+    "name": "oilTempSensor.config.tempC_2",
+    "hash": -1460957867,
+    "source": "config"
+  },
+  {
+    "name": "oilTempSensor.config.tempC_3",
+    "hash": -1460957866,
+    "source": "config"
+  },
+  {
+    "name": "OLBoostBlend1BlendMode",
+    "hash": 742920423,
+    "source": "config"
+  },
+  {
+    "name": "olBoostTableSwitch1Active",
+    "hash": 438814606,
+    "source": "output"
+  },
+  {
+    "name": "orderingErrorCounter",
+    "hash": -1326404407,
+    "source": "output"
+  },
+  {
+    "name": "outputRequestPeriod",
+    "hash": 1894184322,
+    "source": "output"
+  },
+  {
+    "name": "overDwellCounter",
+    "hash": 1513852665,
+    "source": "output"
+  },
+  {
+    "name": "overDwellNotScheduledCounter",
+    "hash": 1629214715,
+    "source": "output"
+  },
+  {
+    "name": "overrideTriggerGaps",
+    "hash": 1362186948,
+    "source": "config"
+  },
+  {
+    "name": "overrideVvtTriggerGaps",
+    "hash": 840966724,
+    "source": "config"
+  },
+  {
+    "name": "pauseEtbControl",
+    "hash": -24313313,
+    "source": "config"
+  },
+  {
+    "name": "pedalToTpsIndex",
+    "hash": 1596433789,
+    "source": "output"
+  },
+  {
+    "name": "pidExtraForLowRpm",
+    "hash": 1414346958,
+    "source": "config"
+  },
+  {
+    "name": "ppsExpAverageAlpha",
+    "hash": 457158886,
+    "source": "config"
+  },
+  {
+    "name": "ppsLowPassCutoffHz",
+    "hash": 1970088010,
+    "source": "config"
+  },
+  {
+    "name": "ppsSecondaryMaximum",
+    "hash": -727657058,
+    "source": "config"
+  },
+  {
+    "name": "predTimerResetCnt",
+    "hash": -1457567239,
+    "source": "output"
+  },
+  {
+    "name": "pressureCorrectionReference",
+    "hash": -917305595,
+    "source": "output"
+  },
+  {
+    "name": "pressureDelta",
+    "hash": -376325528,
+    "source": "output"
+  },
+  {
+    "name": "pressureRatio",
+    "hash": -359858019,
+    "source": "output"
+  },
+  {
+    "name": "primaryInjectorDisabled1",
+    "hash": 344965200,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled10",
+    "hash": -1501050240,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled11",
+    "hash": -1501050239,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled12",
+    "hash": -1501050238,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled2",
+    "hash": 344965201,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled3",
+    "hash": 344965202,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled4",
+    "hash": 344965203,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled5",
+    "hash": 344965204,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled6",
+    "hash": 344965205,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled7",
+    "hash": 344965206,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled8",
+    "hash": 344965207,
+    "source": "config"
+  },
+  {
+    "name": "primaryInjectorDisabled9",
+    "hash": 344965208,
+    "source": "config"
+  },
+  {
+    "name": "primingDelay",
+    "hash": 1506446058,
+    "source": "config"
+  },
+  {
+    "name": "rawAcPressure",
+    "hash": 2079600300,
+    "source": "output"
+  },
+  {
+    "name": "rawAfr",
+    "hash": 417943720,
+    "source": "output"
+  },
+  {
+    "name": "rawAfr2",
+    "hash": 907240922,
+    "source": "output"
+  },
+  {
+    "name": "rawAmbientTemp",
+    "hash": 1781305509,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog1",
+    "hash": 98140608,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog2",
+    "hash": 98140609,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog3",
+    "hash": 98140610,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog4",
+    "hash": 98140611,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog5",
+    "hash": 98140612,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog6",
+    "hash": 98140613,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog7",
+    "hash": 98140614,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxAnalog8",
+    "hash": 98140615,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxLinear1",
+    "hash": 1238859945,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxLinear2",
+    "hash": 1238859946,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxLinear3",
+    "hash": 1238859947,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxLinear4",
+    "hash": 1238859948,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxTemp1",
+    "hash": -801974332,
+    "source": "output"
+  },
+  {
+    "name": "rawAuxTemp2",
+    "hash": -801974331,
+    "source": "output"
+  },
+  {
+    "name": "rawBattery",
+    "hash": 1520918538,
+    "source": "output"
+  },
+  {
+    "name": "rawClt",
+    "hash": 417946098,
+    "source": "output"
+  },
+  {
+    "name": "rawFlexFreq",
+    "hash": -1935221780,
+    "source": "output"
+  },
+  {
+    "name": "rawFrequencyMaf",
+    "hash": -277099819,
+    "source": "output"
+  },
+  {
+    "name": "rawFuelLevel",
+    "hash": 1413130003,
+    "source": "output"
+  },
+  {
+    "name": "rawFuelTankLevel",
+    "hash": 1238409345,
+    "source": "output"
+  },
+  {
+    "name": "rawHighFuelPressure",
+    "hash": 990714516,
+    "source": "output"
+  },
+  {
+    "name": "rawIat",
+    "hash": 417952269,
+    "source": "output"
+  },
+  {
+    "name": "rawIdlePositionSensor",
+    "hash": -677561380,
+    "source": "output"
+  },
+  {
+    "name": "rawLowFuelPressure",
+    "hash": -148455898,
+    "source": "output"
+  },
+  {
+    "name": "rawMaf",
+    "hash": 417956611,
+    "source": "output"
+  },
+  {
+    "name": "rawMaf2",
+    "hash": 907666325,
+    "source": "output"
+  },
+  {
+    "name": "rawMafFast",
+    "hash": -1469913327,
+    "source": "output"
+  },
+  {
+    "name": "rawMap",
+    "hash": 417956621,
+    "source": "output"
+  },
+  {
+    "name": "rawMapFast",
+    "hash": -1458054117,
+    "source": "output"
+  },
+  {
+    "name": "rawMapPre",
+    "hash": 606580596,
+    "source": "output"
+  },
+  {
+    "name": "rawMapPreFast",
+    "hash": 1188291586,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_1",
+    "hash": 541310369,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_10",
+    "hash": 683373041,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_11",
+    "hash": 683373042,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_12",
+    "hash": 683373043,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_13",
+    "hash": 683373044,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_14",
+    "hash": 683373045,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_15",
+    "hash": 683373046,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_16",
+    "hash": 683373047,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_17",
+    "hash": 683373048,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_18",
+    "hash": 683373049,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_19",
+    "hash": 683373050,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_2",
+    "hash": 541310370,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_20",
+    "hash": 683373074,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_21",
+    "hash": 683373075,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_22",
+    "hash": 683373076,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_23",
+    "hash": 683373077,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_24",
+    "hash": 683373078,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_3",
+    "hash": 541310371,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_4",
+    "hash": 541310372,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_5",
+    "hash": 541310373,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_6",
+    "hash": 541310374,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_7",
+    "hash": 541310375,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_8",
+    "hash": 541310376,
+    "source": "output"
+  },
+  {
+    "name": "rawMCP3208_v_9",
+    "hash": 541310377,
+    "source": "output"
+  },
+  {
+    "name": "rawOilPressure",
+    "hash": 2070002124,
+    "source": "output"
+  },
+  {
+    "name": "rawOilTemperature",
+    "hash": -1278065791,
+    "source": "output"
+  },
+  {
+    "name": "rawPpsPrimary",
+    "hash": -347083354,
+    "source": "output"
+  },
+  {
+    "name": "rawPpsSecondary",
+    "hash": -1798336054,
+    "source": "output"
+  },
+  {
+    "name": "rawRawPpsPrimary",
+    "hash": 347493808,
+    "source": "output"
+  },
+  {
+    "name": "rawRawPpsSecondary",
+    "hash": -1318050732,
+    "source": "output"
+  },
+  {
+    "name": "rawTps1Primary",
+    "hash": -1051397637,
+    "source": "output"
+  },
+  {
+    "name": "rawTps1Secondary",
+    "hash": 2555743,
+    "source": "output"
+  },
+  {
+    "name": "rawTps2Primary",
+    "hash": -1382627620,
+    "source": "output"
+  },
+  {
+    "name": "rawTps2Secondary",
+    "hash": 70357120,
+    "source": "output"
+  },
+  {
+    "name": "rawVss",
+    "hash": 417967019,
+    "source": "output"
+  },
+  {
+    "name": "rawWastegatePosition",
+    "hash": 2039421097,
+    "source": "output"
+  },
+  {
+    "name": "ready",
+    "hash": 273085914,
+    "source": "output"
+  },
+  {
+    "name": "RealAFRValue",
+    "hash": -1305029825,
+    "source": "output"
+  },
+  {
+    "name": "RealAFRValue2",
+    "hash": -116311215,
+    "source": "output"
+  },
+  {
+    "name": "RealLambdaValue1",
+    "hash": -1780282696,
+    "source": "output"
+  },
+  {
+    "name": "RealLambdaValue2",
+    "hash": -1780282695,
+    "source": "output"
+  },
+  {
+    "name": "requireFootOnBrakeToCrank",
+    "hash": -703903346,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit1",
+    "hash": -2036098060,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit2",
+    "hash": -2036098059,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit3",
+    "hash": -2036098058,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit4",
+    "hash": -2036098057,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit5",
+    "hash": -2036098056,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit6",
+    "hash": -2036098055,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit7",
+    "hash": -2036098054,
+    "source": "config"
+  },
+  {
+    "name": "resetCanToggleInhibit8",
+    "hash": -2036098053,
+    "source": "config"
+  },
+  {
+    "name": "retardThresholdRpm",
+    "hash": -1374156957,
+    "source": "output"
+  },
+  {
+    "name": "rethrowHardFault",
+    "hash": 1081456939,
+    "source": "config"
+  },
+  {
+    "name": "revolutionCounterSinceStart",
+    "hash": -1555114948,
+    "source": "output"
+  },
+  {
+    "name": "rpmAcceleration",
+    "hash": -968092482,
+    "source": "output"
+  },
+  {
+    "name": "rpmForIgnitionIdleTableDot",
+    "hash": -80687031,
+    "source": "output"
+  },
+  {
+    "name": "rpmForIgnitionTableDot",
+    "hash": 1700636875,
+    "source": "output"
+  },
+  {
+    "name": "rpmHardLimit",
+    "hash": 1176614802,
+    "source": "config"
+  },
+  {
+    "name": "rpmHardLimitHyst",
+    "hash": 1756514810,
+    "source": "config"
+  },
+  {
+    "name": "rpmLaunchCondition",
+    "hash": 859283926,
+    "source": "output"
+  },
+  {
+    "name": "rpmPreLaunchCondition",
+    "hash": -774592003,
+    "source": "output"
+  },
+  {
+    "name": "rpmSoftLimitFuelAdded",
+    "hash": 1094944685,
+    "source": "config"
+  },
+  {
+    "name": "rpmSoftLimitTimingRetard",
+    "hash": -543684839,
+    "source": "config"
+  },
+  {
+    "name": "rpmSoftLimitWindowSize",
+    "hash": 1092207266,
+    "source": "config"
+  },
+  {
+    "name": "RPMValue",
+    "hash": 1699696209,
+    "source": "output"
+  },
+  {
+    "name": "rtcUnixEpochTime",
+    "hash": -1684644880,
+    "source": "output"
+  },
+  {
+    "name": "running.baseFuel",
+    "hash": -42886021,
+    "source": "output"
+  },
+  {
+    "name": "running.coolantTemperatureCoefficient",
+    "hash": 1822238385,
+    "source": "output"
+  },
+  {
+    "name": "running.fuel",
+    "hash": -794283008,
+    "source": "output"
+  },
+  {
+    "name": "running.intakeTemperatureCoefficient",
+    "hash": 197173469,
+    "source": "output"
+  },
+  {
+    "name": "running.postCrankingFuelCorrection",
+    "hash": -1288205717,
+    "source": "output"
+  },
+  {
+    "name": "running.timeSinceCrankingInSecs",
+    "hash": 526786951,
+    "source": "output"
+  },
+  {
+    "name": "runningAirmass",
+    "hash": -131284394,
+    "source": "output"
+  },
+  {
+    "name": "rusefiVerbose29b",
+    "hash": 2043354390,
+    "source": "config"
+  },
+  {
+    "name": "sadDwellRatioCounter",
+    "hash": -2146292012,
+    "source": "output"
+  },
+  {
+    "name": "schedulingUsedCount",
+    "hash": 967311941,
+    "source": "output"
+  },
+  {
+    "name": "sd.tCharge",
+    "hash": -893334680,
+    "source": "output"
+  },
+  {
+    "name": "sd.tChargeK",
+    "hash": 584726739,
+    "source": "output"
+  },
+  {
+    "name": "sd_active_rd",
+    "hash": 1301677708,
+    "source": "output"
+  },
+  {
+    "name": "sd_active_wr",
+    "hash": 1301677887,
+    "source": "output"
+  },
+  {
+    "name": "sd_airflow",
+    "hash": 1535022703,
+    "source": "output"
+  },
+  {
+    "name": "sd_error",
+    "hash": -1811686395,
+    "source": "output"
+  },
+  {
+    "name": "sd_formating",
+    "hash": 352763970,
+    "source": "output"
+  },
+  {
+    "name": "sd_logging_internal",
+    "hash": 708639006,
+    "source": "output"
+  },
+  {
+    "name": "sd_msd",
+    "hash": 459787871,
+    "source": "output"
+  },
+  {
+    "name": "sd_present",
+    "hash": -230533156,
+    "source": "output"
+  },
+  {
+    "name": "sdAirmass",
+    "hash": -1211793460,
+    "source": "output"
+  },
+  {
+    "name": "sdAirMassInOneCylinder",
+    "hash": 1650433343,
+    "source": "output"
+  },
+  {
+    "name": "sdCardLogFrequency",
+    "hash": -773841334,
+    "source": "config"
+  },
+  {
+    "name": "sdLoad",
+    "hash": 460256636,
+    "source": "output"
+  },
+  {
+    "name": "sdTcharge_coff",
+    "hash": 1417236183,
+    "source": "output"
+  },
+  {
+    "name": "sdTriggerLog",
+    "hash": -105464622,
+    "source": "config"
+  },
+  {
+    "name": "secondaryInjectorFuelReferencePressure",
+    "hash": -425992769,
+    "source": "config"
+  },
+  {
+    "name": "seconds",
+    "hash": -1962923820,
+    "source": "output"
+  },
+  {
+    "name": "secToMainRelayOff",
+    "hash": 1420262144,
+    "source": "output"
+  },
+  {
+    "name": "shuttingDownMainRelay",
+    "hash": -1462001003,
+    "source": "output"
+  },
+  {
+    "name": "silentTriggerError",
+    "hash": 582390322,
+    "source": "config"
+  },
+  {
+    "name": "skippedWheelOnCam",
+    "hash": 1538579992,
+    "source": "config"
+  },
+  {
+    "name": "slowAdcErrorCount",
+    "hash": -807823931,
+    "source": "output"
+  },
+  {
+    "name": "slowAdcOverrunCount",
+    "hash": -1166766772,
+    "source": "output"
+  },
+  {
+    "name": "smartChipAliveCounter",
+    "hash": -1945673215,
+    "source": "output"
+  },
+  {
+    "name": "smartChipRestartCounter",
+    "hash": 1192769173,
+    "source": "output"
+  },
+  {
+    "name": "smartChipState",
+    "hash": -517673231,
+    "source": "output"
+  },
+  {
+    "name": "sparkCutReason",
+    "hash": -56739846,
+    "source": "output"
+  },
+  {
+    "name": "sparkCutReasonBlinker",
+    "hash": 927388609,
+    "source": "output"
+  },
+  {
+    "name": "sparkDwell",
+    "hash": -903101570,
+    "source": "output"
+  },
+  {
+    "name": "sparkDwellClamp",
+    "hash": -400293845,
+    "source": "output"
+  },
+  {
+    "name": "sparkHardwareLatencyCorrectionCurveCurveUnits",
+    "hash": -854707527,
+    "source": "config"
+  },
+  {
+    "name": "SparkLatencyCorrection",
+    "hash": 1806457198,
+    "source": "output"
+  },
+  {
+    "name": "sparkOutOfOrderCounter",
+    "hash": -1595596945,
+    "source": "output"
+  },
+  {
+    "name": "speedCondition",
+    "hash": 1722712413,
+    "source": "output"
+  },
+  {
+    "name": "speedometerPulsePerKm",
+    "hash": 1007396714,
+    "source": "config"
+  },
+  {
+    "name": "speedoSweepMax",
+    "hash": 1147267087,
+    "source": "config"
+  },
+  {
+    "name": "speedoSweepTime",
+    "hash": -794631784,
+    "source": "config"
+  },
+  {
+    "name": "speedoSweepUsesSpeedoCorrection",
+    "hash": -513211487,
+    "source": "config"
+  },
+  {
+    "name": "speedToRpmRatio",
+    "hash": -685727673,
+    "source": "output"
+  },
+  {
+    "name": "spooledLevel",
+    "hash": -324119981,
+    "source": "output"
+  },
+  {
+    "name": "stage1InjSmallPwActive",
+    "hash": -1147127033,
+    "source": "output"
+  },
+  {
+    "name": "stage2InjSmallPwActive",
+    "hash": 1316625672,
+    "source": "output"
+  },
+  {
+    "name": "startButtonSuppressOnStartUpMs",
+    "hash": 1856486116,
+    "source": "config"
+  },
+  {
+    "name": "startCrankingDuration",
+    "hash": 644409862,
+    "source": "config"
+  },
+  {
+    "name": "starterRelayDisable",
+    "hash": 1286045659,
+    "source": "output"
+  },
+  {
+    "name": "starterState",
+    "hash": -1438648277,
+    "source": "output"
+  },
+  {
+    "name": "startRequestPinInverted",
+    "hash": 747573348,
+    "source": "config"
+  },
+  {
+    "name": "startStopPhysicalState",
+    "hash": -1943724937,
+    "source": "output"
+  },
+  {
+    "name": "startStopState",
+    "hash": 897099930,
+    "source": "output"
+  },
+  {
+    "name": "startStopStateToggleCounter",
+    "hash": -960645892,
+    "source": "output"
+  },
+  {
+    "name": "startUpFuelPumpDuration",
+    "hash": -664540020,
+    "source": "config"
+  },
+  {
+    "name": "startw",
+    "hash": 478839978,
+    "source": "output"
+  },
+  {
+    "name": "stepper_dc_use_two_wires",
+    "hash": 2136379132,
+    "source": "config"
+  },
+  {
+    "name": "stepperDcInvertedPins",
+    "hash": 337194154,
+    "source": "config"
+  },
+  {
+    "name": "stepperForceParkingEveryRestart",
+    "hash": -2104625325,
+    "source": "config"
+  },
+  {
+    "name": "stepperMaxDutyCycle",
+    "hash": -1188944476,
+    "source": "config"
+  },
+  {
+    "name": "stepperMinDutyCycle",
+    "hash": -1147263902,
+    "source": "config"
+  },
+  {
+    "name": "stepperParkingExtraSteps",
+    "hash": -509113657,
+    "source": "config"
+  },
+  {
+    "name": "stft.cell.maxAdd",
+    "hash": 1779308433,
+    "source": "config"
+  },
+  {
+    "name": "stft.cell.maxRemove",
+    "hash": 200989782,
+    "source": "config"
+  },
+  {
+    "name": "stft.cell.timeConstant",
+    "hash": -465369765,
+    "source": "config"
+  },
+  {
+    "name": "stft.deadband_lean",
+    "hash": -366994282,
+    "source": "config"
+  },
+  {
+    "name": "stft.deadband_rich",
+    "hash": -366774244,
+    "source": "config"
+  },
+  {
+    "name": "stft.maxAfr",
+    "hash": -90543309,
+    "source": "config"
+  },
+  {
+    "name": "stft.maxLambda",
+    "hash": -2140162309,
+    "source": "config"
+  },
+  {
+    "name": "stft.minAfr",
+    "hash": -81415311,
+    "source": "config"
+  },
+  {
+    "name": "stft.minClt",
+    "hash": -81412933,
+    "source": "config"
+  },
+  {
+    "name": "stft.minLambda",
+    "hash": -524812679,
+    "source": "config"
+  },
+  {
+    "name": "stft.startupDelay",
+    "hash": 1028902582,
+    "source": "config"
+  },
+  {
+    "name": "stftDeadBand",
+    "hash": -1165008919,
+    "source": "output"
+  },
+  {
+    "name": "stftIgnoreErrorMagnitude",
+    "hash": 1838375282,
+    "source": "config"
+  },
+  {
+    "name": "stftLimitsUseLambda",
+    "hash": -1605356346,
+    "source": "config"
+  },
+  {
+    "name": "STFTResetRegionChange",
+    "hash": -848735021,
+    "source": "config"
+  },
+  {
+    "name": "stimulatorBench",
+    "hash": 2068951385,
+    "source": "config"
+  },
+  {
+    "name": "stoichiometricRatio",
+    "hash": 341978922,
+    "source": "output"
+  },
+  {
+    "name": "stoichRatioPrimary",
+    "hash": 1762426578,
+    "source": "config"
+  },
+  {
+    "name": "stoichRatioSecondary",
+    "hash": 1945443830,
+    "source": "config"
+  },
+  {
+    "name": "stopEngineCode",
+    "hash": -2112117188,
+    "source": "output"
+  },
+  {
+    "name": "storedInitialBaroPressure",
+    "hash": 485165853,
+    "source": "output"
+  },
+  {
+    "name": "tachPulseDuractionMs",
+    "hash": 58931511,
+    "source": "config"
+  },
+  {
+    "name": "tachPulseDurationAsDutyCycle",
+    "hash": 99110078,
+    "source": "config"
+  },
+  {
+    "name": "tachPulsePerRev",
+    "hash": -2142425790,
+    "source": "config"
+  },
+  {
+    "name": "tachSweepMax",
+    "hash": -829513073,
+    "source": "config"
+  },
+  {
+    "name": "tachSweepTime",
+    "hash": -1603867624,
+    "source": "config"
+  },
+  {
+    "name": "tachSweepUsesTachCorrection",
+    "hash": 1126586273,
+    "source": "config"
+  },
+  {
+    "name": "targetAFR",
+    "hash": 2122891301,
+    "source": "output"
+  },
+  {
+    "name": "targetLambda",
+    "hash": -734904659,
+    "source": "output"
+  },
+  {
+    "name": "tChargeAirCoefMax",
+    "hash": 2115625058,
+    "source": "config"
+  },
+  {
+    "name": "tChargeAirCoefMin",
+    "hash": 2115625312,
+    "source": "config"
+  },
+  {
+    "name": "tChargeAirDecrLimit",
+    "hash": 670644444,
+    "source": "config"
+  },
+  {
+    "name": "tChargeAirFlowMax",
+    "hash": 1590125629,
+    "source": "config"
+  },
+  {
+    "name": "tChargeAirIncrLimit",
+    "hash": -1128797750,
+    "source": "config"
+  },
+  {
+    "name": "tChargeMaxRpmMaxTps",
+    "hash": -608466667,
+    "source": "config"
+  },
+  {
+    "name": "tChargeMaxRpmMinTps",
+    "hash": -599338669,
+    "source": "config"
+  },
+  {
+    "name": "tChargeMinRpmMaxTps",
+    "hash": -566786093,
+    "source": "config"
+  },
+  {
+    "name": "tChargeMinRpmMinTps",
+    "hash": -557658095,
+    "source": "config"
+  },
+  {
+    "name": "tcu_rangeSensorPulldown",
+    "hash": -2079591860,
+    "source": "config"
+  },
+  {
+    "name": "tcu_shiftTime",
+    "hash": -1658957891,
+    "source": "config"
+  },
+  {
+    "name": "tcuDesiredGear",
+    "hash": 471298448,
+    "source": "output"
+  },
+  {
+    "name": "tcuEnabled",
+    "hash": 1997663388,
+    "source": "config"
+  },
+  {
+    "name": "tcuInputSpeedSensorTeeth",
+    "hash": -2116746650,
+    "source": "config"
+  },
+  {
+    "name": "tcUseETB",
+    "hash": 1737683300,
+    "source": "config"
+  },
+  {
+    "name": "tcUseIgnTiming",
+    "hash": 1989689967,
+    "source": "config"
+  },
+  {
+    "name": "tcUseSparkSkip",
+    "hash": 1686979713,
+    "source": "config"
+  },
+  {
+    "name": "temp_mapVvt_index",
+    "hash": 997197711,
+    "source": "output"
+  },
+  {
+    "name": "testBenchIter",
+    "hash": 1092959609,
+    "source": "output"
+  },
+  {
+    "name": "throttleEffectiveAreaOpening",
+    "hash": -184764139,
+    "source": "output"
+  },
+  {
+    "name": "throttleInletPressure",
+    "hash": 769340240,
+    "source": "output"
+  },
+  {
+    "name": "throttlePedalPosition",
+    "hash": -84435626,
+    "source": "output"
+  },
+  {
+    "name": "throttlePedalSecondaryUpVoltage",
+    "hash": -1564912640,
+    "source": "config"
+  },
+  {
+    "name": "throttlePedalSecondaryWOTVoltage",
+    "hash": -699822859,
+    "source": "config"
+  },
+  {
+    "name": "throttlePedalUpVoltage",
+    "hash": -2130836456,
+    "source": "config"
+  },
+  {
+    "name": "throttlePedalWOTVoltage",
+    "hash": 2099527693,
+    "source": "config"
+  },
+  {
+    "name": "throttlePressureRatio",
+    "hash": -654466797,
+    "source": "output"
+  },
+  {
+    "name": "timingIatCorrection",
+    "hash": -1886479485,
+    "source": "output"
+  },
+  {
+    "name": "timingPidCorrection",
+    "hash": -319326974,
+    "source": "output"
+  },
+  {
+    "name": "tmf_airflow",
+    "hash": 1341529023,
+    "source": "output"
+  },
+  {
+    "name": "tmf_cd",
+    "hash": 509832338,
+    "source": "output"
+  },
+  {
+    "name": "tmf_deltap",
+    "hash": 1194318341,
+    "source": "output"
+  },
+  {
+    "name": "tmf_engineload",
+    "hash": -32425311,
+    "source": "output"
+  },
+  {
+    "name": "tmf_maf_engineload_split",
+    "hash": 590388191,
+    "source": "output"
+  },
+  {
+    "name": "tmf_maf_tmf_airmass_split",
+    "hash": -1525404769,
+    "source": "output"
+  },
+  {
+    "name": "tmf_maxairflow",
+    "hash": 1910464965,
+    "source": "output"
+  },
+  {
+    "name": "tmf_pratio",
+    "hash": 1678964986,
+    "source": "output"
+  },
+  {
+    "name": "tmf_rho",
+    "hash": -355385452,
+    "source": "output"
+  },
+  {
+    "name": "tmf_sd_engineload_split",
+    "hash": 1946185602,
+    "source": "output"
+  },
+  {
+    "name": "tmf_sd_tmf_airmass_split",
+    "hash": 266236834,
+    "source": "output"
+  },
+  {
+    "name": "tmf_tbarea",
+    "hash": 1816529498,
+    "source": "output"
+  },
+  {
+    "name": "tmf_tmfarea",
+    "hash": 251753675,
+    "source": "output"
+  },
+  {
+    "name": "tmfAirmass",
+    "hash": -306603236,
+    "source": "output"
+  },
+  {
+    "name": "tmfLoad",
+    "hash": -354921780,
+    "source": "output"
+  },
+  {
+    "name": "TMFLoadIsTMF",
+    "hash": -1671099729,
+    "source": "config"
+  },
+  {
+    "name": "TMFPressureSplitPercentDown",
+    "hash": -550209830,
+    "source": "config"
+  },
+  {
+    "name": "TMFPressureSplitPercentUp",
+    "hash": -1286234105,
+    "source": "config"
+  },
+  {
+    "name": "toothLogReady",
+    "hash": -1662199734,
+    "source": "output"
+  },
+  {
+    "name": "torque",
+    "hash": 512655621,
+    "source": "output"
+  },
+  {
+    "name": "torqueReductionActivationTemperature",
+    "hash": -427105966,
+    "source": "config"
+  },
+  {
+    "name": "torqueReductionArmingApp",
+    "hash": -763838959,
+    "source": "config"
+  },
+  {
+    "name": "torqueReductionArmingRpm",
+    "hash": -763820449,
+    "source": "config"
+  },
+  {
+    "name": "torqueReductionEnabled",
+    "hash": -618104323,
+    "source": "config"
+  },
+  {
+    "name": "torqueReductionTriggerPinState",
+    "hash": 501156654,
+    "source": "output"
+  },
+  {
+    "name": "totalFuelConsumption",
+    "hash": 1417905588,
+    "source": "output"
+  },
+  {
+    "name": "totalFuelCorrection",
+    "hash": -1779658835,
+    "source": "output"
+  },
+  {
+    "name": "totalGearsCount",
+    "hash": -2114430012,
+    "source": "config"
+  },
+  {
+    "name": "totalTriggerErrorCounter",
+    "hash": 2018173863,
+    "source": "output"
+  },
+  {
+    "name": "tps12Split",
+    "hash": 1533250027,
+    "source": "output"
+  },
+  {
+    "name": "tps1_diameter",
+    "hash": 2112480535,
+    "source": "config"
+  },
+  {
+    "name": "tps1SecondaryMax",
+    "hash": -1312968741,
+    "source": "config"
+  },
+  {
+    "name": "tps1SecondaryMin",
+    "hash": -1312968487,
+    "source": "config"
+  },
+  {
+    "name": "tps1Split",
+    "hash": 644036825,
+    "source": "output"
+  },
+  {
+    "name": "tps2Max",
+    "hash": -224185132,
+    "source": "config"
+  },
+  {
+    "name": "tps2Min",
+    "hash": -224184878,
+    "source": "config"
+  },
+  {
+    "name": "tps2SecondaryMax",
+    "hash": 18659676,
+    "source": "config"
+  },
+  {
+    "name": "tps2SecondaryMin",
+    "hash": 18659930,
+    "source": "config"
+  },
+  {
+    "name": "tps2Split",
+    "hash": 683172218,
+    "source": "output"
+  },
+  {
+    "name": "TPS2Value",
+    "hash": 686191307,
+    "source": "output"
+  },
+  {
+    "name": "tpsaccaen",
+    "hash": -1791885641,
+    "source": "output"
+  },
+  {
+    "name": "tpsaccden",
+    "hash": -1791882374,
+    "source": "output"
+  },
+  {
+    "name": "tpsAccelAeEnabled",
+    "hash": -687006075,
+    "source": "config"
+  },
+  {
+    "name": "tpsAccelEnrichmentThreshold",
+    "hash": 1313479950,
+    "source": "config"
+  },
+  {
+    "name": "tpsAccelExtraShot",
+    "hash": -1108794410,
+    "source": "config"
+  },
+  {
+    "name": "tpsAccelFractionDivisor",
+    "hash": 68539114,
+    "source": "config"
+  },
+  {
+    "name": "tpsAccelFractionPeriod",
+    "hash": 1117566701,
+    "source": "config"
+  },
+  {
+    "name": "tpsAccelFuel",
+    "hash": -384925312,
+    "source": "output"
+  },
+  {
+    "name": "tpsAccelLookback",
+    "hash": -1164331270,
+    "source": "config"
+  },
+  {
+    "name": "tpsADC",
+    "hash": 513859492,
+    "source": "output"
+  },
+  {
+    "name": "tpsaeburnskipinitial",
+    "hash": 1056521754,
+    "source": "config"
+  },
+  {
+    "name": "tpsAeDynamicTresholdAverageStaticCurve",
+    "hash": -246556940,
+    "source": "config"
+  },
+  {
+    "name": "tpsAeFastCallback",
+    "hash": -1536638947,
+    "source": "config"
+  },
+  {
+    "name": "tpsAeResetsEgo",
+    "hash": 1519167539,
+    "source": "config"
+  },
+  {
+    "name": "tpsAeScaledFrom",
+    "hash": 559806914,
+    "source": "config"
+  },
+  {
+    "name": "tpsAeUseDynamicThreshold",
+    "hash": -999819551,
+    "source": "config"
+  },
+  {
+    "name": "tpsCondition",
+    "hash": 827982787,
+    "source": "output"
+  },
+  {
+    "name": "tpsDecelEnleanmentMultiplier",
+    "hash": 1164012327,
+    "source": "config"
+  },
+  {
+    "name": "tpsDecelEnleanmentThreshold",
+    "hash": -965453331,
+    "source": "config"
+  },
+  {
+    "name": "tpsErrorDetectionTooHigh",
+    "hash": -838808073,
+    "source": "config"
+  },
+  {
+    "name": "tpsErrorDetectionTooLow",
+    "hash": 625338761,
+    "source": "config"
+  },
+  {
+    "name": "tpsExtraShotMult",
+    "hash": 1711503040,
+    "source": "config"
+  },
+  {
+    "name": "tpsExtraShotTimer",
+    "hash": 652896383,
+    "source": "config"
+  },
+  {
+    "name": "tpsFuelPumpPrimeDuration",
+    "hash": -1118660179,
+    "source": "config"
+  },
+  {
+    "name": "tpsFuelPumpPrimeEnabled",
+    "hash": 573036274,
+    "source": "config"
+  },
+  {
+    "name": "tpsFuelPumpPrimeThreshold",
+    "hash": -1185477196,
+    "source": "config"
+  },
+  {
+    "name": "tpsLowPassCutoffHz",
+    "hash": 767930574,
+    "source": "config"
+  },
+  {
+    "name": "tpsMax",
+    "hash": 513872482,
+    "source": "config"
+  },
+  {
+    "name": "tpsMin",
+    "hash": 513872736,
+    "source": "config"
+  },
+  {
+    "name": "tpsSecondaryADC",
+    "hash": 1457488876,
+    "source": "output"
+  },
+  {
+    "name": "tpsSecondaryMaximum",
+    "hash": -1744146782,
+    "source": "config"
+  },
+  {
+    "name": "TPSValue",
+    "hash": 1272048601,
+    "source": "output"
+  },
+  {
+    "name": "tracDisabled",
+    "hash": 1845538439,
+    "source": "output"
+  },
+  {
+    "name": "tracMinMap",
+    "hash": 965059665,
+    "source": "config"
+  },
+  {
+    "name": "tracMinRpm",
+    "hash": 965065602,
+    "source": "config"
+  },
+  {
+    "name": "tracMinSpeed",
+    "hash": -1309366300,
+    "source": "config"
+  },
+  {
+    "name": "tracMinTps",
+    "hash": 965067786,
+    "source": "config"
+  },
+  {
+    "name": "tracSpeedFrontRearREF",
+    "hash": 774655824,
+    "source": "output"
+  },
+  {
+    "name": "tracSpeedLeftRightREF",
+    "hash": -1668210650,
+    "source": "output"
+  },
+  {
+    "name": "tractionAdvanceDrop",
+    "hash": -899895696,
+    "source": "output"
+  },
+  {
+    "name": "tractionControlEnabled",
+    "hash": -657551755,
+    "source": "config"
+  },
+  {
+    "name": "tractionControlSparkSkip",
+    "hash": -1555684830,
+    "source": "output"
+  },
+  {
+    "name": "trailingSparkAngle",
+    "hash": 274318471,
+    "source": "output"
+  },
+  {
+    "name": "transitionEventCode",
+    "hash": -1006487219,
+    "source": "output"
+  },
+  {
+    "name": "transitionEventsCounter",
+    "hash": 1163075685,
+    "source": "output"
+  },
+  {
+    "name": "trgsynchronizationCounter",
+    "hash": -1943574844,
+    "source": "output"
+  },
+  {
+    "name": "trgtriggerCountersError",
+    "hash": 1108896195,
+    "source": "output"
+  },
+  {
+    "name": "trgtriggerStateIndex",
+    "hash": 310661471,
+    "source": "output"
+  },
+  {
+    "name": "trgtriggerSyncGapRatio",
+    "hash": 1313522810,
+    "source": "output"
+  },
+  {
+    "name": "trgvvtCurrentPosition",
+    "hash": 1926227562,
+    "source": "output"
+  },
+  {
+    "name": "trgvvtToothDurations0",
+    "hash": -601476695,
+    "source": "output"
+  },
+  {
+    "name": "trigger.customSkippedToothCount",
+    "hash": 387956265,
+    "source": "config"
+  },
+  {
+    "name": "trigger.customTotalToothCount",
+    "hash": 1212570205,
+    "source": "config"
+  },
+  {
+    "name": "triggerChannel1",
+    "hash": -448033693,
+    "source": "output"
+  },
+  {
+    "name": "triggerChannel2",
+    "hash": -448033692,
+    "source": "output"
+  },
+  {
+    "name": "triggerCompCenterVolt",
+    "hash": 1455224910,
+    "source": "config"
+  },
+  {
+    "name": "triggerCompHystMax",
+    "hash": -25671466,
+    "source": "config"
+  },
+  {
+    "name": "triggerCompHystMin",
+    "hash": -25671212,
+    "source": "config"
+  },
+  {
+    "name": "triggerCompSensorSatRpm",
+    "hash": -953183719,
+    "source": "config"
+  },
+  {
+    "name": "triggerElapsedUs",
+    "hash": 767689023,
+    "source": "output"
+  },
+  {
+    "name": "triggerEventsTimeoutMs",
+    "hash": 665024981,
+    "source": "config"
+  },
+  {
+    "name": "triggerIgnoredToothCount",
+    "hash": 989545496,
+    "source": "output"
+  },
+  {
+    "name": "triggerPageRefreshFlag",
+    "hash": -1708884225,
+    "source": "output"
+  },
+  {
+    "name": "triggerPrimaryFall",
+    "hash": 248437820,
+    "source": "output"
+  },
+  {
+    "name": "triggerPrimaryRise",
+    "hash": 248878000,
+    "source": "output"
+  },
+  {
+    "name": "triggerScopeReady",
+    "hash": -770506808,
+    "source": "output"
+  },
+  {
+    "name": "triggerSecondaryFall",
+    "hash": 1016089632,
+    "source": "output"
+  },
+  {
+    "name": "triggerSecondaryRise",
+    "hash": 1016529812,
+    "source": "output"
+  },
+  {
+    "name": "triggerSimulatorRpm",
+    "hash": 2122875976,
+    "source": "config"
+  },
+  {
+    "name": "triggerSkipPulses",
+    "hash": 105821772,
+    "source": "config"
+  },
+  {
+    "name": "triggerToothAngleError",
+    "hash": -280624712,
+    "source": "output"
+  },
+  {
+    "name": "tuneCrc16",
+    "hash": -1158359776,
+    "source": "output"
+  },
+  {
+    "name": "tunedMafCorrection",
+    "hash": 698398225,
+    "source": "output"
+  },
+  {
+    "name": "tunedMassAirflow",
+    "hash": -1196900531,
+    "source": "output"
+  },
+  {
+    "name": "tunedVeStrengthMultiplier",
+    "hash": -1202716522,
+    "source": "config"
+  },
+  {
+    "name": "tunedVeValue",
+    "hash": -450796483,
+    "source": "output"
+  },
+  {
+    "name": "tuneHidingKey",
+    "hash": -243078627,
+    "source": "config"
+  },
+  {
+    "name": "tunerStudioSerialSpeed",
+    "hash": 1467553180,
+    "source": "config"
+  },
+  {
+    "name": "tuningDetector",
+    "hash": 1082602292,
+    "source": "config"
+  },
+  {
+    "name": "turbochargerFilter",
+    "hash": 983814707,
+    "source": "config"
+  },
+  {
+    "name": "turboSpeed",
+    "hash": -4187390,
+    "source": "output"
+  },
+  {
+    "name": "turboSpeedSensorMultiplier",
+    "hash": -1056007485,
+    "source": "config"
+  },
+  {
+    "name": "twoStroke",
+    "hash": 38719415,
+    "source": "config"
+  },
+  {
+    "name": "twoWireBatchIgnition",
+    "hash": 454615641,
+    "source": "config"
+  },
+  {
+    "name": "uartConsoleSerialSpeed",
+    "hash": -999870619,
+    "source": "config"
+  },
+  {
+    "name": "usbBytesIn",
+    "hash": 1846828749,
+    "source": "output"
+  },
+  {
+    "name": "usbBytesInPerSec",
+    "hash": 1080782767,
+    "source": "output"
+  },
+  {
+    "name": "usbBytesOut",
+    "hash": 815813454,
+    "source": "output"
+  },
+  {
+    "name": "usbBytesOutPerSec",
+    "hash": -885587728,
+    "source": "output"
+  },
+  {
+    "name": "useAdvanceCorrectionsForCranking",
+    "hash": 1060606307,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnAuxSpeedSensors",
+    "hash": 1486014321,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnAuxSpeedSensors1",
+    "hash": 1793832386,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnAuxSpeedSensors2",
+    "hash": 1793832387,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnAuxSpeedSensors3",
+    "hash": 1793832388,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnAuxSpeedSensors4",
+    "hash": 1793832389,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnWheelSpeedSensors1",
+    "hash": -1040875351,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnWheelSpeedSensors2",
+    "hash": -1040875350,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnWheelSpeedSensors3",
+    "hash": -1040875349,
+    "source": "config"
+  },
+  {
+    "name": "useBiQuadOnWheelSpeedSensors4",
+    "hash": -1040875348,
+    "source": "config"
+  },
+  {
+    "name": "useCicPidForIdle",
+    "hash": -264572349,
+    "source": "config"
+  },
+  {
+    "name": "useCltBasedRpmLimit",
+    "hash": 939816194,
+    "source": "config"
+  },
+  {
+    "name": "useCustomCLTSensor",
+    "hash": 1059939210,
+    "source": "config"
+  },
+  {
+    "name": "useCustomIATSensor",
+    "hash": -750525467,
+    "source": "config"
+  },
+  {
+    "name": "useCustomOTSensor",
+    "hash": -694434518,
+    "source": "config"
+  },
+  {
+    "name": "useEeprom",
+    "hash": -1572546086,
+    "source": "config"
+  },
+  {
+    "name": "useFixedBaroCorrFromMap",
+    "hash": 201676494,
+    "source": "config"
+  },
+  {
+    "name": "useFordRedundantPps",
+    "hash": -1284359115,
+    "source": "config"
+  },
+  {
+    "name": "useFordRedundantTps",
+    "hash": -1284354759,
+    "source": "config"
+  },
+  {
+    "name": "useHbridgesToDriveIdleStepper",
+    "hash": 13806936,
+    "source": "config"
+  },
+  {
+    "name": "useIacPidMultTable",
+    "hash": -364626778,
+    "source": "config"
+  },
+  {
+    "name": "useIacTableForCoasting",
+    "hash": -2101952506,
+    "source": "config"
+  },
+  {
+    "name": "useIdleAdvanceWhileCoasting",
+    "hash": 586887955,
+    "source": "config"
+  },
+  {
+    "name": "useIdleTimingPidControl",
+    "hash": 11736566,
+    "source": "config"
+  },
+  {
+    "name": "useIdleTimingTargetError",
+    "hash": 657642633,
+    "source": "config"
+  },
+  {
+    "name": "useIdleTimingTargetErrorMode",
+    "hash": 1986632654,
+    "source": "config"
+  },
+  {
+    "name": "useIdleVeWhileCoasting",
+    "hash": 1807072764,
+    "source": "config"
+  },
+  {
+    "name": "useInjectorFlowLinearizationTable",
+    "hash": 435614729,
+    "source": "config"
+  },
+  {
+    "name": "useInjSmallPulseWidth1",
+    "hash": -600460986,
+    "source": "config"
+  },
+  {
+    "name": "useInjSmallPulseWidth2",
+    "hash": -600460985,
+    "source": "config"
+  },
+  {
+    "name": "useLinearCltSensor",
+    "hash": -1816997974,
+    "source": "config"
+  },
+  {
+    "name": "useLinearIatSensor",
+    "hash": 667504645,
+    "source": "config"
+  },
+  {
+    "name": "useMapEstimateDuringTransient",
+    "hash": -725051987,
+    "source": "config"
+  },
+  {
+    "name": "useNoiselessTriggerDecoder",
+    "hash": 957244017,
+    "source": "config"
+  },
+  {
+    "name": "useRawOutputToDriveIdleStepper",
+    "hash": 839486731,
+    "source": "config"
+  },
+  {
+    "name": "useRunningMathForCranking",
+    "hash": -54973711,
+    "source": "config"
+  },
+  {
+    "name": "usescriptTableForCanSniffingFiltering",
+    "hash": 671821024,
+    "source": "config"
+  },
+  {
+    "name": "useSeparateAdvanceForCranking",
+    "hash": 685453869,
+    "source": "config"
+  },
+  {
+    "name": "useSeparateAdvanceForIdle",
+    "hash": 216872574,
+    "source": "config"
+  },
+  {
+    "name": "useSeparateIdleTablesForCrankingTaper",
+    "hash": -418454384,
+    "source": "config"
+  },
+  {
+    "name": "useSeparateVeForIdle",
+    "hash": -1997438905,
+    "source": "config"
+  },
+  {
+    "name": "useSmoothedLambda",
+    "hash": 1677542038,
+    "source": "config"
+  },
+  {
+    "name": "useSpiImu",
+    "hash": -1011866871,
+    "source": "config"
+  },
+  {
+    "name": "useSpooledCurve",
+    "hash": -1164679347,
+    "source": "config"
+  },
+  {
+    "name": "useStepperIdle",
+    "hash": -920116109,
+    "source": "config"
+  },
+  {
+    "name": "useTableForDfcoMap",
+    "hash": 1750679771,
+    "source": "config"
+  },
+  {
+    "name": "useTLE8888_cranking_hack",
+    "hash": -1279270887,
+    "source": "config"
+  },
+  {
+    "name": "useTLE8888_stepper",
+    "hash": -647008743,
+    "source": "config"
+  },
+  {
+    "name": "VBatt",
+    "hash": 277722310,
+    "source": "output"
+  },
+  {
+    "name": "vbattDividerCoeff",
+    "hash": -1311217456,
+    "source": "config"
+  },
+  {
+    "name": "veBlend1BlendMode",
+    "hash": 1516831168,
+    "source": "config"
+  },
+  {
+    "name": "veBlend2BlendMode",
+    "hash": 1584632545,
+    "source": "config"
+  },
+  {
+    "name": "vehicleSpeedKph",
+    "hash": -1925174695,
+    "source": "output"
+  },
+  {
+    "name": "vehicleSpeedKph1",
+    "hash": 893744554,
+    "source": "output"
+  },
+  {
+    "name": "vehicleSpeedKph2",
+    "hash": 893744555,
+    "source": "output"
+  },
+  {
+    "name": "vehicleSpeedKph3",
+    "hash": 893744556,
+    "source": "output"
+  },
+  {
+    "name": "vehicleSpeedKph4",
+    "hash": 893744557,
+    "source": "output"
+  },
+  {
+    "name": "vehicleSpeedKphFrontAvg",
+    "hash": 732676192,
+    "source": "output"
+  },
+  {
+    "name": "vehicleSpeedKphRearAvg",
+    "hash": 1328773633,
+    "source": "output"
+  },
+  {
+    "name": "verboseCan",
+    "hash": -1073210355,
+    "source": "config"
+  },
+  {
+    "name": "verboseCan2",
+    "hash": -1056203297,
+    "source": "config"
+  },
+  {
+    "name": "verboseCanBaseAddress",
+    "hash": 6238478,
+    "source": "config"
+  },
+  {
+    "name": "verboseIsoTp",
+    "hash": -487204662,
+    "source": "config"
+  },
+  {
+    "name": "verboseKLine",
+    "hash": -485091122,
+    "source": "config"
+  },
+  {
+    "name": "verboseQuad",
+    "hash": -1055678778,
+    "source": "config"
+  },
+  {
+    "name": "verboseTLE8888",
+    "hash": -1251676000,
+    "source": "config"
+  },
+  {
+    "name": "verboseTriggerSynchDetails",
+    "hash": -325018342,
+    "source": "config"
+  },
+  {
+    "name": "verboseVVTDecoding",
+    "hash": 1540420600,
+    "source": "config"
+  },
+  {
+    "name": "veTableSwitch1Active",
+    "hash": -1738951225,
+    "source": "output"
+  },
+  {
+    "name": "veTableSwitch2Active",
+    "hash": -447483256,
+    "source": "output"
+  },
+  {
+    "name": "veTableYAxis",
+    "hash": 1568071542,
+    "source": "output"
+  },
+  {
+    "name": "veValue",
+    "hash": 1933507837,
+    "source": "output"
+  },
+  {
+    "name": "VssAcceleration",
+    "hash": -513494613,
+    "source": "output"
+  },
+  {
+    "name": "vssCalSpeed",
+    "hash": 358542498,
+    "source": "config"
+  },
+  {
+    "name": "vssEdgeCounter",
+    "hash": 385418550,
+    "source": "output"
+  },
+  {
+    "name": "vssFilterReciprocal",
+    "hash": -495855925,
+    "source": "config"
+  },
+  {
+    "name": "vssFilterReciprocal1",
+    "hash": 816623708,
+    "source": "config"
+  },
+  {
+    "name": "vssFilterReciprocal2",
+    "hash": 816623709,
+    "source": "config"
+  },
+  {
+    "name": "vssFilterReciprocal3",
+    "hash": 816623710,
+    "source": "config"
+  },
+  {
+    "name": "vssFilterReciprocal4",
+    "hash": 816623711,
+    "source": "config"
+  },
+  {
+    "name": "vssGearRatio",
+    "hash": -213773345,
+    "source": "config"
+  },
+  {
+    "name": "vssGearRatio1",
+    "hash": 1535414256,
+    "source": "config"
+  },
+  {
+    "name": "vssGearRatio2",
+    "hash": 1535414257,
+    "source": "config"
+  },
+  {
+    "name": "vssGearRatio3",
+    "hash": 1535414258,
+    "source": "config"
+  },
+  {
+    "name": "vssGearRatio4",
+    "hash": 1535414259,
+    "source": "config"
+  },
+  {
+    "name": "vssPulsePerKm",
+    "hash": 506292297,
+    "source": "config"
+  },
+  {
+    "name": "vssToothCount",
+    "hash": -1958312328,
+    "source": "config"
+  },
+  {
+    "name": "vssToothCount1",
+    "hash": -199797335,
+    "source": "config"
+  },
+  {
+    "name": "vssToothCount2",
+    "hash": -199797334,
+    "source": "config"
+  },
+  {
+    "name": "vssToothCount3",
+    "hash": -199797333,
+    "source": "config"
+  },
+  {
+    "name": "vssToothCount4",
+    "hash": -199797332,
+    "source": "config"
+  },
+  {
+    "name": "vvt1esynchronizationCounter",
+    "hash": -1159462771,
+    "source": "output"
+  },
+  {
+    "name": "vvt1etriggerCountersError",
+    "hash": -937296564,
+    "source": "output"
+  },
+  {
+    "name": "vvt1etriggerStateIndex",
+    "hash": 797862280,
+    "source": "output"
+  },
+  {
+    "name": "vvt1etriggerSyncGapRatio",
+    "hash": -700740893,
+    "source": "output"
+  },
+  {
+    "name": "vvt1evvtCurrentPosition",
+    "hash": 823985075,
+    "source": "output"
+  },
+  {
+    "name": "vvt1evvtToothDurations0",
+    "hash": -1703719182,
+    "source": "output"
+  },
+  {
+    "name": "vvt1isynchronizationCounter",
+    "hash": -608535663,
+    "source": "output"
+  },
+  {
+    "name": "vvt1itriggerCountersError",
+    "hash": 206956368,
+    "source": "output"
+  },
+  {
+    "name": "vvt1itriggerStateIndex",
+    "hash": -404295156,
+    "source": "output"
+  },
+  {
+    "name": "vvt1itriggerSyncGapRatio",
+    "hash": 114836583,
+    "source": "output"
+  },
+  {
+    "name": "vvt1ivvtCurrentPosition",
+    "hash": -192504649,
+    "source": "output"
+  },
+  {
+    "name": "vvt1ivvtToothDurations0",
+    "hash": 1574758390,
+    "source": "output"
+  },
+  {
+    "name": "vvt2esynchronizationCounter",
+    "hash": -1983023250,
+    "source": "output"
+  },
+  {
+    "name": "vvt2etriggerCountersError",
+    "hash": 986597357,
+    "source": "output"
+  },
+  {
+    "name": "vvt2etriggerStateIndex",
+    "hash": -530001975,
+    "source": "output"
+  },
+  {
+    "name": "vvt2etriggerSyncGapRatio",
+    "hash": 659064164,
+    "source": "output"
+  },
+  {
+    "name": "vvt2evvtCurrentPosition",
+    "hash": -45862380,
+    "source": "output"
+  },
+  {
+    "name": "vvt2evvtToothDurations0",
+    "hash": 1721400659,
+    "source": "output"
+  },
+  {
+    "name": "vvt2isynchronizationCounter",
+    "hash": -1432096142,
+    "source": "output"
+  },
+  {
+    "name": "vvt2itriggerCountersError",
+    "hash": 2130850289,
+    "source": "output"
+  },
+  {
+    "name": "vvt2itriggerStateIndex",
+    "hash": -1732159411,
+    "source": "output"
+  },
+  {
+    "name": "vvt2itriggerSyncGapRatio",
+    "hash": 1474641640,
+    "source": "output"
+  },
+  {
+    "name": "vvt2ivvtCurrentPosition",
+    "hash": -1062352104,
+    "source": "output"
+  },
+  {
+    "name": "vvt2ivvtToothDurations0",
+    "hash": 704910935,
+    "source": "output"
+  },
+  {
+    "name": "vvtActivationDelayMs",
+    "hash": 288250022,
+    "source": "config"
+  },
+  {
+    "name": "vvtBooleanForVerySpecialCases",
+    "hash": -376859614,
+    "source": "config"
+  },
+  {
+    "name": "vvtCamCounter",
+    "hash": 477303734,
+    "source": "output"
+  },
+  {
+    "name": "vvtChannel1",
+    "hash": -1764857649,
+    "source": "output"
+  },
+  {
+    "name": "vvtChannel2",
+    "hash": -1764857648,
+    "source": "output"
+  },
+  {
+    "name": "vvtChannel3",
+    "hash": -1764857647,
+    "source": "output"
+  },
+  {
+    "name": "vvtChannel4",
+    "hash": -1764857646,
+    "source": "output"
+  },
+  {
+    "name": "vvtControlMinClt",
+    "hash": 1470830477,
+    "source": "config"
+  },
+  {
+    "name": "vvtControlMinRpm",
+    "hash": 1470846937,
+    "source": "config"
+  },
+  {
+    "name": "vvtOutput",
+    "hash": 1990697206,
+    "source": "output"
+  },
+  {
+    "name": "vvtPositionB1E",
+    "hash": 1384666002,
+    "source": "output"
+  },
+  {
+    "name": "vvtPositionB1I",
+    "hash": 1384666006,
+    "source": "output"
+  },
+  {
+    "name": "vvtPositionB2E",
+    "hash": 1384666035,
+    "source": "output"
+  },
+  {
+    "name": "vvtPositionB2I",
+    "hash": 1384666039,
+    "source": "output"
+  },
+  {
+    "name": "vvtTarget",
+    "hash": -2132393748,
+    "source": "output"
+  },
+  {
+    "name": "wallFuelAmount",
+    "hash": 115540725,
+    "source": "output"
+  },
+  {
+    "name": "wallFuelCorrectionValue",
+    "hash": -1511514122,
+    "source": "output"
+  },
+  {
+    "name": "wallWettingAeEnabled",
+    "hash": -1652586744,
+    "source": "config"
+  },
+  {
+    "name": "warmup",
+    "hash": 613454561,
+    "source": "output"
+  },
+  {
+    "name": "warningCounter",
+    "hash": 1492724763,
+    "source": "output"
+  },
+  {
+    "name": "warningPeriod",
+    "hash": 1322924702,
+    "source": "config"
+  },
+  {
+    "name": "wastegateDcStatus.dTerm",
+    "hash": 1554961855,
+    "source": "output"
+  },
+  {
+    "name": "wastegateDcStatus.error",
+    "hash": 1556089965,
+    "source": "output"
+  },
+  {
+    "name": "wastegateDcStatus.iTerm",
+    "hash": 1560891460,
+    "source": "output"
+  },
+  {
+    "name": "wastegateDcStatus.output",
+    "hash": 206346164,
+    "source": "output"
+  },
+  {
+    "name": "wastegateDcStatus.pTerm",
+    "hash": 1569192907,
+    "source": "output"
+  },
+  {
+    "name": "wastegateDcStatus.resetCounter",
+    "hash": 156247622,
+    "source": "output"
+  },
+  {
+    "name": "wastegatePositionClosedVoltage",
+    "hash": 20003211,
+    "source": "config"
+  },
+  {
+    "name": "wastegatePositionOpenedVoltage",
+    "hash": 866072300,
+    "source": "config"
+  },
+  {
+    "name": "wastegatePositionSensor",
+    "hash": 53406649,
+    "source": "output"
+  },
+  {
+    "name": "watchDogBuddy",
+    "hash": -793811890,
+    "source": "output"
+  },
+  {
+    "name": "watchOutForLinearTime",
+    "hash": -1896516795,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2AcAdder",
+    "hash": 1512410464,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2brokenClt",
+    "hash": 204510464,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2cold",
+    "hash": 48769502,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2cranking",
+    "hash": -88256759,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2disabledBySpeed",
+    "hash": 1117436160,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2disabledWhileEngineStopped",
+    "hash": -173408670,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2enabledForAc",
+    "hash": 524306482,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2ExtraIdle",
+    "hash": -2078468674,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2fan_pwm_started",
+    "hash": 1312178170,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2hot",
+    "hash": 1433139079,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2m_state",
+    "hash": -304465879,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2MaxPwm",
+    "hash": 1945579510,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2MinPwm",
+    "hash": 1954707508,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2notRunning",
+    "hash": 1120273998,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2OffTemperature",
+    "hash": 1859031173,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2OnTemperature",
+    "hash": 374188231,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2Pwm",
+    "hash": 1433148048,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2PwmEnabled",
+    "hash": 2130109627,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2PwmFrequency",
+    "hash": -1789907774,
+    "source": "config"
+  },
+  {
+    "name": "waterPump2radiatorFanStatus",
+    "hash": 480187723,
+    "source": "output"
+  },
+  {
+    "name": "waterPump2SoftStartSec",
+    "hash": -1993101119,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpAcAdder",
+    "hash": 2122945582,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpbrokenClt",
+    "hash": -642676914,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpcold",
+    "hash": 1434907500,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpcranking",
+    "hash": -1415434345,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpdisabledBySpeed",
+    "hash": 835169742,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpdisabledWhileEngineStopped",
+    "hash": -366242192,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpenabledForAc",
+    "hash": -2120302656,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpExtraIdle",
+    "hash": 1369311244,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpfan_pwm_started",
+    "hash": 1029911752,
+    "source": "output"
+  },
+  {
+    "name": "waterPumphot",
+    "hash": 1735444309,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpm_state",
+    "hash": 306069239,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpMaxPwm",
+    "hash": -378628860,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpMinPwm",
+    "hash": -369500862,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpnotRunning",
+    "hash": -1067105700,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpOffTemperature",
+    "hash": -492231789,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpOnTemperature",
+    "hash": -998567403,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpPwm",
+    "hash": 1735453278,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpPwmEnabled",
+    "hash": -57270071,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpPwmFrequency",
+    "hash": -139549616,
+    "source": "config"
+  },
+  {
+    "name": "waterPumpradiatorFanStatus",
+    "hash": -1965263463,
+    "source": "output"
+  },
+  {
+    "name": "waterPumpSoftStartSec",
+    "hash": -342742961,
+    "source": "config"
+  },
+  {
+    "name": "wheelSlipRatio",
+    "hash": 398495089,
+    "source": "output"
+  },
+  {
+    "name": "wheelSlipRatioFrontRear",
+    "hash": 1925854276,
+    "source": "output"
+  },
+  {
+    "name": "wheelSlipRatioLeftRightFRONT",
+    "hash": 1312557699,
+    "source": "output"
+  },
+  {
+    "name": "wheelSlipRatioLeftRightREAR",
+    "hash": -1261314140,
+    "source": "output"
+  },
+  {
+    "name": "wheelSlipRatioLeftRightREF",
+    "hash": -2120630025,
+    "source": "output"
+  },
+  {
+    "name": "wheelspeedAvgError",
+    "hash": -1356218861,
+    "source": "output"
+  },
+  {
+    "name": "wheelspeedFLerror",
+    "hash": -744843641,
+    "source": "output"
+  },
+  {
+    "name": "wheelspeedFRerror",
+    "hash": -510031283,
+    "source": "output"
+  },
+  {
+    "name": "wheelspeedFrontAvgError",
+    "hash": 1254214492,
+    "source": "output"
+  },
+  {
+    "name": "wheelspeedRearAvgError",
+    "hash": 846844765,
+    "source": "output"
+  },
+  {
+    "name": "wheelspeedRLerror",
+    "hash": 1867870099,
+    "source": "output"
+  },
+  {
+    "name": "wheelspeedRRerror",
+    "hash": 2102682457,
+    "source": "output"
+  },
+  {
+    "name": "widebandOnSecondBus",
+    "hash": 1445062086,
+    "source": "config"
+  },
+  {
+    "name": "wwaeBeta",
+    "hash": 4130389,
+    "source": "config"
+  },
+  {
+    "name": "wwaeTau",
+    "hash": -390306941,
+    "source": "config"
+  },
+  {
+    "name": "yesUnderstandLocking",
+    "hash": -1985448683,
+    "source": "config"
+  }
+]

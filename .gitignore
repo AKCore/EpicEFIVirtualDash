@@ -1,0 +1,34 @@
+# Android
+Android/.gradle/
+Android/.idea/
+Android/build/
+Android/app/build/
+Android/app/release/
+Android/local.properties
+Android/*.iml
+Android/app/*.iml
+Android/captures/
+Android/.externalNativeBuild/
+Android/.cxx/
+
+# Firmware (PlatformIO)
+Firmware/.pio/
+Firmware/.vscode/
+Firmware/lib/*/build/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+*.apk
+*.aab
+*.bin
+*.elf

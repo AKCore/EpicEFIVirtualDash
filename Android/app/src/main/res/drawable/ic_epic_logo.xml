@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="180">
+    
+    <!-- Outer ring -->
+    <path
+        android:pathData="M90,10 A80,80 0 1,1 89.99,10"
+        android:strokeWidth="4"
+        android:strokeColor="#FF6B00"
+        android:fillColor="#00000000"/>
+    
+    <!-- Inner ring -->
+    <path
+        android:pathData="M90,25 A65,65 0 1,1 89.99,25"
+        android:strokeWidth="2"
+        android:strokeColor="#FF8C00"
+        android:fillColor="#00000000"/>
+    
+    <!-- Speedometer ticks -->
+    <path
+        android:pathData="M90,18 L90,30"
+        android:strokeWidth="3"
+        android:strokeColor="#FF6B00"/>
+    <path
+        android:pathData="M140,40 L130,50"
+        android:strokeWidth="2"
+        android:strokeColor="#FF6B00"/>
+    <path
+        android:pathData="M162,90 L150,90"
+        android:strokeWidth="3"
+        android:strokeColor="#FF6B00"/>
+    <path
+        android:pathData="M140,140 L130,130"
+        android:strokeWidth="2"
+        android:strokeColor="#FF6B00"/>
+    <path
+        android:pathData="M90,162 L90,150"
+        android:strokeWidth="3"
+        android:strokeColor="#FF6B00"/>
+    <path
+        android:pathData="M40,140 L50,130"
+        android:strokeWidth="2"
+        android:strokeColor="#FF6B00"/>
+    <path
+        android:pathData="M18,90 L30,90"
+        android:strokeWidth="3"
+        android:strokeColor="#FF6B00"/>
+    <path
+        android:pathData="M40,40 L50,50"
+        android:strokeWidth="2"
+        android:strokeColor="#FF6B00"/>
+    
+    <!-- Center circle (as path) -->
+    <path
+        android:pathData="M90,55 A35,35 0 1,1 89.99,55 A35,35 0 1,1 90,55"
+        android:fillColor="#1A1A1A"
+        android:strokeWidth="2"
+        android:strokeColor="#FF6B00"/>
+    
+    <!-- E letter stylized -->
+    <path
+        android:pathData="M75,75 L75,105 M75,75 L105,75 M75,90 L100,90 M75,105 L105,105"
+        android:strokeWidth="5"
+        android:strokeColor="#FF6B00"
+        android:strokeLineCap="round"/>
+    
+    <!-- Needle -->
+    <path
+        android:pathData="M90,90 L130,50"
+        android:strokeWidth="3"
+        android:strokeColor="#FF3300"
+        android:strokeLineCap="round"/>
+    
+    <!-- Center dot (as path) -->
+    <path
+        android:pathData="M90,82 A8,8 0 1,1 89.99,82 A8,8 0 1,1 90,82"
+        android:fillColor="#FF6B00"/>
+
+</vector>

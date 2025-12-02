@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/card_dark">
+
+    <!-- Label Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LABEL"
+        android:textSize="12sp"
+        android:textColor="@color/accent_orange"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etButtonLabel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Button name (optional)"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_dim"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:inputType="text"
+        android:maxLength="12"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Mode Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON MODE"
+        android:textSize="12sp"
+        android:textColor="@color/accent_orange"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="12dp" />
+
+    <RadioGroup
+        android:id="@+id/rgButtonMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbMomentary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Momentary (active while pressed)"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:buttonTint="@color/accent_orange"
+            android:padding="8dp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toggle (on/off with each press)"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:buttonTint="@color/accent_orange"
+            android:padding="8dp" />
+
+    </RadioGroup>
+
+    <!-- Hint -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tip: Long-press any button to edit it"
+        android:textSize="11sp"
+        android:textColor="@color/text_dim" />
+
+</LinearLayout>

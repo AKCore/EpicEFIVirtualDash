@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- EpicDash Theme Colors -->
+    <color name="splash_bg">#0A0A0A</color>
+    <color name="bg_dark">#0D0D0D</color>
+    <color name="bg_surface">#141414</color>
+    <color name="card_dark">#1A1A1A</color>
+    <color name="card_elevated">#222222</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_orange">#FF6B00</color>
+    <color name="accent_orange_dim">#CC5500</color>
+    <color name="accent_red">#FF3333</color>
+    <color name="accent_green">#00CC66</color>
+    <color name="accent_blue">#0099FF</color>
+    <color name="accent_yellow">#FFCC00</color>
+    
+    <!-- Button Colors -->
+    <color name="button_normal">#1F1F1F</color>
+    <color name="button_pressed">#FF6B00</color>
+    <color name="button_border">#333333</color>
+    <color name="button_text">#FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="status_connected">#00CC66</color>
+    <color name="status_disconnected">#FF3333</color>
+    <color name="status_scanning">#FFCC00</color>
+    
+    <!-- Gauge Colors -->
+    <color name="gauge_normal">#FFFFFF</color>
+    <color name="gauge_warning">#FFCC00</color>
+    <color name="gauge_critical">#FF3333</color>
+    <color name="gauge_label">#666666</color>
+    <color name="gauge_unit">#444444</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#999999</color>
+    <color name="text_dim">#555555</color>
+</resources>
