@@ -22,35 +22,19 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Cache Gradle packages
-        uses: actions/cache@v4
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
         with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
-      - name: Cache Android SDK
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.android/build-cache
-          key: ${{ runner.os }}-android-${{ hashFiles('Android/app/build.gradle.kts') }}
-          restore-keys: |
-            ${{ runner.os }}-android-
-
-      - name: Make gradlew executable
-        run: chmod +x Android/gradlew
+          cache-read-only: ${{ github.ref != 'refs/heads/main' }}
+          gradle-version: 8.2
 
       - name: Build Debug APK
         working-directory: Android
-        run: ./gradlew assembleDebug --no-daemon
+        run: gradle assembleDebug
 
       - name: Build Release APK
         working-directory: Android
-        run: ./gradlew assembleRelease --no-daemon
+        run: gradle assembleRelease
         
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
