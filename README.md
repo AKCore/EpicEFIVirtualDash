@@ -80,14 +80,35 @@ This reduces BLE round-trips from N to 1 per update cycle.
 
 ## Building
 
-### Firmware (PlatformIO)
+### GitHub Actions (CI/CD)
+Automated builds run on push to `main`. Releases are created on version tags.
+
+**Required Secrets** (Settings → Secrets → Actions):
+
+| Secret | Description |
+|--------|-------------|
+| `KEYSTORE_BASE64` | Base64-encoded Android keystore (`base64 keystore.jks`) |
+| `KEYSTORE_PASSWORD` | Keystore password |
+| `KEY_ALIAS` | Signing key alias |
+| `KEY_PASSWORD` | Signing key password |
+| `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` | Google Play API service account JSON |
+
+**Creating a Release:**
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+### Local Build
+
+#### Firmware (PlatformIO)
 ```bash
 cd Firmware
 pio run
 pio run -t upload
 ```
 
-### Android App (Android Studio)
+#### Android App (Android Studio)
 1. Open `Android/` folder in Android Studio
 2. Sync Gradle
 3. Build and run on device

@@ -1,0 +1,78 @@
+name: Build
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x Android/gradlew
+        
+      - name: Build Debug APK
+        working-directory: Android
+        run: ./gradlew assembleDebug
+
+      - name: Build Release APK
+        working-directory: Android
+        run: ./gradlew assembleRelease
+        
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          path: Android/app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Upload Release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-unsigned
+          path: Android/app/build/outputs/apk/release/app-release-unsigned.apk
+
+  build-firmware:
+    name: Build Firmware
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PlatformIO
+        run: |
+          python -m pip install --upgrade pip
+          pip install platformio
+
+      - name: Build Firmware
+        working-directory: Firmware
+        run: pio run
+
+      - name: Upload Firmware Binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: |
+            Firmware/.pio/build/*/firmware.bin
+            Firmware/.pio/build/*/bootloader.bin
+            Firmware/.pio/build/*/partitions.bin

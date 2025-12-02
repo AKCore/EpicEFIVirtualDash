@@ -1,0 +1,5 @@
+• Batched variable requests for higher data rates (up to 60 Hz)
+• Configurable data polling rate in Settings
+• Auto-reconnect when returning from Settings
+• Improved BLE connection with MTU negotiation
+• Bug fixes and performance improvements
