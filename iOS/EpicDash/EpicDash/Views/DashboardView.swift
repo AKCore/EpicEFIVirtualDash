@@ -8,6 +8,8 @@ struct DashboardView: View {
     @StateObject private var dashboardState = DashboardState()
     @State private var showSettings = false
     @State private var pollingTask: Task<Void, Never>?
+    @State private var adcValues: [Float] = Array(repeating: 0, count: 16)
+    @State private var adcValuesSentOnConnect = false
     
     private let accentColor = Color(hex: "FF6B00")
     private let bgDark = Color(hex: "121212")
@@ -30,6 +32,9 @@ struct DashboardView: View {
                         dashboardState: dashboardState,
                         onButtonChanged: sendButtonMask
                     )
+                    
+                    // ADC Sliders
+                    adcSlidersSection
                     
                     Spacer()
                     
@@ -150,6 +155,21 @@ struct DashboardView: View {
         )
     }
     
+    // MARK: - ADC Sliders
+    private var adcSlidersSection: some View {
+        ScrollView {
+            AdcSlidersView(adcValues: $adcValues)
+        }
+        .frame(maxHeight: 200)
+        .padding(8)
+        .background(bgSurface)
+        .cornerRadius(12)
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color.gray.opacity(0.3), lineWidth: 1)
+        )
+    }
+    
     // MARK: - Log Panel
     private var logPanel: some View {
         ScrollView {
@@ -216,6 +236,14 @@ struct DashboardView: View {
         pollingTask = Task {
             while !Task.isCancelled {
                 if bleManager.isConnected {
+                    // Send all ADC values on first connect
+                    if !adcValuesSentOnConnect {
+                        adcValuesSentOnConnect = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            bleManager.sendAllAdcValues(adcValues)
+                        }
+                    }
+                    
                     // Get non-GPS gauge hashes
                     let hashes = settingsManager.gauges
                         .filter { !$0.isGpsSpeed }
@@ -224,6 +252,9 @@ struct DashboardView: View {
                     if !hashes.isEmpty {
                         bleManager.requestVariablesBatch(hashes)
                     }
+                } else {
+                    // Reset flag on disconnect
+                    adcValuesSentOnConnect = false
                 }
                 
                 try? await Task.sleep(nanoseconds: UInt64(settingsManager.dataDelayMs) * 1_000_000)

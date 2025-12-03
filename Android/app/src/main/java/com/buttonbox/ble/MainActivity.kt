@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
     private val variableValues = ConcurrentHashMap<Int, Float>()
     
     // ADC values (0-1023) for virtual analog outputs
-    // Note: ADC1 (index 1) is hardware-sampled from GPIO 5 on ESP32
+    // Note: A1 is also hardware-sampled from GPIO 5 on ESP32, slider allows override
     private val adcValues = FloatArray(16) { 0f }
     private var adcValuesSentOnConnect = false
 
@@ -536,8 +536,9 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
         container.removeAllViews()
         adcValueViews.clear()
         
-        // Skip ADC1 (index 1) as it's hardware-sampled from GPIO 5
-        val adcChannels = listOf(0) + (2..15).toList()  // A0, A2-A15 (skip A1)
+        // All 16 ADC channels (A0-A15)
+        // Note: A1 is also hardware-sampled from GPIO 5 on ESP32, but slider allows override
+        val adcChannels = (0..15).toList()
         
         for (channel in adcChannels) {
             val itemLayout = LinearLayout(this).apply {

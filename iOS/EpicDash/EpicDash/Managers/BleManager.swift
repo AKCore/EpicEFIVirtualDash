@@ -20,6 +20,26 @@ class BleManager: NSObject, ObservableObject {
     static let VAR_HASH_GPS_LONGITUDE: Int32 = -809214087
     static let VAR_HASH_GPS_SPEED: Int32 = -1486968225
     
+    // Virtual ADC variable hashes (A0-A15)
+    static let VAR_HASH_ADC: [Int32] = [
+        595545759,   // A0
+        595545760,   // A1
+        595545761,   // A2
+        595545762,   // A3
+        595545763,   // A4
+        595545764,   // A5
+        595545765,   // A6
+        595545766,   // A7
+        595545767,   // A8
+        595545768,   // A9
+        -1821826352, // A10
+        -1821826351, // A11
+        -1821826350, // A12
+        -1821826349, // A13
+        -1821826348, // A14
+        -1821826347  // A15
+    ]
+    
     private static let deviceName = "ESP32 Dashboard"
     
     // MARK: - Published State
@@ -177,6 +197,29 @@ class BleManager: NSObject, ObservableObject {
         
         gpsDataQueue.append(data)
         processGpsDataQueue()
+    }
+    
+    // MARK: - ADC Methods
+    
+    /// Send a single ADC value to ECU
+    /// - Parameters:
+    ///   - channel: ADC channel (0-15)
+    ///   - value: ADC value (0-1023)
+    func sendAdcValue(channel: Int, value: Float) {
+        guard channel >= 0 && channel < Self.VAR_HASH_ADC.count else { return }
+        sendGpsData(varHash: Self.VAR_HASH_ADC[channel], value: value)
+    }
+    
+    /// Send all ADC values to ECU
+    /// - Parameter values: Array of 16 ADC values (0-1023)
+    func sendAllAdcValues(_ values: [Float]) {
+        guard values.count == 16 else { return }
+        
+        var entries: [(hash: Int32, value: Float)] = []
+        for (index, value) in values.enumerated() {
+            entries.append((hash: Self.VAR_HASH_ADC[index], value: value))
+        }
+        sendGpsDataBatch(entries)
     }
     
     // MARK: - Private Methods
