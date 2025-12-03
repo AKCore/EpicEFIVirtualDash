@@ -93,27 +93,34 @@ struct DashboardView: View {
         }
     }
     
-    // MARK: - Top Gauges (2 large)
+    // MARK: - Top Gauges (large, position = .top)
     private var topGaugesSection: some View {
-        let topGauges = Array(settingsManager.gauges.prefix(2))
+        let topGauges = settingsManager.gauges.filter { $0.position == .top }
         
         return HStack(spacing: 8) {
-            ForEach(topGauges) { gauge in
+            ForEach(topGauges.prefix(2)) { gauge in
                 GaugeView(
                     config: gauge,
                     value: gaugeValue(for: gauge),
                     isLarge: true
                 )
             }
+            
+            // Fill empty slots if less than 2 top gauges
+            if topGauges.count < 2 {
+                ForEach(0..<(2 - topGauges.count), id: \.self) { _ in
+                    emptyGaugeSlot(isLarge: true)
+                }
+            }
         }
     }
     
-    // MARK: - Secondary Gauges (4 smaller)
+    // MARK: - Secondary Gauges (small, position = .secondary)
     private var secondaryGaugesSection: some View {
-        let secondaryGauges = Array(settingsManager.gauges.dropFirst(2).prefix(4))
+        let secondaryGauges = settingsManager.gauges.filter { $0.position == .secondary }
         
         return LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: 4), spacing: 8) {
-            ForEach(secondaryGauges) { gauge in
+            ForEach(secondaryGauges.prefix(4)) { gauge in
                 GaugeView(
                     config: gauge,
                     value: gaugeValue(for: gauge),
@@ -121,6 +128,26 @@ struct DashboardView: View {
                 )
             }
         }
+    }
+    
+    private func emptyGaugeSlot(isLarge: Bool) -> some View {
+        VStack {
+            Text("--")
+                .font(.system(size: isLarge ? 48 : 24, weight: .bold, design: .rounded))
+                .foregroundColor(.gray.opacity(0.3))
+            Text("No Gauge")
+                .font(.system(size: isLarge ? 12 : 8))
+                .foregroundColor(.gray.opacity(0.3))
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: isLarge ? 140 : 80)
+        .padding(isLarge ? 16 : 8)
+        .background(bgSurface)
+        .cornerRadius(16)
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(Color.gray.opacity(0.2), lineWidth: 1)
+        )
     }
     
     // MARK: - Log Panel

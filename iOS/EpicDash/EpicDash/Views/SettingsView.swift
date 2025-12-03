@@ -4,8 +4,12 @@ struct SettingsView: View {
     @EnvironmentObject var settingsManager: SettingsManager
     @Environment(\.dismiss) var dismiss
     
+    @StateObject private var variableRepo = VariableRepository()
+    
     @State private var selectedButton: ButtonConfig?
     @State private var showButtonEditor = false
+    @State private var showAddGauge = false
+    @State private var searchText = ""
     
     private let accentColor = Color(hex: "FF6B00")
     private let bgDark = Color(hex: "121212")
@@ -61,6 +65,67 @@ struct SettingsView: View {
                             }
                         }
                         
+                        // Gauges Configuration
+                        settingsCard(title: "Gauges") {
+                            VStack(alignment: .leading, spacing: 12) {
+                                // Add GPS Speed button
+                                Button {
+                                    let gpsGauge = GaugeConfig(
+                                        name: "GPS Speed",
+                                        variableHash: 0,
+                                        variableName: "GPS",
+                                        unit: settingsManager.speedUnit.rawValue,
+                                        isGpsSpeed: true,
+                                        position: .top
+                                    )
+                                    settingsManager.addGauge(gpsGauge)
+                                } label: {
+                                    HStack {
+                                        Image(systemName: "location.fill")
+                                        Text("Add GPS Speed")
+                                    }
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 10)
+                                    .background(Color(hex: "2A2A2A"))
+                                    .foregroundColor(accentColor)
+                                    .cornerRadius(8)
+                                }
+                                
+                                // Add Variable button
+                                Button {
+                                    showAddGauge = true
+                                } label: {
+                                    HStack {
+                                        Image(systemName: "plus.circle.fill")
+                                        Text("Add ECU Variable")
+                                    }
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 10)
+                                    .background(accentColor)
+                                    .foregroundColor(.black)
+                                    .cornerRadius(8)
+                                }
+                                
+                                Divider()
+                                
+                                Text("Current Gauges:")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                                
+                                // Gauge list
+                                if settingsManager.gauges.isEmpty {
+                                    Text("No gauges configured")
+                                        .foregroundColor(.gray)
+                                        .italic()
+                                        .padding(.vertical, 8)
+                                } else {
+                                    ForEach(settingsManager.gauges) { gauge in
+                                        gaugeRow(gauge)
+                                    }
+                                }
+                            }
+                        }
+                        
                         // Button Configuration
                         settingsCard(title: "Buttons") {
                             VStack(alignment: .leading, spacing: 12) {
@@ -98,12 +163,6 @@ struct SettingsView: View {
                                 buttonConfigGrid
                             }
                         }
-                        
-                        // Speedometer Toggle
-                        settingsCard(title: "GPS Speedometer") {
-                            Toggle("Show GPS Speed Gauge", isOn: $settingsManager.showSpeedometer)
-                                .tint(accentColor)
-                        }
                     }
                     .padding()
                 }
@@ -125,7 +184,45 @@ struct SettingsView: View {
                     }
                 }
             }
+            .sheet(isPresented: $showAddGauge) {
+                AddGaugeView(variableRepo: variableRepo) { gauge in
+                    settingsManager.addGauge(gauge)
+                }
+            }
         }
+    }
+    
+    private func gaugeRow(_ gauge: GaugeConfig) -> some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(gauge.name)
+                    .foregroundColor(.white)
+                    .font(.system(size: 14, weight: .medium))
+                
+                HStack(spacing: 8) {
+                    Text(gauge.position == .top ? "TOP" : "SEC")
+                        .font(.system(size: 10))
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(accentColor.opacity(0.3))
+                        .cornerRadius(4)
+                    
+                    Text(gauge.isGpsSpeed ? "GPS" : gauge.variableName)
+                        .font(.system(size: 10))
+                        .foregroundColor(.gray)
+                }
+            }
+            
+            Spacer()
+            
+            Button {
+                settingsManager.removeGauge(variableHash: gauge.variableHash)
+            } label: {
+                Image(systemName: "xmark.circle.fill")
+                    .foregroundColor(.red.opacity(0.8))
+            }
+        }
+        .padding(.vertical, 6)
     }
     
     private func settingsCard<Content: View>(title: String, @ViewBuilder content: () -> Content) -> some View {
@@ -230,6 +327,122 @@ struct ButtonEditorView: View {
                 }
             }
         }
+    }
+}
+
+// MARK: - Add Gauge View
+struct AddGaugeView: View {
+    @Environment(\.dismiss) var dismiss
+    @ObservedObject var variableRepo: VariableRepository
+    var onAdd: (GaugeConfig) -> Void
+    
+    @State private var searchText = ""
+    @State private var selectedPosition: GaugePosition = .top
+    
+    private let accentColor = Color(hex: "FF6B00")
+    private let bgDark = Color(hex: "121212")
+    private let bgSurface = Color(hex: "1E1E1E")
+    
+    var filteredVariables: [VariableDefinition] {
+        variableRepo.searchVariables(searchText)
+    }
+    
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                bgDark.ignoresSafeArea()
+                
+                VStack(spacing: 0) {
+                    // Search bar
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.gray)
+                        TextField("Search variables...", text: $searchText)
+                            .foregroundColor(.white)
+                            .autocorrectionDisabled()
+                        
+                        if !searchText.isEmpty {
+                            Button {
+                                searchText = ""
+                            } label: {
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                    }
+                    .padding(12)
+                    .background(bgSurface)
+                    .cornerRadius(10)
+                    .padding()
+                    
+                    // Position picker
+                    Picker("Position", selection: $selectedPosition) {
+                        Text("Top Row (Large)").tag(GaugePosition.top)
+                        Text("Secondary (Small)").tag(GaugePosition.secondary)
+                    }
+                    .pickerStyle(.segmented)
+                    .padding(.horizontal)
+                    .padding(.bottom, 8)
+                    
+                    // Variable count
+                    HStack {
+                        Text("\(filteredVariables.count) variables")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 4)
+                    
+                    // Variable list
+                    List {
+                        ForEach(filteredVariables, id: \.hash) { variable in
+                            Button {
+                                addGauge(variable)
+                            } label: {
+                                HStack {
+                                    VStack(alignment: .leading, spacing: 2) {
+                                        Text(variable.name)
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 14))
+                                        Text("Hash: \(variable.hash)")
+                                            .font(.system(size: 10))
+                                            .foregroundColor(.gray)
+                                    }
+                                    Spacer()
+                                    Image(systemName: "plus.circle")
+                                        .foregroundColor(accentColor)
+                                }
+                            }
+                            .listRowBackground(bgSurface)
+                        }
+                    }
+                    .listStyle(.plain)
+                    .scrollContentBackground(.hidden)
+                }
+            }
+            .navigationTitle("Add Gauge")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
+                }
+            }
+        }
+    }
+    
+    private func addGauge(_ variable: VariableDefinition) {
+        let gauge = GaugeConfig(
+            name: String(variable.name.prefix(12)),
+            variableHash: variable.hash,
+            variableName: variable.name,
+            unit: "",
+            position: selectedPosition
+        )
+        onAdd(gauge)
+        dismiss()
     }
 }
 

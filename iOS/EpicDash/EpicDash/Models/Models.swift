@@ -26,23 +26,33 @@ struct ButtonConfig: Codable, Identifiable {
     }
 }
 
+// MARK: - Gauge Position
+enum GaugePosition: String, Codable, CaseIterable {
+    case top = "TOP"
+    case secondary = "SECONDARY"
+}
+
 // MARK: - Gauge Configuration
 struct GaugeConfig: Codable, Identifiable, Equatable {
     var id: UUID = UUID()
     var name: String
     var variableHash: Int
+    var variableName: String
     var unit: String
     var minValue: Float
     var maxValue: Float
     var isGpsSpeed: Bool
+    var position: GaugePosition
     
-    init(name: String, variableHash: Int, unit: String = "", minValue: Float = 0, maxValue: Float = 100, isGpsSpeed: Bool = false) {
+    init(name: String, variableHash: Int, variableName: String = "", unit: String = "", minValue: Float = 0, maxValue: Float = 100, isGpsSpeed: Bool = false, position: GaugePosition = .top) {
         self.name = name
         self.variableHash = variableHash
+        self.variableName = variableName.isEmpty ? name : variableName
         self.unit = unit
         self.minValue = minValue
         self.maxValue = maxValue
         self.isGpsSpeed = isGpsSpeed
+        self.position = position
     }
     
     static func == (lhs: GaugeConfig, rhs: GaugeConfig) -> Bool {
@@ -58,42 +68,52 @@ struct VariableDefinition: Codable {
 }
 
 // MARK: - Variable Repository
-class VariableRepository {
+class VariableRepository: ObservableObject {
     static let shared = VariableRepository()
     
     // GPS Speed pseudo-gauge (hash = 0)
     static let gpsSpeedGauge = GaugeConfig(
         name: "GPS Speed",
         variableHash: 0,
+        variableName: "GPS",
         unit: "MPH",
         minValue: 0,
         maxValue: 200,
-        isGpsSpeed: true
+        isGpsSpeed: true,
+        position: .top
     )
     
-    // Common gauges
-    static let commonGauges: [GaugeConfig] = [
-        GaugeConfig(name: "AFR", variableHash: -1412584499, unit: "", minValue: 10, maxValue: 20),
-        GaugeConfig(name: "Baro", variableHash: 1986862668, unit: "kPa", minValue: 80, maxValue: 110),
-        GaugeConfig(name: "Ignition", variableHash: -1803182614, unit: "°", minValue: -10, maxValue: 50),
-        GaugeConfig(name: "Boost", variableHash: -1106583792, unit: "%", minValue: 0, maxValue: 100),
-        GaugeConfig(name: "Coolant", variableHash: 123456789, unit: "°F", minValue: 100, maxValue: 250),
-        GaugeConfig(name: "Oil Pres", variableHash: 987654321, unit: "PSI", minValue: 0, maxValue: 100),
-    ]
+    @Published private(set) var variables: [VariableDefinition] = []
+    @Published private(set) var outputVariables: [VariableDefinition] = []
     
-    private(set) var variables: [VariableDefinition] = []
+    init() {
+        loadVariables()
+    }
     
     func loadVariables() {
         guard let url = Bundle.main.url(forResource: "variables", withExtension: "json"),
               let data = try? Data(contentsOf: url),
               let decoded = try? JSONDecoder().decode([VariableDefinition].self, from: data) else {
+            print("[VariableRepository] Failed to load variables.json")
             return
         }
         variables = decoded
+        outputVariables = decoded.filter { $0.source == "output" }
+        print("[VariableRepository] Loaded \(variables.count) variables, \(outputVariables.count) outputs")
     }
     
     func getVariable(byHash hash: Int) -> VariableDefinition? {
         variables.first { $0.hash == hash }
+    }
+    
+    func getVariable(byName name: String) -> VariableDefinition? {
+        variables.first { $0.name.lowercased() == name.lowercased() }
+    }
+    
+    func searchVariables(_ query: String) -> [VariableDefinition] {
+        guard !query.isEmpty else { return outputVariables }
+        let lowercased = query.lowercased()
+        return outputVariables.filter { $0.name.lowercased().contains(lowercased) }
     }
 }
 

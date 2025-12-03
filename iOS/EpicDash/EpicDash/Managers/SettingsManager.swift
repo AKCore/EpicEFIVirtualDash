@@ -83,12 +83,13 @@ class SettingsManager: ObservableObject {
             self.buttons = (0..<16).map { ButtonConfig(id: $0) }
         }
         
-        // Load gauges
+        // Load gauges - start empty, user adds what they want
         if let data = defaults.data(forKey: Keys.gauges),
            let decoded = try? JSONDecoder().decode([GaugeConfig].self, from: data) {
             self.gauges = decoded
         } else {
-            self.gauges = [VariableRepository.gpsSpeedGauge] + VariableRepository.commonGauges.prefix(1)
+            // Default: GPS speed in top row
+            self.gauges = [VariableRepository.gpsSpeedGauge]
         }
     }
     
