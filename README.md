@@ -8,9 +8,9 @@ A Bluetooth Low Energy (BLE) virtual dashboard system for **EpicEFI** ECUs. Disp
 
 | Component | Status |
 |-----------|--------|
-| **Android** | ![Android Build](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build.yml/badge.svg?branch=main&event=push&job=build-android) |
-| **Firmware** | ![Firmware Build](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build.yml/badge.svg?branch=main&event=push&job=build-firmware) |
-| **iOS** | ![iOS Build](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build.yml/badge.svg?branch=main&event=push&job=build-ios) |
+| **Android** | [![Android](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build-android.yml/badge.svg)](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build-android.yml) |
+| **Firmware** | [![Firmware](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build-firmware.yml/badge.svg)](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build-firmware.yml) |
+| **iOS** | [![iOS](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build-ios.yml/badge.svg)](https://github.com/AKCore/EpicEFIVirtualDash/actions/workflows/build-ios.yml) |
 
 ## Overview
 
