@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ADC Slider dimensions -->
+    <dimen name="adc_label_width">32dp</dimen>
+    <dimen name="adc_value_width">40dp</dimen>
+</resources>

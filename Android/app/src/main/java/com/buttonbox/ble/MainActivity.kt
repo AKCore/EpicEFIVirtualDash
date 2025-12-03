@@ -35,6 +35,7 @@ import com.buttonbox.ble.data.SpeedUnit
 import com.buttonbox.ble.data.VariableRepository
 import com.buttonbox.ble.databinding.ActivityMainBinding
 import com.google.android.gms.location.*
+import com.google.android.gms.location.LocationCallback
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
 import kotlinx.coroutines.launch
@@ -60,6 +61,11 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
     
     // Variable values cache
     private val variableValues = ConcurrentHashMap<Int, Float>()
+    
+    // ADC values (0-1023) for virtual analog outputs
+    // Note: ADC1 (index 1) is hardware-sampled from GPIO 5 on ESP32
+    private val adcValues = FloatArray(16) { 0f }
+    private var adcValuesSentOnConnect = false
 
     private val requiredPermissions = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
         arrayOf(
@@ -115,10 +121,16 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
         setupUI()
         checkPermissionsAndStart()
     }
+    
+    override fun onDestroy() {
+        super.onDestroy()
+        bleManager.disconnect()
+    }
 
     private fun setupUI() {
         setupButtons()
         setupGauges()
+        setupAdcSliders()
         
         binding.btnConnect.setOnClickListener {
             if (bleManager.isConnected) {
@@ -516,6 +528,77 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
         }
     }
     
+    // ADC slider value TextViews for updating display
+    private val adcValueViews = mutableListOf<TextView>()
+    
+    private fun setupAdcSliders() {
+        val container = binding.adcSlidersContainer
+        container.removeAllViews()
+        adcValueViews.clear()
+        
+        // Skip ADC1 (index 1) as it's hardware-sampled from GPIO 5
+        val adcChannels = listOf(0) + (2..15).toList()  // A0, A2-A15 (skip A1)
+        
+        for (channel in adcChannels) {
+            val itemLayout = LinearLayout(this).apply {
+                orientation = LinearLayout.HORIZONTAL
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                )
+                gravity = android.view.Gravity.CENTER_VERTICAL
+                setPadding(0, 4, 0, 4)
+            }
+            
+            val label = TextView(this).apply {
+                text = "A$channel"
+                setTextColor(ContextCompat.getColor(context, R.color.text_secondary))
+                textSize = 12f
+                layoutParams = LinearLayout.LayoutParams(
+                    resources.getDimensionPixelSize(R.dimen.adc_label_width),
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply { marginEnd = 8 }
+            }
+            
+            val slider = android.widget.SeekBar(this).apply {
+                max = 1023
+                progress = adcValues[channel].toInt()
+                layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                
+                val ch = channel
+                setOnSeekBarChangeListener(object : android.widget.SeekBar.OnSeekBarChangeListener {
+                    override fun onProgressChanged(seekBar: android.widget.SeekBar?, progress: Int, fromUser: Boolean) {
+                        adcValues[ch] = progress.toFloat()
+                        adcValueViews.getOrNull(adcChannels.indexOf(ch))?.text = progress.toString()
+                    }
+                    override fun onStartTrackingTouch(seekBar: android.widget.SeekBar?) {}
+                    override fun onStopTrackingTouch(seekBar: android.widget.SeekBar?) {
+                        if (bleManager.isConnected) {
+                            bleManager.sendAdcValue(ch, adcValues[ch])
+                        }
+                    }
+                })
+            }
+            
+            val valueText = TextView(this).apply {
+                text = adcValues[channel].toInt().toString()
+                setTextColor(ContextCompat.getColor(context, R.color.accent_orange))
+                textSize = 12f
+                layoutParams = LinearLayout.LayoutParams(
+                    resources.getDimensionPixelSize(R.dimen.adc_value_width),
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply { marginStart = 8 }
+                gravity = android.view.Gravity.END
+            }
+            adcValueViews.add(valueText)
+            
+            itemLayout.addView(label)
+            itemLayout.addView(slider)
+            itemLayout.addView(valueText)
+            container.addView(itemLayout)
+        }
+    }
+    
     /**
      * Pack GPS HMSD (hours, minutes, seconds, days) into uint32
      * Format: hours | (minutes << 8) | (seconds << 16) | (days << 24)
@@ -558,8 +641,6 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
         val hmsdPacked = packGpsHmsd(hours, minutes, seconds, days)
         if (hmsdPacked != lastGpsHmsdPacked) {
             lastGpsHmsdPacked = hmsdPacked
-            // Send as packed uint32 (raw bytes, not float)
-            log("GPS HMSD: h=$hours m=$minutes s=$seconds d=$days packed=0x${Integer.toHexString(hmsdPacked)}")
             bleManager.sendGpsDataPacked(BleManager.VAR_HASH_GPS_HMSD_PACKED, hmsdPacked)
         }
         
@@ -567,7 +648,6 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
         val myqsatPacked = packGpsMyqsat(months, years, quality, satellites)
         if (myqsatPacked != lastGpsMyqsatPacked) {
             lastGpsMyqsatPacked = myqsatPacked
-            log("GPS MYQSAT: mo=$months y=$years q=$quality sat=$satellites packed=0x${Integer.toHexString(myqsatPacked)}")
             bleManager.sendGpsDataPacked(BleManager.VAR_HASH_GPS_MYQSAT_PACKED, myqsatPacked)
         }
         
@@ -639,7 +719,10 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
                 binding.statusIndicator.setBackgroundResource(R.drawable.status_dot_connected)
                 // Start requesting variables
                 startVariablePolling()
+                // Send all ADC values on connect
+                sendAllAdcValuesOnConnect()
             } else {
+                adcValuesSentOnConnect = false
                 binding.tvStatus.text = "Offline"
                 binding.tvStatus.setTextColor(ContextCompat.getColor(this, R.color.text_secondary))
                 binding.statusIndicator.setBackgroundResource(R.drawable.status_dot)
@@ -664,6 +747,20 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
                 
                 // Wait for cycle time before next batch
                 kotlinx.coroutines.delay(cycleDelayMs)
+            }
+        }
+    }
+    
+    private fun sendAllAdcValuesOnConnect() {
+        if (adcValuesSentOnConnect) return
+        adcValuesSentOnConnect = true
+        
+        // Small delay to ensure BLE is ready
+        lifecycleScope.launch {
+            kotlinx.coroutines.delay(500)
+            if (bleManager.isConnected) {
+                bleManager.sendAllAdcValues(adcValues)
+                log("ADC: Sent all 16 values on connect")
             }
         }
     }
@@ -730,11 +827,6 @@ class MainActivity : AppCompatActivity(), BleManager.BleCallback {
     override fun onPause() {
         super.onPause()
         fusedLocationClient.removeLocationUpdates(locationCallback)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        bleManager.disconnect()
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {

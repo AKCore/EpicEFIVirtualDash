@@ -13,6 +13,12 @@
 #define LOG_LOCAL_LEVEL ESP_LOG_DEBUG
 
 #define RGB_PIN 38       // WS2812 data pin
+#define ADC1_PIN 5       // Hardware ADC input for ADC1 (GPIO 5)
+
+// Hardware ADC configuration
+#define ADC1_SAMPLE_INTERVAL_MS 10   // Sample every 50ms (20 Hz)
+#define ADC1_FILTER_SAMPLES 1        // Number of samples for averaging filter (1 = no filter)
+#define ADC1_CHANGE_THRESHOLD 5      // Minimum change to trigger CAN send
 
 #define TS_HW_BUTTONBOX1_CATEGORY 27 // hardware button box 1
 #define CANBUS_BUTTONBOX_ADDRESS 0x711 // CANBUS BUTTONBOX TX
@@ -32,6 +38,35 @@ const int32_t VAR_HASH_GPS_COURSE = 1842893663;
 const int32_t VAR_HASH_GPS_LATITUDE = 1524934922;
 const int32_t VAR_HASH_GPS_LONGITUDE = -809214087;
 const int32_t VAR_HASH_GPS_SPEED = -1486968225;
+
+// Virtual ADC variable hashes (A0-A15) - sent from phone app
+const int32_t VAR_HASH_ADC[16] = {
+    595545759,   // A0
+    595545760,   // A1
+    595545761,   // A2
+    595545762,   // A3
+    595545763,   // A4
+    595545764,   // A5
+    595545765,   // A6
+    595545766,   // A7
+    595545767,   // A8
+    595545768,   // A9
+    -1821826352, // A10
+    -1821826351, // A11
+    -1821826350, // A12
+    -1821826349, // A13
+    -1821826348, // A14
+    -1821826347  // A15
+};
+
+// Digital input variable hash (D22-D37 packed as 16-bit bitmask)
+// Currently only reading IO1 (touch sensor)
+const int32_t VAR_HASH_D22_D37 = 2138825443;  // TODO: Replace with actual hash from ECU
+
+// Digital input configuration
+#define DIGITAL_INPUT_PIN 1          // IO1 - touch sensor
+#define DIGITAL_SAMPLE_INTERVAL_MS 20 // Sample every 20ms (50 Hz)
+#define DIGITAL_DEBOUNCE_MS 50       // Debounce time
 
 // BLE UUIDs - must match Android app
 #define SERVICE_UUID           "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
@@ -108,6 +143,20 @@ uint8_t pendingVarIndex = 0;
 uint8_t batchResponseBuffer[MAX_BATCH_VARS * VAR_RESPONSE_SIZE];
 uint8_t batchResponseCount = 0;
 
+// Hardware ADC1 state
+uint32_t lastAdc1SampleTime = 0;
+uint16_t adc1FilterBuffer[ADC1_FILTER_SAMPLES];
+uint8_t adc1FilterIndex = 0;
+bool adc1FilterFilled = false;
+float lastAdc1Value = -1;  // Last sent value (-1 = never sent)
+
+// Digital input state
+uint32_t lastDigitalSampleTime = 0;
+uint16_t currentDigitalBits = 0;
+uint16_t lastSentDigitalBits = 0xFFFF;  // Force initial send
+uint32_t lastDigitalChangeTime = 0;
+bool digitalDebouncing = false;
+
 // BLE Server Callbacks
 class MyServerCallbacks : public BLEServerCallbacks {
   void onConnect(BLEServer* pServer) override {
@@ -171,26 +220,33 @@ class VarRequestCharCallbacks : public BLECharacteristicCallbacks {
   }
 };
 
-// GPS Data Callbacks - receives GPS data from phone app, forwards to CAN
+// Helper to check if hash is an ADC variable (A0-A15)
+int8_t getAdcChannel(int32_t varHash) {
+  for (int i = 0; i < 16; i++) {
+    if (VAR_HASH_ADC[i] == varHash) return i;
+  }
+  return -1;
+}
+
+// Variable Set Callbacks - receives GPS/ADC data from phone app, forwards to CAN
 // Format: [0..3] VarHash (int32 BE), [4..7] Value (float32 BE or uint32 BE for packed)
-class GpsDataCharCallbacks : public BLECharacteristicCallbacks {
+class VarSetCharCallbacks : public BLECharacteristicCallbacks {
   void onWrite(BLECharacteristic* pCharacteristic) override {
     std::string value = pCharacteristic->getValue();
     size_t len = value.length();
     
     if (len < 8) {
-      logMessage("GPS data too short!");
+      logMessage("VarSet data too short!");
       return;
     }
     
-    // Process multiple GPS data entries (8 bytes each)
+    // Process multiple variable entries (8 bytes each)
     for (size_t i = 0; i + 8 <= len; i += 8) {
       const uint8_t* data = (const uint8_t*)value.data() + i;
       int32_t varHash = readInt32BigEndian(data);
-      uint32_t rawValue = ((uint32_t)data[4] << 24) | ((uint32_t)data[5] << 16) | 
-                          ((uint32_t)data[6] << 8) | (uint32_t)data[7];
       
       // Forward directly to CAN - data is already in correct format
+      // CAN ID 0x781 = Variable Set (0x780 + ECU_ID)
       uint8_t canData[8];
       memcpy(canData, data, 8);
       
@@ -202,16 +258,19 @@ class GpsDataCharCallbacks : public BLECharacteristicCallbacks {
       
       bool ok = canManager.sendMessage(frame);
       
-      // Log all GPS values for debugging
-     /* if (varHash == VAR_HASH_GPS_HMSD_PACKED || varHash == VAR_HASH_GPS_MYQSAT_PACKED) {
-        logMessage(String("GPS U32: hash=") + String(varHash) + " val=0x" + String(rawValue, HEX) + 
-                   " ok=" + String(ok ? "Y" : "N"));
-      } else {
-        // Float value - decode and log
+      // Optional debug logging (uncomment to enable)
+      /*
+      int8_t adcCh = getAdcChannel(varHash);
+      if (adcCh >= 0) {
         float floatVal = readFloat32BigEndian(data + 4);
-        logMessage(String("GPS F32: hash=") + String(varHash) + " val=" + String(floatVal, 4) + 
+        logMessage(String("ADC[") + String(adcCh) + "] = " + String(floatVal, 0) + 
                    " ok=" + String(ok ? "Y" : "N"));
-      }*/
+      } else if (varHash == VAR_HASH_GPS_HMSD_PACKED || varHash == VAR_HASH_GPS_MYQSAT_PACKED) {
+        uint32_t rawValue = ((uint32_t)data[4] << 24) | ((uint32_t)data[5] << 16) | 
+                            ((uint32_t)data[6] << 8) | (uint32_t)data[7];
+        logMessage(String("GPS U32: hash=") + String(varHash) + " val=0x" + String(rawValue, HEX));
+      }
+      */
     }
   }
 };
@@ -295,6 +354,96 @@ void sendCMD(uint16_t buttonMask) {
   sendButtonCanFrame(buttonMask);
 }
 
+// Send a variable value to ECU via CAN (float)
+void sendVariableToEcu(int32_t varHash, float value) {
+  uint8_t canData[8];
+  writeInt32BigEndian(varHash, canData);
+  writeFloat32BigEndian(value, canData + 4);
+  
+  CANfettiFrame frame = CANfetti()
+                          .setId(CAN_GPS_DATA_BASE + ECU_ID)
+                          .setDataLength(8)
+                          .setData(canData, 8)
+                          .build();
+  
+  canManager.sendMessage(frame);
+}
+
+// Sample hardware ADC1 and send to ECU if changed
+void sampleHardwareAdc1() {
+  uint32_t now = millis();
+  if (now - lastAdc1SampleTime < ADC1_SAMPLE_INTERVAL_MS) return;
+  lastAdc1SampleTime = now;
+  
+  // Read raw ADC value (12-bit: 0-4095)
+  uint16_t rawValue = analogRead(ADC1_PIN);
+  
+  // Scale to 0-1023 range (10-bit) to match app sliders
+  uint16_t scaledValue = rawValue >> 2;
+  
+  // Add to filter buffer
+  adc1FilterBuffer[adc1FilterIndex] = scaledValue;
+  adc1FilterIndex = (adc1FilterIndex + 1) % ADC1_FILTER_SAMPLES;
+  if (adc1FilterIndex == 0) adc1FilterFilled = true;
+  
+  // Calculate filtered value (average)
+  uint32_t sum = 0;
+  uint8_t count = adc1FilterFilled ? ADC1_FILTER_SAMPLES : adc1FilterIndex;
+  if (count == 0) return;  // No samples yet
+  
+  for (uint8_t i = 0; i < count; i++) {
+    sum += adc1FilterBuffer[i];
+  }
+  float filteredValue = (float)sum / count;
+  
+  // Check if value changed enough to send
+  if (lastAdc1Value < 0 || abs(filteredValue - lastAdc1Value) >= ADC1_CHANGE_THRESHOLD) {
+    lastAdc1Value = filteredValue;
+    sendVariableToEcu(VAR_HASH_ADC[1], filteredValue);  // ADC1 = index 1
+  }
+}
+
+// Read digital inputs and pack into 16-bit bitmask
+// Currently only reading IO1 (touch sensor) - bit 0
+void readDigitalInputs(uint16_t* bits) {
+  *bits = 0;
+  // Read IO1 touch sensor - LOW = touched = 1
+  int state = digitalRead(DIGITAL_INPUT_PIN);
+  if (state == LOW) {
+    *bits |= (uint16_t)(1u << 0);  // Bit 0 for IO1
+  }
+  // Future: Add more pins here (IO22-IO37 would be bits 0-15)
+}
+
+// Sample digital inputs and send to ECU if changed (with debounce)
+void sampleDigitalInputs() {
+  uint32_t now = millis();
+  if (now - lastDigitalSampleTime < DIGITAL_SAMPLE_INTERVAL_MS) return;
+  lastDigitalSampleTime = now;
+  
+  uint16_t newBits;
+  readDigitalInputs(&newBits);
+  
+  // Check if changed
+  if (newBits != currentDigitalBits) {
+    currentDigitalBits = newBits;
+    lastDigitalChangeTime = now;
+    digitalDebouncing = true;
+  }
+  
+  // Debounce: only send after stable for DIGITAL_DEBOUNCE_MS
+  if (digitalDebouncing && (now - lastDigitalChangeTime >= DIGITAL_DEBOUNCE_MS)) {
+    digitalDebouncing = false;
+    
+    // Only send if different from last sent value
+    if (currentDigitalBits != lastSentDigitalBits) {
+      lastSentDigitalBits = currentDigitalBits;
+      sendVariableToEcu(VAR_HASH_D22_D37, (float)currentDigitalBits);
+      logMessage(String("Digital: 0x") + String(currentDigitalBits, HEX));
+    }
+  }
+}
+
 void setup() {
 
   Serial.begin(921600);
@@ -303,6 +452,13 @@ void setup() {
   // CAN transceiver control pin
   pinMode(9, OUTPUT);
   digitalWrite(9, LOW); // LOW = high speed mode
+  
+  // Hardware ADC1 input
+  pinMode(ADC1_PIN, INPUT);
+  analogReadResolution(12);  // 12-bit ADC (0-4095)
+  
+  // Digital input (IO1 touch sensor) - internal pullup
+  pinMode(DIGITAL_INPUT_PIN, INPUT_PULLUP);
   
   // Initialize subsystems
   setupCan();
@@ -314,6 +470,12 @@ void setup() {
 void loop() {
   // Process CAN RX messages - check frequently
   processCanRx();
+  
+  // Sample hardware ADC1 (GPIO 5) and send to ECU
+  sampleHardwareAdc1();
+  
+  // Sample digital inputs (IO1 touch sensor) and send to ECU
+  sampleDigitalInputs();
   
   // Handle BLE connection state changes
   if (!deviceConnected && oldDeviceConnected) {
@@ -375,7 +537,7 @@ void setupBLE() {
     CHAR_GPS_DATA_UUID,
     BLECharacteristic::PROPERTY_WRITE_NR
   );
-  pGpsDataChar->setCallbacks(new GpsDataCharCallbacks());
+  pGpsDataChar->setCallbacks(new VarSetCharCallbacks());
   
   pService->start();
   

@@ -37,6 +37,26 @@ class BleManager(private val context: Context) {
         const val VAR_HASH_GPS_LONGITUDE = -809214087
         const val VAR_HASH_GPS_SPEED = -1486968225
         
+        // Virtual ADC variable hashes (A0-A15)
+        val VAR_HASH_ADC = intArrayOf(
+            595545759,   // A0
+            595545760,   // A1
+            595545761,   // A2
+            595545762,   // A3
+            595545763,   // A4
+            595545764,   // A5
+            595545765,   // A6
+            595545766,   // A7
+            595545767,   // A8
+            595545768,   // A9
+            -1821826352, // A10
+            -1821826351, // A11
+            -1821826350, // A12
+            -1821826349, // A13
+            -1821826348, // A14
+            -1821826347  // A15
+        )
+        
         private const val DEVICE_NAME = "ESP32 Dashboard"
         private const val SCAN_TIMEOUT_MS = 10000L
     }
@@ -387,10 +407,6 @@ class BleManager(private val context: Context) {
             .putInt(packedValue)
             .array()
         
-        // Debug: print raw bytes
-        val hexStr = data.joinToString(" ") { String.format("%02X", it) }
-        log("GPS packed: hash=$varHash val=0x${Integer.toHexString(packedValue)} bytes=$hexStr")
-        
         gpsDataQueue.offer(data)
         
         if (!isWritingGpsData) {
@@ -417,20 +433,38 @@ class BleManager(private val context: Context) {
         for ((hash, value) in entries) {
             data.putInt(hash)
             data.putFloat(value)
-            log("GPS queue: hash=$hash val=$value")
         }
         
-        // Debug: print raw bytes
-        val bytes = data.array()
-        val hexStr = bytes.joinToString(" ") { String.format("%02X", it) }
-        log("GPS raw bytes: $hexStr")
-        
-        gpsDataQueue.offer(bytes)
+        gpsDataQueue.offer(data.array())
         
         if (!isWritingGpsData) {
             processGpsDataQueue()
         }
         return true
+    }
+    
+    /**
+     * Send a single ADC value to ECU
+     * @param channel ADC channel (0-15)
+     * @param value ADC value (0-1023)
+     */
+    fun sendAdcValue(channel: Int, value: Float): Boolean {
+        if (channel < 0 || channel >= VAR_HASH_ADC.size) return false
+        return sendGpsData(VAR_HASH_ADC[channel], value)
+    }
+    
+    /**
+     * Send all ADC values to ECU (used on connect or bulk update)
+     * @param values Array of 16 ADC values (0-1023)
+     */
+    fun sendAllAdcValues(values: FloatArray): Boolean {
+        if (!isConnected || gpsDataCharacteristic == null) return false
+        if (values.size != 16) return false
+        
+        val entries = values.mapIndexed { index, value -> 
+            VAR_HASH_ADC[index] to value 
+        }
+        return sendGpsDataBatch(entries)
     }
 
     private fun log(message: String) {

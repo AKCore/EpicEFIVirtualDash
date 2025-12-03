@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.GridLayout
+import android.widget.LinearLayout
 import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.Toast
@@ -275,8 +276,8 @@ class SettingsActivity : AppCompatActivity() {
                 android.R.layout.simple_list_item_1, parent, false
             )
             // Add remove button dynamically
-            val container = android.widget.LinearLayout(parent.context).apply {
-                orientation = android.widget.LinearLayout.HORIZONTAL
+            val container = LinearLayout(parent.context).apply {
+                orientation = LinearLayout.HORIZONTAL
                 layoutParams = ViewGroup.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
@@ -286,7 +287,7 @@ class SettingsActivity : AppCompatActivity() {
             
             val textView = TextView(parent.context).apply {
                 id = android.R.id.text1
-                layoutParams = android.widget.LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f)
+                layoutParams = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f)
                 setTextColor(Color.WHITE)
                 textSize = 14f
             }
