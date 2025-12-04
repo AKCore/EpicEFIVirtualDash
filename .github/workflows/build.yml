@@ -9,6 +9,9 @@ on:
         type: boolean
         default: false
 
+permissions:
+  contents: write
+
 jobs:
   build-android:
     name: Build Android

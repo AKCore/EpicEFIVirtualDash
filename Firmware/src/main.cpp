@@ -4,6 +4,7 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
 #include <CANfetti.hpp>
+#include <esp_task_wdt.h>
 
 #ifdef CORE_DEBUG_LEVEL
 #undef CORE_DEBUG_LEVEL
@@ -16,9 +17,15 @@
 #define ADC1_PIN 5       // Hardware ADC input for ADC1 (GPIO 5)
 
 // Hardware ADC configuration
-#define ADC1_SAMPLE_INTERVAL_MS 10   // Sample every 50ms (20 Hz)
+#define ADC1_SAMPLE_INTERVAL_MS 10   // Sample every 10ms (100 Hz)
 #define ADC1_FILTER_SAMPLES 1        // Number of samples for averaging filter (1 = no filter)
 #define ADC1_CHANGE_THRESHOLD 5      // Minimum change to trigger CAN send
+
+// Timeout and watchdog configuration
+#define VAR_REQUEST_TIMEOUT_MS 100   // Timeout waiting for ECU response
+#define BLE_NOTIFY_MIN_INTERVAL_MS 10 // Minimum interval between BLE notifications
+#define WATCHDOG_TIMEOUT_S 5         // Watchdog timeout in seconds
+#define RECONNECT_DELAY_MS 100       // Delay before restarting advertising (was 500)
 
 #define TS_HW_BUTTONBOX1_CATEGORY 27 // hardware button box 1
 #define CANBUS_BUTTONBOX_ADDRESS 0x711 // CANBUS BUTTONBOX TX
@@ -137,11 +144,19 @@ uint16_t lastButtonMask = 0;
 int32_t pendingVarHashes[MAX_BATCH_VARS];
 uint8_t pendingVarCount = 0;
 uint8_t pendingVarIndex = 0;
+uint32_t lastVarRequestTime = 0;  // For timeout detection
+uint32_t lastBleNotifyTime = 0;   // Rate limiting BLE notifications
 
 // Batched response buffer (up to 16 vars * 8 bytes = 128 bytes)
 #define VAR_RESPONSE_SIZE 8  // 4 bytes hash + 4 bytes value
 uint8_t batchResponseBuffer[MAX_BATCH_VARS * VAR_RESPONSE_SIZE];
 uint8_t batchResponseCount = 0;
+
+// Statistics for debugging
+uint32_t canTxCount = 0;
+uint32_t canRxCount = 0;
+uint32_t bleNotifyCount = 0;
+uint32_t timeoutCount = 0;
 
 // Hardware ADC1 state
 uint32_t lastAdc1SampleTime = 0;
@@ -202,6 +217,11 @@ class VarRequestCharCallbacks : public BLECharacteristicCallbacks {
     size_t len = value.length();
     
     if (len >= 4) {
+      // If previous batch still pending, skip (don't queue up)
+      if (pendingVarCount > 0 && pendingVarIndex < pendingVarCount) {
+        return;  // Still processing previous batch
+      }
+      
       // Parse multiple 4-byte hashes
       pendingVarCount = 0;
       pendingVarIndex = 0;
@@ -213,8 +233,8 @@ class VarRequestCharCallbacks : public BLECharacteristicCallbacks {
       
       // Start requesting first variable
       if (pendingVarCount > 0) {
+        lastVarRequestTime = millis();
         requestCanVariable(pendingVarHashes[0]);
-        //logMessage(String("Batch request: ") + String(pendingVarCount) + " vars");
       }
     }
   }
@@ -290,9 +310,8 @@ void sendButtonCanFrame(uint16_t buttonMask) {
                           .setData(data, 5)
                           .build();
 
-  bool ok = canManager.sendMessage(frame);
-  if (ok) {
-    //logMessage(String("CAN TX 0x711 mask=0x") + String(buttonMask, HEX));
+  if (canManager.sendMessage(frame)) {
+    canTxCount++;
   }
 }
 
@@ -307,19 +326,66 @@ void requestCanVariable(int32_t varHash) {
                           .setData(data, 4)
                           .build();
 
-  bool ok = canManager.sendMessage(frame);
-  if (ok) {
-    //logMessage(String("CAN TX var request hash=") + String(varHash));
+  if (canManager.sendMessage(frame)) {
+    canTxCount++;
+  }
+}
+
+// Send batched BLE response with rate limiting
+void sendBatchedBleResponse() {
+  if (batchResponseCount == 0) return;
+  if (!deviceConnected || pVarDataChar == nullptr) return;
+  
+  uint32_t now = millis();
+  // Rate limit BLE notifications to prevent buffer overflow
+  if (now - lastBleNotifyTime < BLE_NOTIFY_MIN_INTERVAL_MS) return;
+  
+  pVarDataChar->setValue(batchResponseBuffer, batchResponseCount * VAR_RESPONSE_SIZE);
+  pVarDataChar->notify();
+  lastBleNotifyTime = now;
+  bleNotifyCount++;
+  
+  // Reset for next batch
+  pendingVarCount = 0;
+  pendingVarIndex = 0;
+  batchResponseCount = 0;
+}
+
+// Check for variable request timeout
+void checkVarRequestTimeout() {
+  if (pendingVarCount == 0 || pendingVarIndex >= pendingVarCount) return;
+  
+  uint32_t now = millis();
+  if (now - lastVarRequestTime >= VAR_REQUEST_TIMEOUT_MS) {
+    timeoutCount++;
+    
+    // Move to next variable or finish batch
+    pendingVarIndex++;
+    
+    if (pendingVarIndex < pendingVarCount) {
+      // Try next variable
+      lastVarRequestTime = now;
+      requestCanVariable(pendingVarHashes[pendingVarIndex]);
+    } else {
+      // Timeout on last variable - send what we have
+      sendBatchedBleResponse();
+    }
   }
 }
 
 // Process incoming CAN messages and forward variable data to BLE
 void processCanRx() {
   CANfettiFrame frame;
-  while (canManager.receiveMessage(frame, 0)) {
+  uint8_t rxCount = 0;
+  const uint8_t maxRxPerLoop = 10;  // Limit processing per loop iteration
+  
+  while (rxCount < maxRxPerLoop && canManager.receiveMessage(frame, 0)) {
+    rxCount++;
+    canRxCount++;
+    
     // Check if this is a variable response from ECU
     if (frame.id == (CAN_VAR_RESPONSE_BASE + ECU_ID) && frame.len >= 8) {
-      if (deviceConnected && pVarDataChar != nullptr) {
+      if (deviceConnected && pVarDataChar != nullptr && pendingVarCount > 0) {
         // Add to batch response buffer
         if (batchResponseCount < MAX_BATCH_VARS) {
           memcpy(batchResponseBuffer + (batchResponseCount * VAR_RESPONSE_SIZE), frame.buf, 8);
@@ -330,19 +396,12 @@ void processCanRx() {
         pendingVarIndex++;
         
         if (pendingVarIndex < pendingVarCount) {
-          // Request next variable
+          // Request next variable immediately
+          lastVarRequestTime = millis();
           requestCanVariable(pendingVarHashes[pendingVarIndex]);
         } else {
           // All variables received - send batched response
-          if (batchResponseCount > 0) {
-            pVarDataChar->setValue(batchResponseBuffer, batchResponseCount * VAR_RESPONSE_SIZE);
-            pVarDataChar->notify();
-            //logMessage(String("BLE TX batch: ") + String(batchResponseCount) + " vars");
-          }
-          // Reset for next batch
-          pendingVarCount = 0;
-          pendingVarIndex = 0;
-          batchResponseCount = 0;
+          sendBatchedBleResponse();
         }
       }
     }
@@ -366,7 +425,9 @@ void sendVariableToEcu(int32_t varHash, float value) {
                           .setData(canData, 8)
                           .build();
   
-  canManager.sendMessage(frame);
+  if (canManager.sendMessage(frame)) {
+    canTxCount++;
+  }
 }
 
 // Sample hardware ADC1 and send to ECU if changed
@@ -445,9 +506,12 @@ void sampleDigitalInputs() {
 }
 
 void setup() {
-
   Serial.begin(921600);
   Serial.setDebugOutput(true);
+
+  // Initialize watchdog (5 second timeout)
+  esp_task_wdt_init(WATCHDOG_TIMEOUT_S, true);  // true = panic on timeout
+  esp_task_wdt_add(NULL);  // Add current task to watchdog
 
   // CAN transceiver control pin
   pinMode(9, OUTPUT);
@@ -465,11 +529,18 @@ void setup() {
   setupBLE();
   
   logMessage("Setup complete - BLE Dashboard ready");
+  logMessage(String("Watchdog: ") + String(WATCHDOG_TIMEOUT_S) + "s, VAR timeout: " + String(VAR_REQUEST_TIMEOUT_MS) + "ms");
 }
 
 void loop() {
+  // Feed watchdog
+  esp_task_wdt_reset();
+  
   // Process CAN RX messages - check frequently
   processCanRx();
+  
+  // Check for variable request timeouts
+  checkVarRequestTimeout();
   
   // Sample hardware ADC1 (GPIO 5) and send to ECU
   sampleHardwareAdc1();
@@ -477,19 +548,29 @@ void loop() {
   // Sample digital inputs (IO1 touch sensor) and send to ECU
   sampleDigitalInputs();
   
-  // Handle BLE connection state changes
+  // Handle BLE connection state changes (non-blocking)
   if (!deviceConnected && oldDeviceConnected) {
-    delay(500);
-    pServer->startAdvertising();
-    logMessage("BLE advertising restarted");
-    oldDeviceConnected = deviceConnected;
+    // Use non-blocking delay for advertising restart
+    static uint32_t disconnectTime = 0;
+    if (disconnectTime == 0) {
+      disconnectTime = millis();
+    } else if (millis() - disconnectTime >= RECONNECT_DELAY_MS) {
+      pServer->startAdvertising();
+      logMessage("BLE advertising restarted");
+      oldDeviceConnected = deviceConnected;
+      disconnectTime = 0;
+    }
+  } else {
+    if (deviceConnected && !oldDeviceConnected) {
+      oldDeviceConnected = deviceConnected;
+      // Reset state on new connection
+      pendingVarCount = 0;
+      pendingVarIndex = 0;
+      batchResponseCount = 0;
+    }
   }
   
-  if (deviceConnected && !oldDeviceConnected) {
-    oldDeviceConnected = deviceConnected;
-  }
-  
-  // Yield to other tasks without blocking - maximum responsiveness
+  // Yield to other tasks - but don't delay
   yield();
 }
 
